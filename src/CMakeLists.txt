@@ -52,3 +52,163 @@ target_compile_definitions(gdtoa PRIVATE
 	GDTOA_NO_ASSERT
 	NO_FENV_H
 )
+
+add_library(c STATIC)
+
+# Assert Module
+# target_sources(c PRIVATE
+# 	assert/assert.c
+# )
+
+# CType Module
+target_sources(c PRIVATE
+	ctype/isalnum.c
+	ctype/isalpha.c
+	ctype/isascii.c
+	ctype/isblank.c
+	ctype/iscntrl.c
+	ctype/isdigit.c
+	ctype/isgraph.c
+	ctype/islower.c
+	ctype/isprint.c
+	ctype/ispunct.c
+	ctype/isspace.c
+	ctype/isupper.c
+	ctype/isxdigit.c
+	ctype/toascii.c
+	ctype/tolower.c
+	ctype/toupper.c
+)
+
+# stdlib Module
+target_sources(c PRIVATE
+	stdlib/abs.c
+	stdlib/atof.c
+	stdlib/atoi.c
+	stdlib/atol.c
+	stdlib/atoll.c
+	stdlib/bsearch.c
+	stdlib/calloc.c
+	stdlib/div.c
+	stdlib/heapsort_r.c
+	stdlib/heapsort.c
+	stdlib/imaxabs.c
+	stdlib/imaxdiv.c
+	stdlib/labs.c
+	stdlib/ldiv.c
+	stdlib/llabs.c
+	stdlib/lldiv.c
+	stdlib/qsort_r.c
+	stdlib/qsort.c
+	stdlib/rand.c
+	stdlib/realloc.c
+	stdlib/strtol.c
+	stdlib/strtold.c
+	stdlib/strtoul.c
+	stdlib/strtoll.c
+	stdlib/strtoull.c
+)
+
+# wchar Module
+target_sources(c PRIVATE
+	wchar/iswalnum.c
+	wchar/iswalpha.c
+	wchar/iswblank.c
+	wchar/iswcntrl.c
+	wchar/iswalnum.c
+	wchar/iswalpha.c
+	wchar/iswblank.c
+	wchar/iswcntrl.c
+	wchar/iswctype.c
+	wchar/iswdigit.c
+	wchar/iswgraph.c
+	wchar/iswlower.c
+	wchar/iswprint.c
+	wchar/iswpunct.c
+	wchar/iswspace.c
+	wchar/iswupper.c
+	wchar/iswxdigit.c
+	wchar/towccase.c
+	wchar/towctrans.c
+	wchar/towlower.c
+	wchar/towupper.c
+	wchar/wcswidth.c
+	wchar/wctrans.c
+	wchar/wctype.c
+	wchar/wcwidth.c
+)
+
+# locale Module
+target_sources(c PRIVATE
+	locale/langinfo.c
+)
+
+# math Module
+# target_sources(c PRIVATE
+# 	math/fabs.c
+# 	math/fabsf.c
+# )
+
+# stdio Module
+# target_sources(c PRIVATE
+# 	stdio/asprintf.c
+# 	stdio/putchar.c
+# 	stdio/puts.c
+# 	stdio/vasprintf.c
+# )
+
+# stdio_native Module
+# target_sources(c PRIVATE
+# 	stdio/putchar_native.c
+# )
+
+# support Module
+target_sources(c PRIVATE
+	support/fls.c
+	support/flsl.c
+	support/flsll.c
+)
+
+# time Module
+# target_sources(c PRIVATE
+# 	time/asctime.c
+# 	time/asctime_r.c
+# )
+
+# string Module
+target_sources(c PRIVATE
+	string/memcmp.c
+	string/memcpy.c
+	string/memmem.c
+	string/memmove.c
+	string/memchr.c
+	string/memrchr.c
+	string/memset.c
+	string/strcat.c
+	string/strchr.c
+	string/strchrnul.c
+	string/strcmp.c
+	string/strcoll.c
+	string/strcpy.c
+	string/strcspn.c
+	string/strdup.c
+	string/strerror.c
+	string/strerror_r.c
+	string/strlen.c
+	string/strncat.c
+	string/strncmp.c
+	string/strncpy.c
+	string/strndup.c
+	string/strnlen.c
+	string/strnstr.c
+	string/strpbrk.c
+	string/strrchr.c
+	string/strspn.c
+	string/strstr.c
+	string/strtok.c
+	string/strxfrm.c
+)
+
+target_include_directories(c PUBLIC ${PROJECT_SOURCE_DIR}/include)
+# architecture-specific deps required by some of the modules
+target_include_directories(c PUBLIC ${PROJECT_SOURCE_DIR}/arch/x86_64/include)
