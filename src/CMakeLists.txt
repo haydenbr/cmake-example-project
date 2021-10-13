@@ -1,5 +1,5 @@
-add_library(gdtoa STATIC)
-target_sources(gdtoa PRIVATE
+add_library(gdtoa STATIC) # This is a target we want to build!
+target_sources(gdtoa PRIVATE # adding source files for the target
 	gdtoa/src/dmisc.c
 	gdtoa/src/dtoa.c
 	gdtoa/src/g__fmt.c
@@ -42,7 +42,10 @@ target_sources(gdtoa PRIVATE
 	gdtoa/src/sum.c
 	gdtoa/src/ulp.c
 )
+# these are required by the source files
+# we add them as PUBLIC because library depdendents also need these
 target_include_directories(gdtoa PUBLIC gdtoa/include)
+# preprocessor definitions
 target_compile_definitions(gdtoa PRIVATE
 	NO_ERRNO
 	IFNAN_CHECK
