@@ -66,24 +66,12 @@ add_library(c STATIC)
 # )
 
 # CType Module
-target_sources(c PRIVATE
-	ctype/isalnum.c
-	ctype/isalpha.c
-	ctype/isascii.c
-	ctype/isblank.c
-	ctype/iscntrl.c
-	ctype/isdigit.c
-	ctype/isgraph.c
-	ctype/islower.c
-	ctype/isprint.c
-	ctype/ispunct.c
-	ctype/isspace.c
-	ctype/isupper.c
-	ctype/isxdigit.c
-	ctype/toascii.c
-	ctype/tolower.c
-	ctype/toupper.c
-)
+## doing this is nice and terse, but since this
+## doesn't require adding a new source file
+## to the list, there's no change to CMakeList.txt
+## so building doesn't cause cmake to rerun
+aux_source_directory(support ctype_target_sources)
+target_sources(c PRIVATE ${ctype_target_sources})
 
 # stdlib Module
 target_sources(c PRIVATE

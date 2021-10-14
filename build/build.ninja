@@ -95,581 +95,12 @@ build src/edit_cache: phony src/CMakeFiles/edit_cache.util
 
 build cmake_object_order_depends_target_c: phony || src/CMakeFiles/c.dir
 
-build src/CMakeFiles/c.dir/ctype/isalnum.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/ctype/isalnum.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/ctype/isalnum.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/ctype
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/ctype/isalpha.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/ctype/isalpha.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/ctype/isalpha.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/ctype
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/ctype/isascii.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/ctype/isascii.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/ctype/isascii.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/ctype
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/ctype/isblank.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/ctype/isblank.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/ctype/isblank.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/ctype
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/ctype/iscntrl.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/ctype/iscntrl.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/ctype/iscntrl.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/ctype
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/ctype/isdigit.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/ctype/isdigit.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/ctype/isdigit.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/ctype
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/ctype/isgraph.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/ctype/isgraph.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/ctype/isgraph.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/ctype
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/ctype/islower.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/ctype/islower.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/ctype/islower.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/ctype
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/ctype/isprint.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/ctype/isprint.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/ctype/isprint.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/ctype
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/ctype/ispunct.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/ctype/ispunct.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/ctype/ispunct.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/ctype
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/ctype/isspace.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/ctype/isspace.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/ctype/isspace.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/ctype
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/ctype/isupper.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/ctype/isupper.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/ctype/isupper.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/ctype
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/ctype/isxdigit.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/ctype/isxdigit.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/ctype/isxdigit.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/ctype
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/ctype/toascii.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/ctype/toascii.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/ctype/toascii.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/ctype
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/ctype/tolower.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/ctype/tolower.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/ctype/tolower.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/ctype
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/ctype/toupper.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/ctype/toupper.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/ctype/toupper.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/ctype
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/stdlib/abs.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/abs.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/stdlib/abs.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/stdlib/atof.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/atof.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/stdlib/atof.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/stdlib/atoi.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/atoi.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/stdlib/atoi.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/stdlib/atol.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/atol.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/stdlib/atol.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/stdlib/atoll.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/atoll.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/stdlib/atoll.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/stdlib/bsearch.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/bsearch.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/stdlib/bsearch.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/stdlib/calloc.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/calloc.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/stdlib/calloc.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/stdlib/div.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/div.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/stdlib/div.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/stdlib/heapsort_r.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/heapsort_r.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/stdlib/heapsort_r.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/stdlib/heapsort.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/heapsort.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/stdlib/heapsort.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/stdlib/imaxabs.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/imaxabs.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/stdlib/imaxabs.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/stdlib/imaxdiv.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/imaxdiv.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/stdlib/imaxdiv.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/stdlib/labs.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/labs.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/stdlib/labs.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/stdlib/ldiv.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/ldiv.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/stdlib/ldiv.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/stdlib/llabs.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/llabs.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/stdlib/llabs.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/stdlib/lldiv.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/lldiv.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/stdlib/lldiv.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/stdlib/qsort_r.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/qsort_r.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/stdlib/qsort_r.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/stdlib/qsort.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/qsort.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/stdlib/qsort.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/stdlib/rand.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/rand.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/stdlib/rand.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/stdlib/realloc.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/realloc.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/stdlib/realloc.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/stdlib/strtol.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/strtol.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/stdlib/strtol.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/stdlib/strtold.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/strtold.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/stdlib/strtold.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/stdlib/strtoul.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/strtoul.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/stdlib/strtoul.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/stdlib/strtoll.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/strtoll.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/stdlib/strtoll.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/stdlib/strtoull.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/strtoull.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/stdlib/strtoull.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/wchar/iswalnum.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/iswalnum.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/wchar/iswalnum.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/wchar/iswalpha.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/iswalpha.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/wchar/iswalpha.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/wchar/iswblank.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/iswblank.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/wchar/iswblank.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/wchar/iswcntrl.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/iswcntrl.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/wchar/iswcntrl.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/wchar/iswctype.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/iswctype.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/wchar/iswctype.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/wchar/iswdigit.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/iswdigit.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/wchar/iswdigit.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/wchar/iswgraph.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/iswgraph.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/wchar/iswgraph.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/wchar/iswlower.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/iswlower.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/wchar/iswlower.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/wchar/iswprint.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/iswprint.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/wchar/iswprint.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/wchar/iswpunct.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/iswpunct.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/wchar/iswpunct.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/wchar/iswspace.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/iswspace.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/wchar/iswspace.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/wchar/iswupper.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/iswupper.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/wchar/iswupper.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/wchar/iswxdigit.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/iswxdigit.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/wchar/iswxdigit.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/wchar/towccase.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/towccase.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/wchar/towccase.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/wchar/towctrans.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/towctrans.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/wchar/towctrans.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/wchar/towlower.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/towlower.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/wchar/towlower.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/wchar/towupper.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/towupper.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/wchar/towupper.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/wchar/wcswidth.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/wcswidth.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/wchar/wcswidth.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/wchar/wctrans.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/wctrans.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/wchar/wctrans.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/wchar/wctype.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/wctype.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/wchar/wctype.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/wchar/wcwidth.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/wcwidth.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/wchar/wcwidth.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
-build src/CMakeFiles/c.dir/locale/langinfo.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/locale/langinfo.c || cmake_object_order_depends_target_c
-  DEP_FILE = src/CMakeFiles/c.dir/locale/langinfo.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
-  OBJECT_DIR = src/CMakeFiles/c.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/locale
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
-
 build src/CMakeFiles/c.dir/support/fls.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/support/fls.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/support/fls.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/support
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
 
 build src/CMakeFiles/c.dir/support/flsl.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/support/flsl.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/support/flsl.c.o.d
@@ -677,8 +108,6 @@ build src/CMakeFiles/c.dir/support/flsl.c.o: C_COMPILER__c_ /Users/haydenbraxton
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/support
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
 
 build src/CMakeFiles/c.dir/support/flsll.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/support/flsll.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/support/flsll.c.o.d
@@ -686,8 +115,335 @@ build src/CMakeFiles/c.dir/support/flsll.c.o: C_COMPILER__c_ /Users/haydenbraxto
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/support
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
+
+build src/CMakeFiles/c.dir/stdlib/abs.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/abs.c || cmake_object_order_depends_target_c
+  DEP_FILE = src/CMakeFiles/c.dir/stdlib/abs.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
+  OBJECT_DIR = src/CMakeFiles/c.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
+
+build src/CMakeFiles/c.dir/stdlib/atof.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/atof.c || cmake_object_order_depends_target_c
+  DEP_FILE = src/CMakeFiles/c.dir/stdlib/atof.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
+  OBJECT_DIR = src/CMakeFiles/c.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
+
+build src/CMakeFiles/c.dir/stdlib/atoi.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/atoi.c || cmake_object_order_depends_target_c
+  DEP_FILE = src/CMakeFiles/c.dir/stdlib/atoi.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
+  OBJECT_DIR = src/CMakeFiles/c.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
+
+build src/CMakeFiles/c.dir/stdlib/atol.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/atol.c || cmake_object_order_depends_target_c
+  DEP_FILE = src/CMakeFiles/c.dir/stdlib/atol.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
+  OBJECT_DIR = src/CMakeFiles/c.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
+
+build src/CMakeFiles/c.dir/stdlib/atoll.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/atoll.c || cmake_object_order_depends_target_c
+  DEP_FILE = src/CMakeFiles/c.dir/stdlib/atoll.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
+  OBJECT_DIR = src/CMakeFiles/c.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
+
+build src/CMakeFiles/c.dir/stdlib/bsearch.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/bsearch.c || cmake_object_order_depends_target_c
+  DEP_FILE = src/CMakeFiles/c.dir/stdlib/bsearch.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
+  OBJECT_DIR = src/CMakeFiles/c.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
+
+build src/CMakeFiles/c.dir/stdlib/calloc.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/calloc.c || cmake_object_order_depends_target_c
+  DEP_FILE = src/CMakeFiles/c.dir/stdlib/calloc.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
+  OBJECT_DIR = src/CMakeFiles/c.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
+
+build src/CMakeFiles/c.dir/stdlib/div.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/div.c || cmake_object_order_depends_target_c
+  DEP_FILE = src/CMakeFiles/c.dir/stdlib/div.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
+  OBJECT_DIR = src/CMakeFiles/c.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
+
+build src/CMakeFiles/c.dir/stdlib/heapsort_r.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/heapsort_r.c || cmake_object_order_depends_target_c
+  DEP_FILE = src/CMakeFiles/c.dir/stdlib/heapsort_r.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
+  OBJECT_DIR = src/CMakeFiles/c.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
+
+build src/CMakeFiles/c.dir/stdlib/heapsort.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/heapsort.c || cmake_object_order_depends_target_c
+  DEP_FILE = src/CMakeFiles/c.dir/stdlib/heapsort.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
+  OBJECT_DIR = src/CMakeFiles/c.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
+
+build src/CMakeFiles/c.dir/stdlib/imaxabs.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/imaxabs.c || cmake_object_order_depends_target_c
+  DEP_FILE = src/CMakeFiles/c.dir/stdlib/imaxabs.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
+  OBJECT_DIR = src/CMakeFiles/c.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
+
+build src/CMakeFiles/c.dir/stdlib/imaxdiv.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/imaxdiv.c || cmake_object_order_depends_target_c
+  DEP_FILE = src/CMakeFiles/c.dir/stdlib/imaxdiv.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
+  OBJECT_DIR = src/CMakeFiles/c.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
+
+build src/CMakeFiles/c.dir/stdlib/labs.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/labs.c || cmake_object_order_depends_target_c
+  DEP_FILE = src/CMakeFiles/c.dir/stdlib/labs.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
+  OBJECT_DIR = src/CMakeFiles/c.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
+
+build src/CMakeFiles/c.dir/stdlib/ldiv.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/ldiv.c || cmake_object_order_depends_target_c
+  DEP_FILE = src/CMakeFiles/c.dir/stdlib/ldiv.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
+  OBJECT_DIR = src/CMakeFiles/c.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
+
+build src/CMakeFiles/c.dir/stdlib/llabs.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/llabs.c || cmake_object_order_depends_target_c
+  DEP_FILE = src/CMakeFiles/c.dir/stdlib/llabs.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
+  OBJECT_DIR = src/CMakeFiles/c.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
+
+build src/CMakeFiles/c.dir/stdlib/lldiv.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/lldiv.c || cmake_object_order_depends_target_c
+  DEP_FILE = src/CMakeFiles/c.dir/stdlib/lldiv.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
+  OBJECT_DIR = src/CMakeFiles/c.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
+
+build src/CMakeFiles/c.dir/stdlib/qsort_r.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/qsort_r.c || cmake_object_order_depends_target_c
+  DEP_FILE = src/CMakeFiles/c.dir/stdlib/qsort_r.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
+  OBJECT_DIR = src/CMakeFiles/c.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
+
+build src/CMakeFiles/c.dir/stdlib/qsort.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/qsort.c || cmake_object_order_depends_target_c
+  DEP_FILE = src/CMakeFiles/c.dir/stdlib/qsort.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
+  OBJECT_DIR = src/CMakeFiles/c.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
+
+build src/CMakeFiles/c.dir/stdlib/rand.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/rand.c || cmake_object_order_depends_target_c
+  DEP_FILE = src/CMakeFiles/c.dir/stdlib/rand.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
+  OBJECT_DIR = src/CMakeFiles/c.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
+
+build src/CMakeFiles/c.dir/stdlib/realloc.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/realloc.c || cmake_object_order_depends_target_c
+  DEP_FILE = src/CMakeFiles/c.dir/stdlib/realloc.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
+  OBJECT_DIR = src/CMakeFiles/c.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
+
+build src/CMakeFiles/c.dir/stdlib/strtol.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/strtol.c || cmake_object_order_depends_target_c
+  DEP_FILE = src/CMakeFiles/c.dir/stdlib/strtol.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
+  OBJECT_DIR = src/CMakeFiles/c.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
+
+build src/CMakeFiles/c.dir/stdlib/strtold.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/strtold.c || cmake_object_order_depends_target_c
+  DEP_FILE = src/CMakeFiles/c.dir/stdlib/strtold.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
+  OBJECT_DIR = src/CMakeFiles/c.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
+
+build src/CMakeFiles/c.dir/stdlib/strtoul.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/strtoul.c || cmake_object_order_depends_target_c
+  DEP_FILE = src/CMakeFiles/c.dir/stdlib/strtoul.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
+  OBJECT_DIR = src/CMakeFiles/c.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
+
+build src/CMakeFiles/c.dir/stdlib/strtoll.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/strtoll.c || cmake_object_order_depends_target_c
+  DEP_FILE = src/CMakeFiles/c.dir/stdlib/strtoll.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
+  OBJECT_DIR = src/CMakeFiles/c.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
+
+build src/CMakeFiles/c.dir/stdlib/strtoull.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/strtoull.c || cmake_object_order_depends_target_c
+  DEP_FILE = src/CMakeFiles/c.dir/stdlib/strtoull.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
+  OBJECT_DIR = src/CMakeFiles/c.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
+
+build src/CMakeFiles/c.dir/wchar/iswalnum.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/iswalnum.c || cmake_object_order_depends_target_c
+  DEP_FILE = src/CMakeFiles/c.dir/wchar/iswalnum.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
+  OBJECT_DIR = src/CMakeFiles/c.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
+
+build src/CMakeFiles/c.dir/wchar/iswalpha.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/iswalpha.c || cmake_object_order_depends_target_c
+  DEP_FILE = src/CMakeFiles/c.dir/wchar/iswalpha.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
+  OBJECT_DIR = src/CMakeFiles/c.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
+
+build src/CMakeFiles/c.dir/wchar/iswblank.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/iswblank.c || cmake_object_order_depends_target_c
+  DEP_FILE = src/CMakeFiles/c.dir/wchar/iswblank.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
+  OBJECT_DIR = src/CMakeFiles/c.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
+
+build src/CMakeFiles/c.dir/wchar/iswcntrl.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/iswcntrl.c || cmake_object_order_depends_target_c
+  DEP_FILE = src/CMakeFiles/c.dir/wchar/iswcntrl.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
+  OBJECT_DIR = src/CMakeFiles/c.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
+
+build src/CMakeFiles/c.dir/wchar/iswctype.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/iswctype.c || cmake_object_order_depends_target_c
+  DEP_FILE = src/CMakeFiles/c.dir/wchar/iswctype.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
+  OBJECT_DIR = src/CMakeFiles/c.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
+
+build src/CMakeFiles/c.dir/wchar/iswdigit.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/iswdigit.c || cmake_object_order_depends_target_c
+  DEP_FILE = src/CMakeFiles/c.dir/wchar/iswdigit.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
+  OBJECT_DIR = src/CMakeFiles/c.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
+
+build src/CMakeFiles/c.dir/wchar/iswgraph.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/iswgraph.c || cmake_object_order_depends_target_c
+  DEP_FILE = src/CMakeFiles/c.dir/wchar/iswgraph.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
+  OBJECT_DIR = src/CMakeFiles/c.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
+
+build src/CMakeFiles/c.dir/wchar/iswlower.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/iswlower.c || cmake_object_order_depends_target_c
+  DEP_FILE = src/CMakeFiles/c.dir/wchar/iswlower.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
+  OBJECT_DIR = src/CMakeFiles/c.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
+
+build src/CMakeFiles/c.dir/wchar/iswprint.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/iswprint.c || cmake_object_order_depends_target_c
+  DEP_FILE = src/CMakeFiles/c.dir/wchar/iswprint.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
+  OBJECT_DIR = src/CMakeFiles/c.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
+
+build src/CMakeFiles/c.dir/wchar/iswpunct.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/iswpunct.c || cmake_object_order_depends_target_c
+  DEP_FILE = src/CMakeFiles/c.dir/wchar/iswpunct.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
+  OBJECT_DIR = src/CMakeFiles/c.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
+
+build src/CMakeFiles/c.dir/wchar/iswspace.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/iswspace.c || cmake_object_order_depends_target_c
+  DEP_FILE = src/CMakeFiles/c.dir/wchar/iswspace.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
+  OBJECT_DIR = src/CMakeFiles/c.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
+
+build src/CMakeFiles/c.dir/wchar/iswupper.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/iswupper.c || cmake_object_order_depends_target_c
+  DEP_FILE = src/CMakeFiles/c.dir/wchar/iswupper.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
+  OBJECT_DIR = src/CMakeFiles/c.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
+
+build src/CMakeFiles/c.dir/wchar/iswxdigit.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/iswxdigit.c || cmake_object_order_depends_target_c
+  DEP_FILE = src/CMakeFiles/c.dir/wchar/iswxdigit.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
+  OBJECT_DIR = src/CMakeFiles/c.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
+
+build src/CMakeFiles/c.dir/wchar/towccase.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/towccase.c || cmake_object_order_depends_target_c
+  DEP_FILE = src/CMakeFiles/c.dir/wchar/towccase.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
+  OBJECT_DIR = src/CMakeFiles/c.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
+
+build src/CMakeFiles/c.dir/wchar/towctrans.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/towctrans.c || cmake_object_order_depends_target_c
+  DEP_FILE = src/CMakeFiles/c.dir/wchar/towctrans.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
+  OBJECT_DIR = src/CMakeFiles/c.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
+
+build src/CMakeFiles/c.dir/wchar/towlower.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/towlower.c || cmake_object_order_depends_target_c
+  DEP_FILE = src/CMakeFiles/c.dir/wchar/towlower.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
+  OBJECT_DIR = src/CMakeFiles/c.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
+
+build src/CMakeFiles/c.dir/wchar/towupper.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/towupper.c || cmake_object_order_depends_target_c
+  DEP_FILE = src/CMakeFiles/c.dir/wchar/towupper.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
+  OBJECT_DIR = src/CMakeFiles/c.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
+
+build src/CMakeFiles/c.dir/wchar/wcswidth.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/wcswidth.c || cmake_object_order_depends_target_c
+  DEP_FILE = src/CMakeFiles/c.dir/wchar/wcswidth.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
+  OBJECT_DIR = src/CMakeFiles/c.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
+
+build src/CMakeFiles/c.dir/wchar/wctrans.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/wctrans.c || cmake_object_order_depends_target_c
+  DEP_FILE = src/CMakeFiles/c.dir/wchar/wctrans.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
+  OBJECT_DIR = src/CMakeFiles/c.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
+
+build src/CMakeFiles/c.dir/wchar/wctype.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/wctype.c || cmake_object_order_depends_target_c
+  DEP_FILE = src/CMakeFiles/c.dir/wchar/wctype.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
+  OBJECT_DIR = src/CMakeFiles/c.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
+
+build src/CMakeFiles/c.dir/wchar/wcwidth.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/wcwidth.c || cmake_object_order_depends_target_c
+  DEP_FILE = src/CMakeFiles/c.dir/wchar/wcwidth.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
+  OBJECT_DIR = src/CMakeFiles/c.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
+
+build src/CMakeFiles/c.dir/locale/langinfo.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/locale/langinfo.c || cmake_object_order_depends_target_c
+  DEP_FILE = src/CMakeFiles/c.dir/locale/langinfo.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
+  OBJECT_DIR = src/CMakeFiles/c.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/c.dir/locale
 
 build src/CMakeFiles/c.dir/string/memcmp.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/memcmp.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/memcmp.c.o.d
@@ -695,8 +451,6 @@ build src/CMakeFiles/c.dir/string/memcmp.c.o: C_COMPILER__c_ /Users/haydenbraxto
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
 
 build src/CMakeFiles/c.dir/string/memcpy.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/memcpy.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/memcpy.c.o.d
@@ -704,8 +458,6 @@ build src/CMakeFiles/c.dir/string/memcpy.c.o: C_COMPILER__c_ /Users/haydenbraxto
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
 
 build src/CMakeFiles/c.dir/string/memmem.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/memmem.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/memmem.c.o.d
@@ -713,8 +465,6 @@ build src/CMakeFiles/c.dir/string/memmem.c.o: C_COMPILER__c_ /Users/haydenbraxto
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
 
 build src/CMakeFiles/c.dir/string/memmove.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/memmove.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/memmove.c.o.d
@@ -722,8 +472,6 @@ build src/CMakeFiles/c.dir/string/memmove.c.o: C_COMPILER__c_ /Users/haydenbraxt
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
 
 build src/CMakeFiles/c.dir/string/memchr.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/memchr.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/memchr.c.o.d
@@ -731,8 +479,6 @@ build src/CMakeFiles/c.dir/string/memchr.c.o: C_COMPILER__c_ /Users/haydenbraxto
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
 
 build src/CMakeFiles/c.dir/string/memrchr.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/memrchr.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/memrchr.c.o.d
@@ -740,8 +486,6 @@ build src/CMakeFiles/c.dir/string/memrchr.c.o: C_COMPILER__c_ /Users/haydenbraxt
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
 
 build src/CMakeFiles/c.dir/string/memset.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/memset.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/memset.c.o.d
@@ -749,8 +493,6 @@ build src/CMakeFiles/c.dir/string/memset.c.o: C_COMPILER__c_ /Users/haydenbraxto
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
 
 build src/CMakeFiles/c.dir/string/strcat.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/strcat.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/strcat.c.o.d
@@ -758,8 +500,6 @@ build src/CMakeFiles/c.dir/string/strcat.c.o: C_COMPILER__c_ /Users/haydenbraxto
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
 
 build src/CMakeFiles/c.dir/string/strchr.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/strchr.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/strchr.c.o.d
@@ -767,8 +507,6 @@ build src/CMakeFiles/c.dir/string/strchr.c.o: C_COMPILER__c_ /Users/haydenbraxto
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
 
 build src/CMakeFiles/c.dir/string/strchrnul.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/strchrnul.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/strchrnul.c.o.d
@@ -776,8 +514,6 @@ build src/CMakeFiles/c.dir/string/strchrnul.c.o: C_COMPILER__c_ /Users/haydenbra
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
 
 build src/CMakeFiles/c.dir/string/strcmp.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/strcmp.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/strcmp.c.o.d
@@ -785,8 +521,6 @@ build src/CMakeFiles/c.dir/string/strcmp.c.o: C_COMPILER__c_ /Users/haydenbraxto
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
 
 build src/CMakeFiles/c.dir/string/strcoll.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/strcoll.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/strcoll.c.o.d
@@ -794,8 +528,6 @@ build src/CMakeFiles/c.dir/string/strcoll.c.o: C_COMPILER__c_ /Users/haydenbraxt
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
 
 build src/CMakeFiles/c.dir/string/strcpy.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/strcpy.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/strcpy.c.o.d
@@ -803,8 +535,6 @@ build src/CMakeFiles/c.dir/string/strcpy.c.o: C_COMPILER__c_ /Users/haydenbraxto
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
 
 build src/CMakeFiles/c.dir/string/strcspn.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/strcspn.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/strcspn.c.o.d
@@ -812,8 +542,6 @@ build src/CMakeFiles/c.dir/string/strcspn.c.o: C_COMPILER__c_ /Users/haydenbraxt
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
 
 build src/CMakeFiles/c.dir/string/strdup.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/strdup.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/strdup.c.o.d
@@ -821,8 +549,6 @@ build src/CMakeFiles/c.dir/string/strdup.c.o: C_COMPILER__c_ /Users/haydenbraxto
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
 
 build src/CMakeFiles/c.dir/string/strerror.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/strerror.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/strerror.c.o.d
@@ -830,8 +556,6 @@ build src/CMakeFiles/c.dir/string/strerror.c.o: C_COMPILER__c_ /Users/haydenbrax
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
 
 build src/CMakeFiles/c.dir/string/strerror_r.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/strerror_r.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/strerror_r.c.o.d
@@ -839,8 +563,6 @@ build src/CMakeFiles/c.dir/string/strerror_r.c.o: C_COMPILER__c_ /Users/haydenbr
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
 
 build src/CMakeFiles/c.dir/string/strlen.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/strlen.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/strlen.c.o.d
@@ -848,8 +570,6 @@ build src/CMakeFiles/c.dir/string/strlen.c.o: C_COMPILER__c_ /Users/haydenbraxto
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
 
 build src/CMakeFiles/c.dir/string/strncat.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/strncat.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/strncat.c.o.d
@@ -857,8 +577,6 @@ build src/CMakeFiles/c.dir/string/strncat.c.o: C_COMPILER__c_ /Users/haydenbraxt
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
 
 build src/CMakeFiles/c.dir/string/strncmp.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/strncmp.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/strncmp.c.o.d
@@ -866,8 +584,6 @@ build src/CMakeFiles/c.dir/string/strncmp.c.o: C_COMPILER__c_ /Users/haydenbraxt
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
 
 build src/CMakeFiles/c.dir/string/strncpy.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/strncpy.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/strncpy.c.o.d
@@ -875,8 +591,6 @@ build src/CMakeFiles/c.dir/string/strncpy.c.o: C_COMPILER__c_ /Users/haydenbraxt
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
 
 build src/CMakeFiles/c.dir/string/strndup.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/strndup.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/strndup.c.o.d
@@ -884,8 +598,6 @@ build src/CMakeFiles/c.dir/string/strndup.c.o: C_COMPILER__c_ /Users/haydenbraxt
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
 
 build src/CMakeFiles/c.dir/string/strnlen.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/strnlen.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/strnlen.c.o.d
@@ -893,8 +605,6 @@ build src/CMakeFiles/c.dir/string/strnlen.c.o: C_COMPILER__c_ /Users/haydenbraxt
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
 
 build src/CMakeFiles/c.dir/string/strnstr.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/strnstr.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/strnstr.c.o.d
@@ -902,8 +612,6 @@ build src/CMakeFiles/c.dir/string/strnstr.c.o: C_COMPILER__c_ /Users/haydenbraxt
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
 
 build src/CMakeFiles/c.dir/string/strpbrk.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/strpbrk.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/strpbrk.c.o.d
@@ -911,8 +619,6 @@ build src/CMakeFiles/c.dir/string/strpbrk.c.o: C_COMPILER__c_ /Users/haydenbraxt
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
 
 build src/CMakeFiles/c.dir/string/strrchr.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/strrchr.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/strrchr.c.o.d
@@ -920,8 +626,6 @@ build src/CMakeFiles/c.dir/string/strrchr.c.o: C_COMPILER__c_ /Users/haydenbraxt
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
 
 build src/CMakeFiles/c.dir/string/strspn.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/strspn.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/strspn.c.o.d
@@ -929,8 +633,6 @@ build src/CMakeFiles/c.dir/string/strspn.c.o: C_COMPILER__c_ /Users/haydenbraxto
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
 
 build src/CMakeFiles/c.dir/string/strstr.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/strstr.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/strstr.c.o.d
@@ -938,8 +640,6 @@ build src/CMakeFiles/c.dir/string/strstr.c.o: C_COMPILER__c_ /Users/haydenbraxto
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
 
 build src/CMakeFiles/c.dir/string/strtok.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/strtok.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/strtok.c.o.d
@@ -947,8 +647,6 @@ build src/CMakeFiles/c.dir/string/strtok.c.o: C_COMPILER__c_ /Users/haydenbraxto
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
 
 build src/CMakeFiles/c.dir/string/strxfrm.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/strxfrm.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/strxfrm.c.o.d
@@ -956,8 +654,6 @@ build src/CMakeFiles/c.dir/string/strxfrm.c.o: C_COMPILER__c_ /Users/haydenbraxt
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
-  TARGET_PDB = src/libc.pdb
 
 
 # =============================================================================
@@ -967,14 +663,13 @@ build src/CMakeFiles/c.dir/string/strxfrm.c.o: C_COMPILER__c_ /Users/haydenbraxt
 #############################################
 # Link the static library src/libc.a
 
-build src/libc.a: C_STATIC_LIBRARY_LINKER__c_ src/CMakeFiles/c.dir/ctype/isalnum.c.o src/CMakeFiles/c.dir/ctype/isalpha.c.o src/CMakeFiles/c.dir/ctype/isascii.c.o src/CMakeFiles/c.dir/ctype/isblank.c.o src/CMakeFiles/c.dir/ctype/iscntrl.c.o src/CMakeFiles/c.dir/ctype/isdigit.c.o src/CMakeFiles/c.dir/ctype/isgraph.c.o src/CMakeFiles/c.dir/ctype/islower.c.o src/CMakeFiles/c.dir/ctype/isprint.c.o src/CMakeFiles/c.dir/ctype/ispunct.c.o src/CMakeFiles/c.dir/ctype/isspace.c.o src/CMakeFiles/c.dir/ctype/isupper.c.o src/CMakeFiles/c.dir/ctype/isxdigit.c.o src/CMakeFiles/c.dir/ctype/toascii.c.o src/CMakeFiles/c.dir/ctype/tolower.c.o src/CMakeFiles/c.dir/ctype/toupper.c.o src/CMakeFiles/c.dir/stdlib/abs.c.o src/CMakeFiles/c.dir/stdlib/atof.c.o src/CMakeFiles/c.dir/stdlib/atoi.c.o src/CMakeFiles/c.dir/stdlib/atol.c.o src/CMakeFiles/c.dir/stdlib/atoll.c.o src/CMakeFiles/c.dir/stdlib/bsearch.c.o src/CMakeFiles/c.dir/stdlib/calloc.c.o src/CMakeFiles/c.dir/stdlib/div.c.o src/CMakeFiles/c.dir/stdlib/heapsort_r.c.o src/CMakeFiles/c.dir/stdlib/heapsort.c.o src/CMakeFiles/c.dir/stdlib/imaxabs.c.o src/CMakeFiles/c.dir/stdlib/imaxdiv.c.o src/CMakeFiles/c.dir/stdlib/labs.c.o src/CMakeFiles/c.dir/stdlib/ldiv.c.o src/CMakeFiles/c.dir/stdlib/llabs.c.o src/CMakeFiles/c.dir/stdlib/lldiv.c.o src/CMakeFiles/c.dir/stdlib/qsort_r.c.o src/CMakeFiles/c.dir/stdlib/qsort.c.o src/CMakeFiles/c.dir/stdlib/rand.c.o src/CMakeFiles/c.dir/stdlib/realloc.c.o src/CMakeFiles/c.dir/stdlib/strtol.c.o src/CMakeFiles/c.dir/stdlib/strtold.c.o src/CMakeFiles/c.dir/stdlib/strtoul.c.o src/CMakeFiles/c.dir/stdlib/strtoll.c.o src/CMakeFiles/c.dir/stdlib/strtoull.c.o src/CMakeFiles/c.dir/wchar/iswalnum.c.o src/CMakeFiles/c.dir/wchar/iswalpha.c.o src/CMakeFiles/c.dir/wchar/iswblank.c.o src/CMakeFiles/c.dir/wchar/iswcntrl.c.o src/CMakeFiles/c.dir/wchar/iswctype.c.o src/CMakeFiles/c.dir/wchar/iswdigit.c.o src/CMakeFiles/c.dir/wchar/iswgraph.c.o src/CMakeFiles/c.dir/wchar/iswlower.c.o src/CMakeFiles/c.dir/wchar/iswprint.c.o src/CMakeFiles/c.dir/wchar/iswpunct.c.o src/CMakeFiles/c.dir/wchar/iswspace.c.o src/CMakeFiles/c.dir/wchar/iswupper.c.o src/CMakeFiles/c.dir/wchar/iswxdigit.c.o src/CMakeFiles/c.dir/wchar/towccase.c.o src/CMakeFiles/c.dir/wchar/towctrans.c.o src/CMakeFiles/c.dir/wchar/towlower.c.o src/CMakeFiles/c.dir/wchar/towupper.c.o src/CMakeFiles/c.dir/wchar/wcswidth.c.o src/CMakeFiles/c.dir/wchar/wctrans.c.o src/CMakeFiles/c.dir/wchar/wctype.c.o src/CMakeFiles/c.dir/wchar/wcwidth.c.o src/CMakeFiles/c.dir/locale/langinfo.c.o src/CMakeFiles/c.dir/support/fls.c.o src/CMakeFiles/c.dir/support/flsl.c.o src/CMakeFiles/c.dir/support/flsll.c.o src/CMakeFiles/c.dir/string/memcmp.c.o src/CMakeFiles/c.dir/string/memcpy.c.o src/CMakeFiles/c.dir/string/memmem.c.o src/CMakeFiles/c.dir/string/memmove.c.o src/CMakeFiles/c.dir/string/memchr.c.o src/CMakeFiles/c.dir/string/memrchr.c.o src/CMakeFiles/c.dir/string/memset.c.o src/CMakeFiles/c.dir/string/strcat.c.o src/CMakeFiles/c.dir/string/strchr.c.o src/CMakeFiles/c.dir/string/strchrnul.c.o src/CMakeFiles/c.dir/string/strcmp.c.o src/CMakeFiles/c.dir/string/strcoll.c.o src/CMakeFiles/c.dir/string/strcpy.c.o src/CMakeFiles/c.dir/string/strcspn.c.o src/CMakeFiles/c.dir/string/strdup.c.o src/CMakeFiles/c.dir/string/strerror.c.o src/CMakeFiles/c.dir/string/strerror_r.c.o src/CMakeFiles/c.dir/string/strlen.c.o src/CMakeFiles/c.dir/string/strncat.c.o src/CMakeFiles/c.dir/string/strncmp.c.o src/CMakeFiles/c.dir/string/strncpy.c.o src/CMakeFiles/c.dir/string/strndup.c.o src/CMakeFiles/c.dir/string/strnlen.c.o src/CMakeFiles/c.dir/string/strnstr.c.o src/CMakeFiles/c.dir/string/strpbrk.c.o src/CMakeFiles/c.dir/string/strrchr.c.o src/CMakeFiles/c.dir/string/strspn.c.o src/CMakeFiles/c.dir/string/strstr.c.o src/CMakeFiles/c.dir/string/strtok.c.o src/CMakeFiles/c.dir/string/strxfrm.c.o
+build src/libc.a: C_STATIC_LIBRARY_LINKER__c_ src/CMakeFiles/c.dir/support/fls.c.o src/CMakeFiles/c.dir/support/flsl.c.o src/CMakeFiles/c.dir/support/flsll.c.o src/CMakeFiles/c.dir/stdlib/abs.c.o src/CMakeFiles/c.dir/stdlib/atof.c.o src/CMakeFiles/c.dir/stdlib/atoi.c.o src/CMakeFiles/c.dir/stdlib/atol.c.o src/CMakeFiles/c.dir/stdlib/atoll.c.o src/CMakeFiles/c.dir/stdlib/bsearch.c.o src/CMakeFiles/c.dir/stdlib/calloc.c.o src/CMakeFiles/c.dir/stdlib/div.c.o src/CMakeFiles/c.dir/stdlib/heapsort_r.c.o src/CMakeFiles/c.dir/stdlib/heapsort.c.o src/CMakeFiles/c.dir/stdlib/imaxabs.c.o src/CMakeFiles/c.dir/stdlib/imaxdiv.c.o src/CMakeFiles/c.dir/stdlib/labs.c.o src/CMakeFiles/c.dir/stdlib/ldiv.c.o src/CMakeFiles/c.dir/stdlib/llabs.c.o src/CMakeFiles/c.dir/stdlib/lldiv.c.o src/CMakeFiles/c.dir/stdlib/qsort_r.c.o src/CMakeFiles/c.dir/stdlib/qsort.c.o src/CMakeFiles/c.dir/stdlib/rand.c.o src/CMakeFiles/c.dir/stdlib/realloc.c.o src/CMakeFiles/c.dir/stdlib/strtol.c.o src/CMakeFiles/c.dir/stdlib/strtold.c.o src/CMakeFiles/c.dir/stdlib/strtoul.c.o src/CMakeFiles/c.dir/stdlib/strtoll.c.o src/CMakeFiles/c.dir/stdlib/strtoull.c.o src/CMakeFiles/c.dir/wchar/iswalnum.c.o src/CMakeFiles/c.dir/wchar/iswalpha.c.o src/CMakeFiles/c.dir/wchar/iswblank.c.o src/CMakeFiles/c.dir/wchar/iswcntrl.c.o src/CMakeFiles/c.dir/wchar/iswctype.c.o src/CMakeFiles/c.dir/wchar/iswdigit.c.o src/CMakeFiles/c.dir/wchar/iswgraph.c.o src/CMakeFiles/c.dir/wchar/iswlower.c.o src/CMakeFiles/c.dir/wchar/iswprint.c.o src/CMakeFiles/c.dir/wchar/iswpunct.c.o src/CMakeFiles/c.dir/wchar/iswspace.c.o src/CMakeFiles/c.dir/wchar/iswupper.c.o src/CMakeFiles/c.dir/wchar/iswxdigit.c.o src/CMakeFiles/c.dir/wchar/towccase.c.o src/CMakeFiles/c.dir/wchar/towctrans.c.o src/CMakeFiles/c.dir/wchar/towlower.c.o src/CMakeFiles/c.dir/wchar/towupper.c.o src/CMakeFiles/c.dir/wchar/wcswidth.c.o src/CMakeFiles/c.dir/wchar/wctrans.c.o src/CMakeFiles/c.dir/wchar/wctype.c.o src/CMakeFiles/c.dir/wchar/wcwidth.c.o src/CMakeFiles/c.dir/locale/langinfo.c.o src/CMakeFiles/c.dir/string/memcmp.c.o src/CMakeFiles/c.dir/string/memcpy.c.o src/CMakeFiles/c.dir/string/memmem.c.o src/CMakeFiles/c.dir/string/memmove.c.o src/CMakeFiles/c.dir/string/memchr.c.o src/CMakeFiles/c.dir/string/memrchr.c.o src/CMakeFiles/c.dir/string/memset.c.o src/CMakeFiles/c.dir/string/strcat.c.o src/CMakeFiles/c.dir/string/strchr.c.o src/CMakeFiles/c.dir/string/strchrnul.c.o src/CMakeFiles/c.dir/string/strcmp.c.o src/CMakeFiles/c.dir/string/strcoll.c.o src/CMakeFiles/c.dir/string/strcpy.c.o src/CMakeFiles/c.dir/string/strcspn.c.o src/CMakeFiles/c.dir/string/strdup.c.o src/CMakeFiles/c.dir/string/strerror.c.o src/CMakeFiles/c.dir/string/strerror_r.c.o src/CMakeFiles/c.dir/string/strlen.c.o src/CMakeFiles/c.dir/string/strncat.c.o src/CMakeFiles/c.dir/string/strncmp.c.o src/CMakeFiles/c.dir/string/strncpy.c.o src/CMakeFiles/c.dir/string/strndup.c.o src/CMakeFiles/c.dir/string/strnlen.c.o src/CMakeFiles/c.dir/string/strnstr.c.o src/CMakeFiles/c.dir/string/strpbrk.c.o src/CMakeFiles/c.dir/string/strrchr.c.o src/CMakeFiles/c.dir/string/strspn.c.o src/CMakeFiles/c.dir/string/strstr.c.o src/CMakeFiles/c.dir/string/strtok.c.o src/CMakeFiles/c.dir/string/strxfrm.c.o
   ARCH_FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
   OBJECT_DIR = src/CMakeFiles/c.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = src/CMakeFiles/c.dir/c.pdb
   TARGET_FILE = src/libc.a
-  TARGET_PDB = src/libc.pdb
+  TARGET_PDB = c.a.dbg
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target gdtoa
@@ -992,8 +687,6 @@ build src/CMakeFiles/gdtoa.dir/gdtoa/src/dmisc.c.o: C_COMPILER__gdtoa_ /Users/ha
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
   OBJECT_DIR = src/CMakeFiles/gdtoa.dir
   OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-  TARGET_COMPILE_PDB = src/CMakeFiles/gdtoa.dir/gdtoa.pdb
-  TARGET_PDB = src/libgdtoa.pdb
 
 build src/CMakeFiles/gdtoa.dir/gdtoa/src/dtoa.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/dtoa.c || cmake_object_order_depends_target_gdtoa
   DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
@@ -1002,8 +695,6 @@ build src/CMakeFiles/gdtoa.dir/gdtoa/src/dtoa.c.o: C_COMPILER__gdtoa_ /Users/hay
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
   OBJECT_DIR = src/CMakeFiles/gdtoa.dir
   OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-  TARGET_COMPILE_PDB = src/CMakeFiles/gdtoa.dir/gdtoa.pdb
-  TARGET_PDB = src/libgdtoa.pdb
 
 build src/CMakeFiles/gdtoa.dir/gdtoa/src/g__fmt.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/g__fmt.c || cmake_object_order_depends_target_gdtoa
   DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
@@ -1012,8 +703,6 @@ build src/CMakeFiles/gdtoa.dir/gdtoa/src/g__fmt.c.o: C_COMPILER__gdtoa_ /Users/h
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
   OBJECT_DIR = src/CMakeFiles/gdtoa.dir
   OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-  TARGET_COMPILE_PDB = src/CMakeFiles/gdtoa.dir/gdtoa.pdb
-  TARGET_PDB = src/libgdtoa.pdb
 
 build src/CMakeFiles/gdtoa.dir/gdtoa/src/g_ddfmt.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/g_ddfmt.c || cmake_object_order_depends_target_gdtoa
   DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
@@ -1022,8 +711,6 @@ build src/CMakeFiles/gdtoa.dir/gdtoa/src/g_ddfmt.c.o: C_COMPILER__gdtoa_ /Users/
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
   OBJECT_DIR = src/CMakeFiles/gdtoa.dir
   OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-  TARGET_COMPILE_PDB = src/CMakeFiles/gdtoa.dir/gdtoa.pdb
-  TARGET_PDB = src/libgdtoa.pdb
 
 build src/CMakeFiles/gdtoa.dir/gdtoa/src/g_dfmt.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/g_dfmt.c || cmake_object_order_depends_target_gdtoa
   DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
@@ -1032,8 +719,6 @@ build src/CMakeFiles/gdtoa.dir/gdtoa/src/g_dfmt.c.o: C_COMPILER__gdtoa_ /Users/h
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
   OBJECT_DIR = src/CMakeFiles/gdtoa.dir
   OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-  TARGET_COMPILE_PDB = src/CMakeFiles/gdtoa.dir/gdtoa.pdb
-  TARGET_PDB = src/libgdtoa.pdb
 
 build src/CMakeFiles/gdtoa.dir/gdtoa/src/g_ffmt.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/g_ffmt.c || cmake_object_order_depends_target_gdtoa
   DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
@@ -1042,8 +727,6 @@ build src/CMakeFiles/gdtoa.dir/gdtoa/src/g_ffmt.c.o: C_COMPILER__gdtoa_ /Users/h
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
   OBJECT_DIR = src/CMakeFiles/gdtoa.dir
   OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-  TARGET_COMPILE_PDB = src/CMakeFiles/gdtoa.dir/gdtoa.pdb
-  TARGET_PDB = src/libgdtoa.pdb
 
 build src/CMakeFiles/gdtoa.dir/gdtoa/src/g_Qfmt.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/g_Qfmt.c || cmake_object_order_depends_target_gdtoa
   DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
@@ -1052,8 +735,6 @@ build src/CMakeFiles/gdtoa.dir/gdtoa/src/g_Qfmt.c.o: C_COMPILER__gdtoa_ /Users/h
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
   OBJECT_DIR = src/CMakeFiles/gdtoa.dir
   OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-  TARGET_COMPILE_PDB = src/CMakeFiles/gdtoa.dir/gdtoa.pdb
-  TARGET_PDB = src/libgdtoa.pdb
 
 build src/CMakeFiles/gdtoa.dir/gdtoa/src/g_xfmt.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/g_xfmt.c || cmake_object_order_depends_target_gdtoa
   DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
@@ -1062,8 +743,6 @@ build src/CMakeFiles/gdtoa.dir/gdtoa/src/g_xfmt.c.o: C_COMPILER__gdtoa_ /Users/h
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
   OBJECT_DIR = src/CMakeFiles/gdtoa.dir
   OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-  TARGET_COMPILE_PDB = src/CMakeFiles/gdtoa.dir/gdtoa.pdb
-  TARGET_PDB = src/libgdtoa.pdb
 
 build src/CMakeFiles/gdtoa.dir/gdtoa/src/g_xLfmt.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/g_xLfmt.c || cmake_object_order_depends_target_gdtoa
   DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
@@ -1072,8 +751,6 @@ build src/CMakeFiles/gdtoa.dir/gdtoa/src/g_xLfmt.c.o: C_COMPILER__gdtoa_ /Users/
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
   OBJECT_DIR = src/CMakeFiles/gdtoa.dir
   OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-  TARGET_COMPILE_PDB = src/CMakeFiles/gdtoa.dir/gdtoa.pdb
-  TARGET_PDB = src/libgdtoa.pdb
 
 build src/CMakeFiles/gdtoa.dir/gdtoa/src/gdtoa.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/gdtoa.c || cmake_object_order_depends_target_gdtoa
   DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
@@ -1082,8 +759,6 @@ build src/CMakeFiles/gdtoa.dir/gdtoa/src/gdtoa.c.o: C_COMPILER__gdtoa_ /Users/ha
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
   OBJECT_DIR = src/CMakeFiles/gdtoa.dir
   OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-  TARGET_COMPILE_PDB = src/CMakeFiles/gdtoa.dir/gdtoa.pdb
-  TARGET_PDB = src/libgdtoa.pdb
 
 build src/CMakeFiles/gdtoa.dir/gdtoa/src/gethex.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/gethex.c || cmake_object_order_depends_target_gdtoa
   DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
@@ -1092,8 +767,6 @@ build src/CMakeFiles/gdtoa.dir/gdtoa/src/gethex.c.o: C_COMPILER__gdtoa_ /Users/h
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
   OBJECT_DIR = src/CMakeFiles/gdtoa.dir
   OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-  TARGET_COMPILE_PDB = src/CMakeFiles/gdtoa.dir/gdtoa.pdb
-  TARGET_PDB = src/libgdtoa.pdb
 
 build src/CMakeFiles/gdtoa.dir/gdtoa/src/gmisc.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/gmisc.c || cmake_object_order_depends_target_gdtoa
   DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
@@ -1102,8 +775,6 @@ build src/CMakeFiles/gdtoa.dir/gdtoa/src/gmisc.c.o: C_COMPILER__gdtoa_ /Users/ha
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
   OBJECT_DIR = src/CMakeFiles/gdtoa.dir
   OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-  TARGET_COMPILE_PDB = src/CMakeFiles/gdtoa.dir/gdtoa.pdb
-  TARGET_PDB = src/libgdtoa.pdb
 
 build src/CMakeFiles/gdtoa.dir/gdtoa/src/hd_init.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/hd_init.c || cmake_object_order_depends_target_gdtoa
   DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
@@ -1112,8 +783,6 @@ build src/CMakeFiles/gdtoa.dir/gdtoa/src/hd_init.c.o: C_COMPILER__gdtoa_ /Users/
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
   OBJECT_DIR = src/CMakeFiles/gdtoa.dir
   OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-  TARGET_COMPILE_PDB = src/CMakeFiles/gdtoa.dir/gdtoa.pdb
-  TARGET_PDB = src/libgdtoa.pdb
 
 build src/CMakeFiles/gdtoa.dir/gdtoa/src/hexnan.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/hexnan.c || cmake_object_order_depends_target_gdtoa
   DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
@@ -1122,8 +791,6 @@ build src/CMakeFiles/gdtoa.dir/gdtoa/src/hexnan.c.o: C_COMPILER__gdtoa_ /Users/h
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
   OBJECT_DIR = src/CMakeFiles/gdtoa.dir
   OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-  TARGET_COMPILE_PDB = src/CMakeFiles/gdtoa.dir/gdtoa.pdb
-  TARGET_PDB = src/libgdtoa.pdb
 
 build src/CMakeFiles/gdtoa.dir/gdtoa/src/misc.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/misc.c || cmake_object_order_depends_target_gdtoa
   DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
@@ -1132,8 +799,6 @@ build src/CMakeFiles/gdtoa.dir/gdtoa/src/misc.c.o: C_COMPILER__gdtoa_ /Users/hay
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
   OBJECT_DIR = src/CMakeFiles/gdtoa.dir
   OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-  TARGET_COMPILE_PDB = src/CMakeFiles/gdtoa.dir/gdtoa.pdb
-  TARGET_PDB = src/libgdtoa.pdb
 
 build src/CMakeFiles/gdtoa.dir/gdtoa/src/smisc.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/smisc.c || cmake_object_order_depends_target_gdtoa
   DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
@@ -1142,8 +807,6 @@ build src/CMakeFiles/gdtoa.dir/gdtoa/src/smisc.c.o: C_COMPILER__gdtoa_ /Users/ha
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
   OBJECT_DIR = src/CMakeFiles/gdtoa.dir
   OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-  TARGET_COMPILE_PDB = src/CMakeFiles/gdtoa.dir/gdtoa.pdb
-  TARGET_PDB = src/libgdtoa.pdb
 
 build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtod.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtod.c || cmake_object_order_depends_target_gdtoa
   DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
@@ -1152,8 +815,6 @@ build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtod.c.o: C_COMPILER__gdtoa_ /Users/h
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
   OBJECT_DIR = src/CMakeFiles/gdtoa.dir
   OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-  TARGET_COMPILE_PDB = src/CMakeFiles/gdtoa.dir/gdtoa.pdb
-  TARGET_PDB = src/libgdtoa.pdb
 
 build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtodg.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtodg.c || cmake_object_order_depends_target_gdtoa
   DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
@@ -1162,8 +823,6 @@ build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtodg.c.o: C_COMPILER__gdtoa_ /Users/
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
   OBJECT_DIR = src/CMakeFiles/gdtoa.dir
   OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-  TARGET_COMPILE_PDB = src/CMakeFiles/gdtoa.dir/gdtoa.pdb
-  TARGET_PDB = src/libgdtoa.pdb
 
 build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtodI.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtodI.c || cmake_object_order_depends_target_gdtoa
   DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
@@ -1172,8 +831,6 @@ build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtodI.c.o: C_COMPILER__gdtoa_ /Users/
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
   OBJECT_DIR = src/CMakeFiles/gdtoa.dir
   OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-  TARGET_COMPILE_PDB = src/CMakeFiles/gdtoa.dir/gdtoa.pdb
-  TARGET_PDB = src/libgdtoa.pdb
 
 build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtof.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtof.c || cmake_object_order_depends_target_gdtoa
   DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
@@ -1182,8 +839,6 @@ build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtof.c.o: C_COMPILER__gdtoa_ /Users/h
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
   OBJECT_DIR = src/CMakeFiles/gdtoa.dir
   OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-  TARGET_COMPILE_PDB = src/CMakeFiles/gdtoa.dir/gdtoa.pdb
-  TARGET_PDB = src/libgdtoa.pdb
 
 build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoId.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtoId.c || cmake_object_order_depends_target_gdtoa
   DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
@@ -1192,8 +847,6 @@ build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoId.c.o: C_COMPILER__gdtoa_ /Users/
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
   OBJECT_DIR = src/CMakeFiles/gdtoa.dir
   OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-  TARGET_COMPILE_PDB = src/CMakeFiles/gdtoa.dir/gdtoa.pdb
-  TARGET_PDB = src/libgdtoa.pdb
 
 build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIdd.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtoIdd.c || cmake_object_order_depends_target_gdtoa
   DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
@@ -1202,8 +855,6 @@ build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIdd.c.o: C_COMPILER__gdtoa_ /Users
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
   OBJECT_DIR = src/CMakeFiles/gdtoa.dir
   OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-  TARGET_COMPILE_PDB = src/CMakeFiles/gdtoa.dir/gdtoa.pdb
-  TARGET_PDB = src/libgdtoa.pdb
 
 build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIf.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtoIf.c || cmake_object_order_depends_target_gdtoa
   DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
@@ -1212,8 +863,6 @@ build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIf.c.o: C_COMPILER__gdtoa_ /Users/
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
   OBJECT_DIR = src/CMakeFiles/gdtoa.dir
   OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-  TARGET_COMPILE_PDB = src/CMakeFiles/gdtoa.dir/gdtoa.pdb
-  TARGET_PDB = src/libgdtoa.pdb
 
 build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIg.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtoIg.c || cmake_object_order_depends_target_gdtoa
   DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
@@ -1222,8 +871,6 @@ build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIg.c.o: C_COMPILER__gdtoa_ /Users/
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
   OBJECT_DIR = src/CMakeFiles/gdtoa.dir
   OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-  TARGET_COMPILE_PDB = src/CMakeFiles/gdtoa.dir/gdtoa.pdb
-  TARGET_PDB = src/libgdtoa.pdb
 
 build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIQ.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtoIQ.c || cmake_object_order_depends_target_gdtoa
   DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
@@ -1232,8 +879,6 @@ build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIQ.c.o: C_COMPILER__gdtoa_ /Users/
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
   OBJECT_DIR = src/CMakeFiles/gdtoa.dir
   OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-  TARGET_COMPILE_PDB = src/CMakeFiles/gdtoa.dir/gdtoa.pdb
-  TARGET_PDB = src/libgdtoa.pdb
 
 build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIx.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtoIx.c || cmake_object_order_depends_target_gdtoa
   DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
@@ -1242,8 +887,6 @@ build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIx.c.o: C_COMPILER__gdtoa_ /Users/
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
   OBJECT_DIR = src/CMakeFiles/gdtoa.dir
   OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-  TARGET_COMPILE_PDB = src/CMakeFiles/gdtoa.dir/gdtoa.pdb
-  TARGET_PDB = src/libgdtoa.pdb
 
 build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIxL.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtoIxL.c || cmake_object_order_depends_target_gdtoa
   DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
@@ -1252,8 +895,6 @@ build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIxL.c.o: C_COMPILER__gdtoa_ /Users
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
   OBJECT_DIR = src/CMakeFiles/gdtoa.dir
   OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-  TARGET_COMPILE_PDB = src/CMakeFiles/gdtoa.dir/gdtoa.pdb
-  TARGET_PDB = src/libgdtoa.pdb
 
 build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopd.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtopd.c || cmake_object_order_depends_target_gdtoa
   DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
@@ -1262,8 +903,6 @@ build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopd.c.o: C_COMPILER__gdtoa_ /Users/
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
   OBJECT_DIR = src/CMakeFiles/gdtoa.dir
   OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-  TARGET_COMPILE_PDB = src/CMakeFiles/gdtoa.dir/gdtoa.pdb
-  TARGET_PDB = src/libgdtoa.pdb
 
 build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopdd.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtopdd.c || cmake_object_order_depends_target_gdtoa
   DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
@@ -1272,8 +911,6 @@ build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopdd.c.o: C_COMPILER__gdtoa_ /Users
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
   OBJECT_DIR = src/CMakeFiles/gdtoa.dir
   OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-  TARGET_COMPILE_PDB = src/CMakeFiles/gdtoa.dir/gdtoa.pdb
-  TARGET_PDB = src/libgdtoa.pdb
 
 build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopf.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtopf.c || cmake_object_order_depends_target_gdtoa
   DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
@@ -1282,8 +919,6 @@ build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopf.c.o: C_COMPILER__gdtoa_ /Users/
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
   OBJECT_DIR = src/CMakeFiles/gdtoa.dir
   OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-  TARGET_COMPILE_PDB = src/CMakeFiles/gdtoa.dir/gdtoa.pdb
-  TARGET_PDB = src/libgdtoa.pdb
 
 build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopQ.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtopQ.c || cmake_object_order_depends_target_gdtoa
   DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
@@ -1292,8 +927,6 @@ build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopQ.c.o: C_COMPILER__gdtoa_ /Users/
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
   OBJECT_DIR = src/CMakeFiles/gdtoa.dir
   OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-  TARGET_COMPILE_PDB = src/CMakeFiles/gdtoa.dir/gdtoa.pdb
-  TARGET_PDB = src/libgdtoa.pdb
 
 build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopx.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtopx.c || cmake_object_order_depends_target_gdtoa
   DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
@@ -1302,8 +935,6 @@ build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopx.c.o: C_COMPILER__gdtoa_ /Users/
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
   OBJECT_DIR = src/CMakeFiles/gdtoa.dir
   OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-  TARGET_COMPILE_PDB = src/CMakeFiles/gdtoa.dir/gdtoa.pdb
-  TARGET_PDB = src/libgdtoa.pdb
 
 build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopxL.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtopxL.c || cmake_object_order_depends_target_gdtoa
   DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
@@ -1312,8 +943,6 @@ build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopxL.c.o: C_COMPILER__gdtoa_ /Users
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
   OBJECT_DIR = src/CMakeFiles/gdtoa.dir
   OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-  TARGET_COMPILE_PDB = src/CMakeFiles/gdtoa.dir/gdtoa.pdb
-  TARGET_PDB = src/libgdtoa.pdb
 
 build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtord.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtord.c || cmake_object_order_depends_target_gdtoa
   DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
@@ -1322,8 +951,6 @@ build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtord.c.o: C_COMPILER__gdtoa_ /Users/
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
   OBJECT_DIR = src/CMakeFiles/gdtoa.dir
   OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-  TARGET_COMPILE_PDB = src/CMakeFiles/gdtoa.dir/gdtoa.pdb
-  TARGET_PDB = src/libgdtoa.pdb
 
 build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtordd.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtordd.c || cmake_object_order_depends_target_gdtoa
   DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
@@ -1332,8 +959,6 @@ build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtordd.c.o: C_COMPILER__gdtoa_ /Users
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
   OBJECT_DIR = src/CMakeFiles/gdtoa.dir
   OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-  TARGET_COMPILE_PDB = src/CMakeFiles/gdtoa.dir/gdtoa.pdb
-  TARGET_PDB = src/libgdtoa.pdb
 
 build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtorf.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtorf.c || cmake_object_order_depends_target_gdtoa
   DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
@@ -1342,8 +967,6 @@ build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtorf.c.o: C_COMPILER__gdtoa_ /Users/
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
   OBJECT_DIR = src/CMakeFiles/gdtoa.dir
   OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-  TARGET_COMPILE_PDB = src/CMakeFiles/gdtoa.dir/gdtoa.pdb
-  TARGET_PDB = src/libgdtoa.pdb
 
 build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtorQ.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtorQ.c || cmake_object_order_depends_target_gdtoa
   DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
@@ -1352,8 +975,6 @@ build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtorQ.c.o: C_COMPILER__gdtoa_ /Users/
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
   OBJECT_DIR = src/CMakeFiles/gdtoa.dir
   OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-  TARGET_COMPILE_PDB = src/CMakeFiles/gdtoa.dir/gdtoa.pdb
-  TARGET_PDB = src/libgdtoa.pdb
 
 build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtorx.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtorx.c || cmake_object_order_depends_target_gdtoa
   DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
@@ -1362,8 +983,6 @@ build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtorx.c.o: C_COMPILER__gdtoa_ /Users/
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
   OBJECT_DIR = src/CMakeFiles/gdtoa.dir
   OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-  TARGET_COMPILE_PDB = src/CMakeFiles/gdtoa.dir/gdtoa.pdb
-  TARGET_PDB = src/libgdtoa.pdb
 
 build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtorxL.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtorxL.c || cmake_object_order_depends_target_gdtoa
   DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
@@ -1372,8 +991,6 @@ build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtorxL.c.o: C_COMPILER__gdtoa_ /Users
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
   OBJECT_DIR = src/CMakeFiles/gdtoa.dir
   OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-  TARGET_COMPILE_PDB = src/CMakeFiles/gdtoa.dir/gdtoa.pdb
-  TARGET_PDB = src/libgdtoa.pdb
 
 build src/CMakeFiles/gdtoa.dir/gdtoa/src/sum.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/sum.c || cmake_object_order_depends_target_gdtoa
   DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
@@ -1382,8 +999,6 @@ build src/CMakeFiles/gdtoa.dir/gdtoa/src/sum.c.o: C_COMPILER__gdtoa_ /Users/hayd
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
   OBJECT_DIR = src/CMakeFiles/gdtoa.dir
   OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-  TARGET_COMPILE_PDB = src/CMakeFiles/gdtoa.dir/gdtoa.pdb
-  TARGET_PDB = src/libgdtoa.pdb
 
 build src/CMakeFiles/gdtoa.dir/gdtoa/src/ulp.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/ulp.c || cmake_object_order_depends_target_gdtoa
   DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
@@ -1392,8 +1007,6 @@ build src/CMakeFiles/gdtoa.dir/gdtoa/src/ulp.c.o: C_COMPILER__gdtoa_ /Users/hayd
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
   OBJECT_DIR = src/CMakeFiles/gdtoa.dir
   OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-  TARGET_COMPILE_PDB = src/CMakeFiles/gdtoa.dir/gdtoa.pdb
-  TARGET_PDB = src/libgdtoa.pdb
 
 
 # =============================================================================
@@ -1408,9 +1021,8 @@ build src/libgdtoa.a: C_STATIC_LIBRARY_LINKER__gdtoa_ src/CMakeFiles/gdtoa.dir/g
   OBJECT_DIR = src/CMakeFiles/gdtoa.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = src/CMakeFiles/gdtoa.dir/gdtoa.pdb
   TARGET_FILE = src/libgdtoa.a
-  TARGET_PDB = src/libgdtoa.pdb
+  TARGET_PDB = gdtoa.a.dbg
 
 # =============================================================================
 # Target aliases.
@@ -1447,14 +1059,14 @@ build src/all: phony src/libc.a src/libgdtoa.a
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../src/CMakeLists.txt /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeCCompiler.cmake.in /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeCCompilerABI.c /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeCompilerIdDetection.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeDetermineCCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeDetermineCompileFeatures.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeDetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeDetermineCompilerABI.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeDetermineCompilerId.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeDetermineSystem.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeFindBinUtils.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeNinjaFindMake.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeSystem.cmake.in /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeTestCCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeTestCompilerCommon.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/AppleClang-C.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/Clang.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Internal/FeatureTesting.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Apple-Clang-C.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Apple-Clang.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.21.3/CMakeCCompiler.cmake CMakeFiles/3.21.3/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../src/CMakeLists.txt /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/AppleClang-C.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/Clang.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Apple-Clang-C.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Apple-Clang.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.21.3/CMakeCCompiler.cmake CMakeFiles/3.21.3/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt ../src/CMakeLists.txt /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeCCompiler.cmake.in /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeCCompilerABI.c /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeCompilerIdDetection.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeDetermineCCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeDetermineCompileFeatures.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeDetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeDetermineCompilerABI.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeDetermineCompilerId.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeDetermineSystem.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeFindBinUtils.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeNinjaFindMake.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeSystem.cmake.in /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeTestCCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeTestCompilerCommon.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/AppleClang-C.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/Clang.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Internal/FeatureTesting.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Apple-Clang-C.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Apple-Clang.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.21.3/CMakeCCompiler.cmake CMakeFiles/3.21.3/CMakeSystem.cmake: phony
+build ../CMakeLists.txt ../src/CMakeLists.txt /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/AppleClang-C.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/Clang.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Apple-Clang-C.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Apple-Clang.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.21.3/CMakeCCompiler.cmake CMakeFiles/3.21.3/CMakeSystem.cmake: phony
 
 
 #############################################
