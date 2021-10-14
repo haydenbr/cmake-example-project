@@ -214,7 +214,7 @@ target_sources(c PRIVATE
 	string/strxfrm.c
 )
 
-# without these headers, the compiler thinks we're redefining built-in functions
+# without these header files, the compiler thinks we're redefining built-in functions
 target_include_directories(c PUBLIC ${PROJECT_SOURCE_DIR}/include)
 # architecture-specific deps required by some of the modules
 target_include_directories(c PUBLIC ${PROJECT_SOURCE_DIR}/arch/x86_64/include)
