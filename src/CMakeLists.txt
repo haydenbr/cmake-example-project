@@ -143,12 +143,12 @@ target_sources(c PRIVATE
 # )
 
 # stdio Module
-# target_sources(c PRIVATE
-# 	stdio/asprintf.c
-# 	stdio/putchar.c
-# 	stdio/puts.c
-# 	stdio/vasprintf.c
-# )
+target_sources(c PRIVATE
+	stdio/asprintf.c
+	stdio/putchar.c
+	stdio/puts.c
+	stdio/vasprintf.c
+)
 
 # stdio_native Module
 # target_sources(c PRIVATE
