@@ -63,9 +63,9 @@ add_library(c STATIC)
 target_link_libraries(c PRIVATE printf openlibm)
 
 # Assert Module
-# target_sources(c PRIVATE
-# 	assert/assert.c
-# )
+target_sources(c PRIVATE
+	assert/assert.c
+)
 
 # CType Module
 ## doing this is nice and terse, but since this
@@ -153,9 +153,9 @@ target_sources(c PRIVATE
 )
 
 # stdio_native Module
-# target_sources(c PRIVATE
-# 	stdio/putchar_native.c
-# )
+target_sources(c PRIVATE
+	stdio/putchar_native.c
+)
 
 # support Module
 target_sources(c PRIVATE
@@ -165,10 +165,10 @@ target_sources(c PRIVATE
 )
 
 # time Module
-# target_sources(c PRIVATE
-# 	time/asctime.c
-# 	time/asctime_r.c
-# )
+target_sources(c PRIVATE
+	time/asctime.c
+	time/asctime_r.c
+)
 
 # string Module
 target_sources(c PRIVATE
