@@ -20,7 +20,8 @@ CPMAddPackage(
 
 ## defines a "library" that's used by other targets
 add_library(printf INTERFACE)
-target_sources(printf INTERFACE ${printf_SOURCE_DIR})
+# leaving this commented out for now to see what happens in the future
+# target_sources(printf INTERFACE ${printf_SOURCE_DIR})
 target_include_directories(printf SYSTEM INTERFACE ${printf_SOURCE_DIR})
 
 # openlibm
@@ -32,9 +33,9 @@ CPMAddPackage(
 	DOWNLOAD_ONLY
 )
 
-message(${openlibm_SOURCE_DIR})
-
 add_library(openlibm INTERFACE)
+# we don't have to add sources because right now
+# our libc is only using header files from openlibm
 target_include_directories(openlibm SYSTEM INTERFACE
 	${openlibm_SOURCE_DIR}/src
 	${openlibm_SOURCE_DIR}/include
