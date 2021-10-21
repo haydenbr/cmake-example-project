@@ -61,6 +61,22 @@ target_compile_definitions(gdtoa PRIVATE
 add_library(c STATIC)
 
 target_link_libraries(c PRIVATE printf openlibm)
+# as private, we'll see warnings when building libc
+# but not when linking against libc
+target_include_directories(c
+	PRIVATE
+		${PROJECT_SOURCE_DIR}/include
+		${PROJECT_SOURCE_DIR}/arch/x86_64/include
+)
+# this makes these available as deps
+# but SYSTEM supresses warnings for users
+# linking against libc
+target_include_directories(c
+	SYSTEM INTERFACE
+		${PROJECT_SOURCE_DIR}/include
+		${PROJECT_SOURCE_DIR}/arch/x86_64/include
+		$<TARGET_PROPERTY:openlibm,INTERFACE_INCLUDE_DIRECTORIES>
+)
 
 # Assert Module
 target_sources(c PRIVATE
