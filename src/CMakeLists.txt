@@ -60,6 +60,8 @@ target_compile_definitions(gdtoa PRIVATE
 
 add_library(c STATIC)
 
+target_link_libraries(c PRIVATE printf openlibm)
+
 # Assert Module
 # target_sources(c PRIVATE
 # 	assert/assert.c
@@ -137,10 +139,10 @@ target_sources(c PRIVATE
 )
 
 # math Module
-# target_sources(c PRIVATE
-# 	math/fabs.c
-# 	math/fabsf.c
-# )
+target_sources(c PRIVATE
+	math/fabs.c
+	math/fabsf.c
+)
 
 # stdio Module
 target_sources(c PRIVATE

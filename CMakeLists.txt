@@ -6,11 +6,11 @@ project(
 	LANGUAGES C
 )
 set_property(GLOBAL PROPERTY C_STANDARD 11)
-add_subdirectory(src)
 
 include(cmake/CPM.cmake)
 
-# install printf with CPM
+# printf
+## install printf with CPM
 CPMAddPackage(
 	NAME printf
 	GITHUB_REPOSITORY mpaland/printf
@@ -18,10 +18,26 @@ CPMAddPackage(
 	DONWLOAD_ONLY
 )
 
-# defines a "library" that's used by other targets
+## defines a "library" that's used by other targets
 add_library(printf INTERFACE)
 target_sources(printf INTERFACE ${printf_SOURCE_DIR})
 target_include_directories(printf SYSTEM INTERFACE ${printf_SOURCE_DIR})
 
-# link the printf library with the c target
-target_link_libraries(c PRIVATE printf)
+# openlibm
+## install openlibm with CPM
+CPMAddPackage(
+	NAME openlibm
+	GIT_REPOSITORY https://github.com/JuliaMath/openlibm.git
+	VERSION 0.7.0
+	DOWNLOAD_ONLY
+)
+
+message(${openlibm_SOURCE_DIR})
+
+add_library(openlibm INTERFACE)
+target_include_directories(openlibm SYSTEM INTERFACE
+	${openlibm_SOURCE_DIR}/src
+	${openlibm_SOURCE_DIR}/include
+)
+
+add_subdirectory(src)
