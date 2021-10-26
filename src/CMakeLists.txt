@@ -1,57 +1,54 @@
-add_library(gdtoa STATIC) # This is a target we want to build!
+add_library(gdtoa INTERFACE)
 
-set(gdtoa_target_sources
-	dmisc.c
-	dtoa.c
-	g__fmt.c
-	g_ddfmt.c
-	g_dfmt.c
-	g_ffmt.c
-	g_Qfmt.c
-	g_xfmt.c
-	g_xLfmt.c
-	gdtoa.c
-	gethex.c
-	gmisc.c
-	hd_init.c
-	hexnan.c
-	misc.c
-	smisc.c
-	strtod.c
-	strtodg.c
-	strtodI.c
-	strtof.c
-	strtoId.c
-	strtoIdd.c
-	strtoIf.c
-	strtoIg.c
-	strtoIQ.c
-	strtoIx.c
-	strtoIxL.c
-	strtopd.c
-	strtopdd.c
-	strtopf.c
-	strtopQ.c
-	strtopx.c
-	strtopxL.c
-	strtord.c
-	strtordd.c
-	strtorf.c
-	strtorQ.c
-	strtorx.c
-	strtorxL.c
-	sum.c
-	ulp.c
-)
-list(TRANSFORM gdtoa_target_sources PREPEND "gdtoa/src/")
-
-target_sources(gdtoa PRIVATE ${gdtoa_target_sources}) # adding source files for the target
+target_sources(gdtoa INTERFACE
+	gdtoa/src/dmisc.c
+	gdtoa/src/dtoa.c
+	gdtoa/src/g__fmt.c
+	gdtoa/src/g_ddfmt.c
+	gdtoa/src/g_dfmt.c
+	gdtoa/src/g_ffmt.c
+	gdtoa/src/g_Qfmt.c
+	gdtoa/src/g_xfmt.c
+	gdtoa/src/g_xLfmt.c
+	gdtoa/src/gdtoa.c
+	gdtoa/src/gethex.c
+	gdtoa/src/gmisc.c
+	gdtoa/src/hd_init.c
+	gdtoa/src/hexnan.c
+	gdtoa/src/misc.c
+	gdtoa/src/smisc.c
+	gdtoa/src/strtod.c
+	gdtoa/src/strtodg.c
+	gdtoa/src/strtodI.c
+	gdtoa/src/strtof.c
+	gdtoa/src/strtoId.c
+	gdtoa/src/strtoIdd.c
+	gdtoa/src/strtoIf.c
+	gdtoa/src/strtoIg.c
+	gdtoa/src/strtoIQ.c
+	gdtoa/src/strtoIx.c
+	gdtoa/src/strtoIxL.c
+	gdtoa/src/strtopd.c
+	gdtoa/src/strtopdd.c
+	gdtoa/src/strtopf.c
+	gdtoa/src/strtopQ.c
+	gdtoa/src/strtopx.c
+	gdtoa/src/strtopxL.c
+	gdtoa/src/strtord.c
+	gdtoa/src/strtordd.c
+	gdtoa/src/strtorf.c
+	gdtoa/src/strtorQ.c
+	gdtoa/src/strtorx.c
+	gdtoa/src/strtorxL.c
+	gdtoa/src/sum.c
+	gdtoa/src/ulp.c
+) # adding source files for the target
 
 # these are required by the source files
 # we add them as PUBLIC because library depdendents also need these
-target_include_directories(gdtoa PUBLIC gdtoa/include)
+target_include_directories(gdtoa INTERFACE gdtoa/include)
 # preprocessor definitions
-target_compile_definitions(gdtoa PRIVATE
+target_compile_definitions(gdtoa INTERFACE
 	NO_ERRNO
 	IFNAN_CHECK
 	GDTOA_NO_ASSERT
@@ -225,3 +222,4 @@ target_sources(c PRIVATE
 target_include_directories(c PUBLIC ${PROJECT_SOURCE_DIR}/include)
 # architecture-specific deps required by some of the modules
 target_include_directories(c PUBLIC ${PROJECT_SOURCE_DIR}/arch/x86_64/include)
+target_link_libraries(c PRIVATE gdtoa)
