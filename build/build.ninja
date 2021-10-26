@@ -37,6 +37,36 @@ include CMakeFiles/rules.ninja
 cmake_ninja_workdir = /Users/haydenbraxton/Projects/cmake-example-project/build/
 
 #############################################
+# Utility command for install/strip
+
+build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build install/strip: phony CMakeFiles/install/strip.util
+
+
+#############################################
+# Utility command for install/local
+
+build CMakeFiles/install/local.util: CUSTOM_COMMAND all
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build install/local: phony CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build list_install_components: phony
+
+
+#############################################
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
@@ -46,6 +76,212 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
   restat = 1
 
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Object build statements for EXECUTABLE target printf_tests
+
+
+#############################################
+# Order-only phony target for printf_tests
+
+build cmake_object_order_depends_target_printf_tests: phony || CMakeFiles/printf_tests.dir
+
+build CMakeFiles/printf_tests.dir/_deps/printf-src/test/test_suite.cpp.o: CXX_COMPILER__printf_tests_ /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src/test/test_suite.cpp || cmake_object_order_depends_target_printf_tests
+  DEP_FILE = CMakeFiles/printf_tests.dir/_deps/printf-src/test/test_suite.cpp.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -std=gnu++11
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src
+  OBJECT_DIR = CMakeFiles/printf_tests.dir
+  OBJECT_FILE_DIR = CMakeFiles/printf_tests.dir/_deps/printf-src/test
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target printf_tests
+
+
+#############################################
+# Link the executable printf_tests
+
+build printf_tests: CXX_EXECUTABLE_LINKER__printf_tests_ CMakeFiles/printf_tests.dir/_deps/printf-src/test/test_suite.cpp.o
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  OBJECT_DIR = CMakeFiles/printf_tests.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = printf_tests
+  TARGET_PDB = printf_tests.dbg
+
+
+#############################################
+# Utility command for package_source
+
+build CMakeFiles/package_source.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/cpack --config ./CPackSourceConfig.cmake /Users/haydenbraxton/Projects/cmake-example-project/build/CPackSourceConfig.cmake
+  DESC = Run CPack packaging tool for source...
+  pool = console
+  restat = 1
+
+build package_source: phony CMakeFiles/package_source.util
+
+
+#############################################
+# Utility command for ContinuousCoverage
+
+build ContinuousCoverage: phony CMakeFiles/ContinuousCoverage
+
+
+#############################################
+# Utility command for ContinuousTest
+
+build ContinuousTest: phony CMakeFiles/ContinuousTest
+
+
+#############################################
+# Utility command for ContinuousBuild
+
+build ContinuousBuild: phony CMakeFiles/ContinuousBuild
+
+
+#############################################
+# Utility command for ContinuousStart
+
+build ContinuousStart: phony CMakeFiles/ContinuousStart
+
+
+#############################################
+# Utility command for ExperimentalBuild
+
+build ExperimentalBuild: phony CMakeFiles/ExperimentalBuild
+
+
+#############################################
+# Utility command for ExperimentalCoverage
+
+build ExperimentalCoverage: phony CMakeFiles/ExperimentalCoverage
+
+
+#############################################
+# Utility command for ExperimentalSubmit
+
+build ExperimentalSubmit: phony CMakeFiles/ExperimentalSubmit
+
+
+#############################################
+# Utility command for ContinuousUpdate
+
+build ContinuousUpdate: phony CMakeFiles/ContinuousUpdate
+
+
+#############################################
+# Utility command for ExperimentalUpdate
+
+build ExperimentalUpdate: phony CMakeFiles/ExperimentalUpdate
+
+
+#############################################
+# Utility command for install
+
+build CMakeFiles/install.util: CUSTOM_COMMAND all
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build install: phony CMakeFiles/install.util
+
+
+#############################################
+# Utility command for ExperimentalStart
+
+build ExperimentalStart: phony CMakeFiles/ExperimentalStart
+
+
+#############################################
+# Utility command for ContinuousSubmit
+
+build ContinuousSubmit: phony CMakeFiles/ContinuousSubmit
+
+
+#############################################
+# Utility command for ExperimentalTest
+
+build ExperimentalTest: phony CMakeFiles/ExperimentalTest
+
+
+#############################################
+# Utility command for NightlySubmit
+
+build NightlySubmit: phony CMakeFiles/NightlySubmit
+
+
+#############################################
+# Utility command for NightlyMemCheck
+
+build NightlyMemCheck: phony CMakeFiles/NightlyMemCheck
+
+
+#############################################
+# Utility command for test
+
+build CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest --force-new-ctest-process
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build test: phony CMakeFiles/test.util
+
+
+#############################################
+# Utility command for package
+
+build CMakeFiles/package.util: CUSTOM_COMMAND all
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/cpack --config ./CPackConfig.cmake
+  DESC = Run CPack packaging tool...
+  pool = console
+  restat = 1
+
+build package: phony CMakeFiles/package.util
+
+
+#############################################
+# Utility command for ExperimentalConfigure
+
+build ExperimentalConfigure: phony CMakeFiles/ExperimentalConfigure
+
+
+#############################################
+# Utility command for NightlyCoverage
+
+build NightlyCoverage: phony CMakeFiles/NightlyCoverage
+
+
+#############################################
+# Utility command for NightlyTest
+
+build NightlyTest: phony CMakeFiles/NightlyTest
+
+
+#############################################
+# Utility command for ContinuousMemCheck
+
+build ContinuousMemCheck: phony CMakeFiles/ContinuousMemCheck
+
+
+#############################################
+# Utility command for NightlyBuild
+
+build NightlyBuild: phony CMakeFiles/NightlyBuild
+
+
+#############################################
+# Utility command for NightlyConfigure
+
+build NightlyConfigure: phony CMakeFiles/NightlyConfigure
+
+
+#############################################
+# Utility command for NightlyUpdate
+
+build NightlyUpdate: phony CMakeFiles/NightlyUpdate
 
 
 #############################################
@@ -58,10 +294,1166 @@ build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
 
 build edit_cache: phony CMakeFiles/edit_cache.util
 
+
+#############################################
+# Utility command for NightlyMemoryCheck
+
+build NightlyMemoryCheck: phony CMakeFiles/NightlyMemoryCheck
+
+
+#############################################
+# Utility command for ContinuousConfigure
+
+build ContinuousConfigure: phony CMakeFiles/ContinuousConfigure
+
+
+#############################################
+# Utility command for Nightly
+
+build Nightly: phony CMakeFiles/Nightly
+
+
+#############################################
+# Utility command for NightlyStart
+
+build NightlyStart: phony CMakeFiles/NightlyStart
+
+
+#############################################
+# Utility command for ExperimentalMemCheck
+
+build ExperimentalMemCheck: phony CMakeFiles/ExperimentalMemCheck
+
+
+#############################################
+# Utility command for Continuous
+
+build Continuous: phony CMakeFiles/Continuous
+
+
+#############################################
+# Utility command for Experimental
+
+build Experimental: phony CMakeFiles/Experimental
+
+
+#############################################
+# Custom command for CMakeFiles/ContinuousCoverage
+
+build CMakeFiles/ContinuousCoverage | ${cmake_ninja_workdir}CMakeFiles/ContinuousCoverage: CUSTOM_COMMAND
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ContinuousCoverage
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/ContinuousTest
+
+build CMakeFiles/ContinuousTest | ${cmake_ninja_workdir}CMakeFiles/ContinuousTest: CUSTOM_COMMAND
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ContinuousTest
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/ContinuousBuild
+
+build CMakeFiles/ContinuousBuild | ${cmake_ninja_workdir}CMakeFiles/ContinuousBuild: CUSTOM_COMMAND
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ContinuousBuild
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/ContinuousStart
+
+build CMakeFiles/ContinuousStart | ${cmake_ninja_workdir}CMakeFiles/ContinuousStart: CUSTOM_COMMAND
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ContinuousStart
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/ExperimentalBuild
+
+build CMakeFiles/ExperimentalBuild | ${cmake_ninja_workdir}CMakeFiles/ExperimentalBuild: CUSTOM_COMMAND
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ExperimentalBuild
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/ExperimentalCoverage
+
+build CMakeFiles/ExperimentalCoverage | ${cmake_ninja_workdir}CMakeFiles/ExperimentalCoverage: CUSTOM_COMMAND
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ExperimentalCoverage
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/ExperimentalSubmit
+
+build CMakeFiles/ExperimentalSubmit | ${cmake_ninja_workdir}CMakeFiles/ExperimentalSubmit: CUSTOM_COMMAND
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ExperimentalSubmit
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/ContinuousUpdate
+
+build CMakeFiles/ContinuousUpdate | ${cmake_ninja_workdir}CMakeFiles/ContinuousUpdate: CUSTOM_COMMAND
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ContinuousUpdate
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/ExperimentalUpdate
+
+build CMakeFiles/ExperimentalUpdate | ${cmake_ninja_workdir}CMakeFiles/ExperimentalUpdate: CUSTOM_COMMAND
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ExperimentalUpdate
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/ExperimentalStart
+
+build CMakeFiles/ExperimentalStart | ${cmake_ninja_workdir}CMakeFiles/ExperimentalStart: CUSTOM_COMMAND
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ExperimentalStart
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/ContinuousSubmit
+
+build CMakeFiles/ContinuousSubmit | ${cmake_ninja_workdir}CMakeFiles/ContinuousSubmit: CUSTOM_COMMAND
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ContinuousSubmit
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/ExperimentalTest
+
+build CMakeFiles/ExperimentalTest | ${cmake_ninja_workdir}CMakeFiles/ExperimentalTest: CUSTOM_COMMAND
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ExperimentalTest
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/NightlySubmit
+
+build CMakeFiles/NightlySubmit | ${cmake_ninja_workdir}CMakeFiles/NightlySubmit: CUSTOM_COMMAND
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D NightlySubmit
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/NightlyMemCheck
+
+build CMakeFiles/NightlyMemCheck | ${cmake_ninja_workdir}CMakeFiles/NightlyMemCheck: CUSTOM_COMMAND
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D NightlyMemCheck
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/ExperimentalConfigure
+
+build CMakeFiles/ExperimentalConfigure | ${cmake_ninja_workdir}CMakeFiles/ExperimentalConfigure: CUSTOM_COMMAND
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ExperimentalConfigure
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/NightlyCoverage
+
+build CMakeFiles/NightlyCoverage | ${cmake_ninja_workdir}CMakeFiles/NightlyCoverage: CUSTOM_COMMAND
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D NightlyCoverage
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/NightlyTest
+
+build CMakeFiles/NightlyTest | ${cmake_ninja_workdir}CMakeFiles/NightlyTest: CUSTOM_COMMAND
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D NightlyTest
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/ContinuousMemCheck
+
+build CMakeFiles/ContinuousMemCheck | ${cmake_ninja_workdir}CMakeFiles/ContinuousMemCheck: CUSTOM_COMMAND
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ContinuousMemCheck
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/NightlyBuild
+
+build CMakeFiles/NightlyBuild | ${cmake_ninja_workdir}CMakeFiles/NightlyBuild: CUSTOM_COMMAND
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D NightlyBuild
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/NightlyConfigure
+
+build CMakeFiles/NightlyConfigure | ${cmake_ninja_workdir}CMakeFiles/NightlyConfigure: CUSTOM_COMMAND
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D NightlyConfigure
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/NightlyUpdate
+
+build CMakeFiles/NightlyUpdate | ${cmake_ninja_workdir}CMakeFiles/NightlyUpdate: CUSTOM_COMMAND
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D NightlyUpdate
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/NightlyMemoryCheck
+
+build CMakeFiles/NightlyMemoryCheck | ${cmake_ninja_workdir}CMakeFiles/NightlyMemoryCheck: CUSTOM_COMMAND
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D NightlyMemoryCheck
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/ContinuousConfigure
+
+build CMakeFiles/ContinuousConfigure | ${cmake_ninja_workdir}CMakeFiles/ContinuousConfigure: CUSTOM_COMMAND
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ContinuousConfigure
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/Nightly
+
+build CMakeFiles/Nightly | ${cmake_ninja_workdir}CMakeFiles/Nightly: CUSTOM_COMMAND
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D Nightly
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/NightlyStart
+
+build CMakeFiles/NightlyStart | ${cmake_ninja_workdir}CMakeFiles/NightlyStart: CUSTOM_COMMAND
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D NightlyStart
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/ExperimentalMemCheck
+
+build CMakeFiles/ExperimentalMemCheck | ${cmake_ninja_workdir}CMakeFiles/ExperimentalMemCheck: CUSTOM_COMMAND
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ExperimentalMemCheck
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/Continuous
+
+build CMakeFiles/Continuous | ${cmake_ninja_workdir}CMakeFiles/Continuous: CUSTOM_COMMAND
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D Continuous
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/Experimental
+
+build CMakeFiles/Experimental | ${cmake_ninja_workdir}CMakeFiles/Experimental: CUSTOM_COMMAND
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D Experimental
+  pool = console
+
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
 # /Users/haydenbraxton/Projects/cmake-example-project/CMakeLists.txt
 # =============================================================================
+
+
+#############################################
+# Utility command for install/strip
+
+build _deps/cmocka-build/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/cmocka-build/all
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build _deps/cmocka-build/install/strip: phony _deps/cmocka-build/CMakeFiles/install/strip.util
+
+
+#############################################
+# Utility command for install
+
+build _deps/cmocka-build/CMakeFiles/install.util: CUSTOM_COMMAND _deps/cmocka-build/all
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build _deps/cmocka-build/install: phony _deps/cmocka-build/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build _deps/cmocka-build/list_install_components: phony
+
+
+#############################################
+# Utility command for install/local
+
+build _deps/cmocka-build/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/cmocka-build/all
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build _deps/cmocka-build/install/local: phony _deps/cmocka-build/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for test
+
+build _deps/cmocka-build/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest --force-new-ctest-process
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build _deps/cmocka-build/test: phony _deps/cmocka-build/CMakeFiles/test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build _deps/cmocka-build/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build _deps/cmocka-build/edit_cache: phony _deps/cmocka-build/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build _deps/cmocka-build/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake --regenerate-during-build -S/Users/haydenbraxton/Projects/cmake-example-project -B/Users/haydenbraxton/Projects/cmake-example-project/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build _deps/cmocka-build/rebuild_cache: phony _deps/cmocka-build/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for package_source
+
+build _deps/cmocka-build/CMakeFiles/package_source.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/cpack --config ./CPackSourceConfig.cmake /Users/haydenbraxton/Projects/cmake-example-project/build/CPackSourceConfig.cmake
+  DESC = Run CPack packaging tool for source...
+  pool = console
+  restat = 1
+
+build _deps/cmocka-build/package_source: phony _deps/cmocka-build/CMakeFiles/package_source.util
+
+
+#############################################
+# Utility command for package
+
+build _deps/cmocka-build/CMakeFiles/package.util: CUSTOM_COMMAND _deps/cmocka-build/all
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/cpack --config ./CPackConfig.cmake
+  DESC = Run CPack packaging tool...
+  pool = console
+  restat = 1
+
+build _deps/cmocka-build/package: phony _deps/cmocka-build/CMakeFiles/package.util
+
+
+#############################################
+# Utility command for dist
+
+build _deps/cmocka-build/dist: phony _deps/cmocka-build/CMakeFiles/dist
+
+
+#############################################
+# Custom command for _deps/cmocka-build/CMakeFiles/dist
+
+build _deps/cmocka-build/CMakeFiles/dist | ${cmake_ninja_workdir}_deps/cmocka-build/CMakeFiles/dist: CUSTOM_COMMAND
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build && /usr/local/bin/ninja package_source
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-src/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for install/strip
+
+build _deps/cmocka-build/include/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/cmocka-build/include/all
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build/include && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build _deps/cmocka-build/include/install/strip: phony _deps/cmocka-build/include/CMakeFiles/install/strip.util
+
+
+#############################################
+# Utility command for install
+
+build _deps/cmocka-build/include/CMakeFiles/install.util: CUSTOM_COMMAND _deps/cmocka-build/include/all
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build/include && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build _deps/cmocka-build/include/install: phony _deps/cmocka-build/include/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build _deps/cmocka-build/include/list_install_components: phony
+
+
+#############################################
+# Utility command for install/local
+
+build _deps/cmocka-build/include/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/cmocka-build/include/all
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build/include && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build _deps/cmocka-build/include/install/local: phony _deps/cmocka-build/include/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for test
+
+build _deps/cmocka-build/include/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build/include && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest --force-new-ctest-process
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build _deps/cmocka-build/include/test: phony _deps/cmocka-build/include/CMakeFiles/test.util
+
+
+#############################################
+# Utility command for package_source
+
+build _deps/cmocka-build/include/CMakeFiles/package_source.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/cpack --config ./CPackSourceConfig.cmake /Users/haydenbraxton/Projects/cmake-example-project/build/CPackSourceConfig.cmake
+  DESC = Run CPack packaging tool for source...
+  pool = console
+  restat = 1
+
+build _deps/cmocka-build/include/package_source: phony _deps/cmocka-build/include/CMakeFiles/package_source.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build _deps/cmocka-build/include/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build/include && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake --regenerate-during-build -S/Users/haydenbraxton/Projects/cmake-example-project -B/Users/haydenbraxton/Projects/cmake-example-project/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build _deps/cmocka-build/include/rebuild_cache: phony _deps/cmocka-build/include/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build _deps/cmocka-build/include/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build/include && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build _deps/cmocka-build/include/edit_cache: phony _deps/cmocka-build/include/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for package
+
+build _deps/cmocka-build/include/CMakeFiles/package.util: CUSTOM_COMMAND _deps/cmocka-build/include/all
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/cpack --config ./CPackConfig.cmake
+  DESC = Run CPack packaging tool...
+  pool = console
+  restat = 1
+
+build _deps/cmocka-build/include/package: phony _deps/cmocka-build/include/CMakeFiles/package.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-src/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for install/strip
+
+build _deps/cmocka-build/src/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/cmocka-build/src/all
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build/src && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build _deps/cmocka-build/src/install/strip: phony _deps/cmocka-build/src/CMakeFiles/install/strip.util
+
+
+#############################################
+# Utility command for install
+
+build _deps/cmocka-build/src/CMakeFiles/install.util: CUSTOM_COMMAND _deps/cmocka-build/src/all
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build/src && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build _deps/cmocka-build/src/install: phony _deps/cmocka-build/src/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build _deps/cmocka-build/src/list_install_components: phony
+
+
+#############################################
+# Utility command for install/local
+
+build _deps/cmocka-build/src/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/cmocka-build/src/all
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build/src && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build _deps/cmocka-build/src/install/local: phony _deps/cmocka-build/src/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for test
+
+build _deps/cmocka-build/src/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build/src && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest --force-new-ctest-process
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build _deps/cmocka-build/src/test: phony _deps/cmocka-build/src/CMakeFiles/test.util
+
+
+#############################################
+# Utility command for package
+
+build _deps/cmocka-build/src/CMakeFiles/package.util: CUSTOM_COMMAND _deps/cmocka-build/src/all
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/cpack --config ./CPackConfig.cmake
+  DESC = Run CPack packaging tool...
+  pool = console
+  restat = 1
+
+build _deps/cmocka-build/src/package: phony _deps/cmocka-build/src/CMakeFiles/package.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build _deps/cmocka-build/src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build/src && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build _deps/cmocka-build/src/edit_cache: phony _deps/cmocka-build/src/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build _deps/cmocka-build/src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build/src && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake --regenerate-during-build -S/Users/haydenbraxton/Projects/cmake-example-project -B/Users/haydenbraxton/Projects/cmake-example-project/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build _deps/cmocka-build/src/rebuild_cache: phony _deps/cmocka-build/src/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for package_source
+
+build _deps/cmocka-build/src/CMakeFiles/package_source.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/cpack --config ./CPackSourceConfig.cmake /Users/haydenbraxton/Projects/cmake-example-project/build/CPackSourceConfig.cmake
+  DESC = Run CPack packaging tool for source...
+  pool = console
+  restat = 1
+
+build _deps/cmocka-build/src/package_source: phony _deps/cmocka-build/src/CMakeFiles/package_source.util
+
+# =============================================================================
+# Object build statements for SHARED_LIBRARY target cmocka
+
+
+#############################################
+# Order-only phony target for cmocka
+
+build cmake_object_order_depends_target_cmocka: phony || _deps/cmocka-build/src/CMakeFiles/cmocka.dir
+
+build _deps/cmocka-build/src/CMakeFiles/cmocka.dir/cmocka.c.o: C_COMPILER__cmocka_DEBUG /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-src/src/cmocka.c || cmake_object_order_depends_target_cmocka
+  DEFINES = -Dcmocka_EXPORTS
+  DEP_FILE = _deps/cmocka-build/src/CMakeFiles/cmocka.dir/cmocka.c.o.d
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIC -std=gnu99 -Wpedantic -Wall -Wshadow -Wmissing-prototypes -Wcast-align -Werror=address -Wstrict-prototypes -Werror=strict-prototypes -Wwrite-strings -Werror=write-strings -Werror-implicit-function-declaration -Wpointer-arith -Werror=pointer-arith -Wdeclaration-after-statement -Werror=declaration-after-statement -Wreturn-type -Werror=return-type -Wuninitialized -Werror=uninitialized -Wimplicit-fallthrough -Werror=strict-overflow -Wstrict-overflow=2 -Wno-format-zero-length -Wmissing-field-initializers -Wformat -Wformat-security -Werror=format-security -fno-common -fstack-protector-strong -DHAVE_CONFIG_H
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build/src -I/Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-src/src -I/Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build -I/Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-src/include
+  OBJECT_DIR = _deps/cmocka-build/src/CMakeFiles/cmocka.dir
+  OBJECT_FILE_DIR = _deps/cmocka-build/src/CMakeFiles/cmocka.dir
+
+
+# =============================================================================
+# Link build statements for SHARED_LIBRARY target cmocka
+
+
+#############################################
+# Link the shared library _deps/cmocka-build/src/libcmocka.0.7.0.dylib
+
+build _deps/cmocka-build/src/libcmocka.0.7.0.dylib: C_SHARED_LIBRARY_LINKER__cmocka_DEBUG _deps/cmocka-build/src/CMakeFiles/cmocka.dir/cmocka.c.o
+  ARCH_FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INSTALLNAME_DIR = @rpath/
+  LANGUAGE_COMPILE_FLAGS = -g
+  LINK_FLAGS = -current_version 0.7.0
+  OBJECT_DIR = _deps/cmocka-build/src/CMakeFiles/cmocka.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  SONAME = libcmocka.0.dylib
+  SONAME_FLAG = -install_name
+  TARGET_FILE = _deps/cmocka-build/src/libcmocka.0.7.0.dylib
+  TARGET_PDB = cmocka.dylib.dbg
+
+
+#############################################
+# Create library symlink _deps/cmocka-build/src/libcmocka.dylib
+
+build _deps/cmocka-build/src/libcmocka.0.dylib _deps/cmocka-build/src/libcmocka.dylib: CMAKE_SYMLINK_LIBRARY _deps/cmocka-build/src/libcmocka.0.7.0.dylib
+  POST_BUILD = :
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-src/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for install/strip
+
+build _deps/cmocka-build/doc/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/cmocka-build/doc/all
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build/doc && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build _deps/cmocka-build/doc/install/strip: phony _deps/cmocka-build/doc/CMakeFiles/install/strip.util
+
+
+#############################################
+# Utility command for install
+
+build _deps/cmocka-build/doc/CMakeFiles/install.util: CUSTOM_COMMAND _deps/cmocka-build/doc/all
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build/doc && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build _deps/cmocka-build/doc/install: phony _deps/cmocka-build/doc/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build _deps/cmocka-build/doc/list_install_components: phony
+
+
+#############################################
+# Utility command for install/local
+
+build _deps/cmocka-build/doc/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/cmocka-build/doc/all
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build/doc && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build _deps/cmocka-build/doc/install/local: phony _deps/cmocka-build/doc/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for test
+
+build _deps/cmocka-build/doc/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build/doc && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest --force-new-ctest-process
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build _deps/cmocka-build/doc/test: phony _deps/cmocka-build/doc/CMakeFiles/test.util
+
+
+#############################################
+# Utility command for package
+
+build _deps/cmocka-build/doc/CMakeFiles/package.util: CUSTOM_COMMAND _deps/cmocka-build/doc/all
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/cpack --config ./CPackConfig.cmake
+  DESC = Run CPack packaging tool...
+  pool = console
+  restat = 1
+
+build _deps/cmocka-build/doc/package: phony _deps/cmocka-build/doc/CMakeFiles/package.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build _deps/cmocka-build/doc/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build/doc && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build _deps/cmocka-build/doc/edit_cache: phony _deps/cmocka-build/doc/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build _deps/cmocka-build/doc/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build/doc && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake --regenerate-during-build -S/Users/haydenbraxton/Projects/cmake-example-project -B/Users/haydenbraxton/Projects/cmake-example-project/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build _deps/cmocka-build/doc/rebuild_cache: phony _deps/cmocka-build/doc/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for package_source
+
+build _deps/cmocka-build/doc/CMakeFiles/package_source.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/cpack --config ./CPackSourceConfig.cmake /Users/haydenbraxton/Projects/cmake-example-project/build/CPackSourceConfig.cmake
+  DESC = Run CPack packaging tool for source...
+  pool = console
+  restat = 1
+
+build _deps/cmocka-build/doc/package_source: phony _deps/cmocka-build/doc/CMakeFiles/package_source.util
+
+
+#############################################
+# Utility command for docs
+
+build _deps/cmocka-build/doc/docs: phony _deps/cmocka-build/doc/CMakeFiles/docs
+
+
+#############################################
+# Custom command for _deps/cmocka-build/doc/CMakeFiles/docs
+
+build _deps/cmocka-build/doc/CMakeFiles/docs | ${cmake_ninja_workdir}_deps/cmocka-build/doc/CMakeFiles/docs: CUSTOM_COMMAND _deps/cmocka-build/doc/Doxyfile.docs
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-src/doc && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -E make_directory /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build/doc && /usr/local/bin/doxygen /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build/doc/Doxyfile.docs
+  DESC = Generate API documentation for docs
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/haydenbraxton/Projects/cmake-example-project/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for list_install_components
+
+build src/list_install_components: phony
+
+
+#############################################
+# Utility command for edit_cache
+
+build src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/src && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build src/edit_cache: phony src/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for install/local
+
+build src/CMakeFiles/install/local.util: CUSTOM_COMMAND src/all
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/src && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build src/install/local: phony src/CMakeFiles/install/local.util
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gdtoa
+
+
+#############################################
+# Order-only phony target for gdtoa
+
+build cmake_object_order_depends_target_gdtoa: phony || src/CMakeFiles/gdtoa.dir
+
+build src/CMakeFiles/gdtoa.dir/gdtoa/src/dmisc.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/dmisc.c || cmake_object_order_depends_target_gdtoa
+  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
+  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/dmisc.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
+  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
+
+build src/CMakeFiles/gdtoa.dir/gdtoa/src/dtoa.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/dtoa.c || cmake_object_order_depends_target_gdtoa
+  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
+  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/dtoa.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
+  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
+
+build src/CMakeFiles/gdtoa.dir/gdtoa/src/g__fmt.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/g__fmt.c || cmake_object_order_depends_target_gdtoa
+  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
+  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/g__fmt.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
+  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
+
+build src/CMakeFiles/gdtoa.dir/gdtoa/src/g_ddfmt.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/g_ddfmt.c || cmake_object_order_depends_target_gdtoa
+  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
+  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/g_ddfmt.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
+  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
+
+build src/CMakeFiles/gdtoa.dir/gdtoa/src/g_dfmt.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/g_dfmt.c || cmake_object_order_depends_target_gdtoa
+  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
+  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/g_dfmt.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
+  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
+
+build src/CMakeFiles/gdtoa.dir/gdtoa/src/g_ffmt.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/g_ffmt.c || cmake_object_order_depends_target_gdtoa
+  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
+  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/g_ffmt.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
+  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
+
+build src/CMakeFiles/gdtoa.dir/gdtoa/src/g_Qfmt.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/g_Qfmt.c || cmake_object_order_depends_target_gdtoa
+  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
+  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/g_Qfmt.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
+  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
+
+build src/CMakeFiles/gdtoa.dir/gdtoa/src/g_xfmt.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/g_xfmt.c || cmake_object_order_depends_target_gdtoa
+  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
+  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/g_xfmt.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
+  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
+
+build src/CMakeFiles/gdtoa.dir/gdtoa/src/g_xLfmt.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/g_xLfmt.c || cmake_object_order_depends_target_gdtoa
+  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
+  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/g_xLfmt.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
+  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
+
+build src/CMakeFiles/gdtoa.dir/gdtoa/src/gdtoa.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/gdtoa.c || cmake_object_order_depends_target_gdtoa
+  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
+  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/gdtoa.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
+  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
+
+build src/CMakeFiles/gdtoa.dir/gdtoa/src/gethex.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/gethex.c || cmake_object_order_depends_target_gdtoa
+  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
+  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/gethex.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
+  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
+
+build src/CMakeFiles/gdtoa.dir/gdtoa/src/gmisc.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/gmisc.c || cmake_object_order_depends_target_gdtoa
+  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
+  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/gmisc.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
+  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
+
+build src/CMakeFiles/gdtoa.dir/gdtoa/src/hd_init.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/hd_init.c || cmake_object_order_depends_target_gdtoa
+  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
+  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/hd_init.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
+  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
+
+build src/CMakeFiles/gdtoa.dir/gdtoa/src/hexnan.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/hexnan.c || cmake_object_order_depends_target_gdtoa
+  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
+  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/hexnan.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
+  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
+
+build src/CMakeFiles/gdtoa.dir/gdtoa/src/misc.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/misc.c || cmake_object_order_depends_target_gdtoa
+  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
+  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/misc.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
+  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
+
+build src/CMakeFiles/gdtoa.dir/gdtoa/src/smisc.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/smisc.c || cmake_object_order_depends_target_gdtoa
+  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
+  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/smisc.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
+  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
+
+build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtod.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtod.c || cmake_object_order_depends_target_gdtoa
+  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
+  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/strtod.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
+  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
+
+build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtodg.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtodg.c || cmake_object_order_depends_target_gdtoa
+  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
+  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/strtodg.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
+  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
+
+build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtodI.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtodI.c || cmake_object_order_depends_target_gdtoa
+  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
+  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/strtodI.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
+  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
+
+build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtof.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtof.c || cmake_object_order_depends_target_gdtoa
+  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
+  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/strtof.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
+  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
+
+build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoId.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtoId.c || cmake_object_order_depends_target_gdtoa
+  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
+  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoId.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
+  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
+
+build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIdd.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtoIdd.c || cmake_object_order_depends_target_gdtoa
+  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
+  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIdd.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
+  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
+
+build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIf.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtoIf.c || cmake_object_order_depends_target_gdtoa
+  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
+  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIf.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
+  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
+
+build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIg.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtoIg.c || cmake_object_order_depends_target_gdtoa
+  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
+  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIg.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
+  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
+
+build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIQ.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtoIQ.c || cmake_object_order_depends_target_gdtoa
+  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
+  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIQ.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
+  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
+
+build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIx.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtoIx.c || cmake_object_order_depends_target_gdtoa
+  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
+  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIx.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
+  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
+
+build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIxL.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtoIxL.c || cmake_object_order_depends_target_gdtoa
+  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
+  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIxL.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
+  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
+
+build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopd.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtopd.c || cmake_object_order_depends_target_gdtoa
+  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
+  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopd.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
+  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
+
+build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopdd.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtopdd.c || cmake_object_order_depends_target_gdtoa
+  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
+  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopdd.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
+  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
+
+build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopf.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtopf.c || cmake_object_order_depends_target_gdtoa
+  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
+  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopf.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
+  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
+
+build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopQ.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtopQ.c || cmake_object_order_depends_target_gdtoa
+  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
+  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopQ.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
+  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
+
+build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopx.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtopx.c || cmake_object_order_depends_target_gdtoa
+  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
+  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopx.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
+  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
+
+build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopxL.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtopxL.c || cmake_object_order_depends_target_gdtoa
+  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
+  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopxL.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
+  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
+
+build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtord.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtord.c || cmake_object_order_depends_target_gdtoa
+  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
+  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/strtord.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
+  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
+
+build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtordd.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtordd.c || cmake_object_order_depends_target_gdtoa
+  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
+  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/strtordd.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
+  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
+
+build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtorf.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtorf.c || cmake_object_order_depends_target_gdtoa
+  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
+  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/strtorf.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
+  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
+
+build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtorQ.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtorQ.c || cmake_object_order_depends_target_gdtoa
+  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
+  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/strtorQ.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
+  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
+
+build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtorx.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtorx.c || cmake_object_order_depends_target_gdtoa
+  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
+  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/strtorx.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
+  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
+
+build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtorxL.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtorxL.c || cmake_object_order_depends_target_gdtoa
+  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
+  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/strtorxL.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
+  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
+
+build src/CMakeFiles/gdtoa.dir/gdtoa/src/sum.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/sum.c || cmake_object_order_depends_target_gdtoa
+  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
+  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/sum.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
+  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
+
+build src/CMakeFiles/gdtoa.dir/gdtoa/src/ulp.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/ulp.c || cmake_object_order_depends_target_gdtoa
+  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
+  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/ulp.c.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
+  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gdtoa
+
+
+#############################################
+# Link the static library src/libgdtoa.a
+
+build src/libgdtoa.a: C_STATIC_LIBRARY_LINKER__gdtoa_ src/CMakeFiles/gdtoa.dir/gdtoa/src/dmisc.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/dtoa.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/g__fmt.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/g_ddfmt.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/g_dfmt.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/g_ffmt.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/g_Qfmt.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/g_xfmt.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/g_xLfmt.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/gdtoa.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/gethex.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/gmisc.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/hd_init.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/hexnan.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/misc.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/smisc.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/strtod.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/strtodg.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/strtodI.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/strtof.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoId.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIdd.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIf.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIg.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIQ.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIx.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIxL.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopd.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopdd.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopf.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopQ.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopx.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopxL.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/strtord.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/strtordd.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/strtorf.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/strtorQ.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/strtorx.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/strtorxL.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/sum.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/ulp.c.o
+  ARCH_FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = src/libgdtoa.a
+  TARGET_PDB = gdtoa.a.dbg
+
+
+#############################################
+# Utility command for test
+
+build src/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/src && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest --force-new-ctest-process
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build src/test: phony src/CMakeFiles/test.util
 
 
 #############################################
@@ -77,14 +1469,39 @@ build src/rebuild_cache: phony src/CMakeFiles/rebuild_cache.util
 
 
 #############################################
-# Utility command for edit_cache
+# Utility command for package_source
 
-build src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/src && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-  DESC = No interactive CMake dialog available...
+build src/CMakeFiles/package_source.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/cpack --config ./CPackSourceConfig.cmake /Users/haydenbraxton/Projects/cmake-example-project/build/CPackSourceConfig.cmake
+  DESC = Run CPack packaging tool for source...
+  pool = console
   restat = 1
 
-build src/edit_cache: phony src/CMakeFiles/edit_cache.util
+build src/package_source: phony src/CMakeFiles/package_source.util
+
+
+#############################################
+# Utility command for install/strip
+
+build src/CMakeFiles/install/strip.util: CUSTOM_COMMAND src/all
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/src && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build src/install/strip: phony src/CMakeFiles/install/strip.util
+
+
+#############################################
+# Utility command for install
+
+build src/CMakeFiles/install.util: CUSTOM_COMMAND src/all
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/src && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build src/install: phony src/CMakeFiles/install.util
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target c
@@ -741,367 +2158,34 @@ build src/libc.a: C_STATIC_LIBRARY_LINKER__c_ src/CMakeFiles/c.dir/assert/assert
   TARGET_FILE = src/libc.a
   TARGET_PDB = c.a.dbg
 
-# =============================================================================
-# Object build statements for STATIC_LIBRARY target gdtoa
-
 
 #############################################
-# Order-only phony target for gdtoa
+# Utility command for package
 
-build cmake_object_order_depends_target_gdtoa: phony || src/CMakeFiles/gdtoa.dir
+build src/CMakeFiles/package.util: CUSTOM_COMMAND src/all
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/cpack --config ./CPackConfig.cmake
+  DESC = Run CPack packaging tool...
+  pool = console
+  restat = 1
 
-build src/CMakeFiles/gdtoa.dir/gdtoa/src/dmisc.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/dmisc.c || cmake_object_order_depends_target_gdtoa
-  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
-  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/dmisc.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
-  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-
-build src/CMakeFiles/gdtoa.dir/gdtoa/src/dtoa.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/dtoa.c || cmake_object_order_depends_target_gdtoa
-  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
-  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/dtoa.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
-  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-
-build src/CMakeFiles/gdtoa.dir/gdtoa/src/g__fmt.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/g__fmt.c || cmake_object_order_depends_target_gdtoa
-  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
-  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/g__fmt.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
-  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-
-build src/CMakeFiles/gdtoa.dir/gdtoa/src/g_ddfmt.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/g_ddfmt.c || cmake_object_order_depends_target_gdtoa
-  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
-  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/g_ddfmt.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
-  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-
-build src/CMakeFiles/gdtoa.dir/gdtoa/src/g_dfmt.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/g_dfmt.c || cmake_object_order_depends_target_gdtoa
-  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
-  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/g_dfmt.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
-  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-
-build src/CMakeFiles/gdtoa.dir/gdtoa/src/g_ffmt.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/g_ffmt.c || cmake_object_order_depends_target_gdtoa
-  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
-  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/g_ffmt.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
-  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-
-build src/CMakeFiles/gdtoa.dir/gdtoa/src/g_Qfmt.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/g_Qfmt.c || cmake_object_order_depends_target_gdtoa
-  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
-  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/g_Qfmt.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
-  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-
-build src/CMakeFiles/gdtoa.dir/gdtoa/src/g_xfmt.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/g_xfmt.c || cmake_object_order_depends_target_gdtoa
-  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
-  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/g_xfmt.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
-  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-
-build src/CMakeFiles/gdtoa.dir/gdtoa/src/g_xLfmt.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/g_xLfmt.c || cmake_object_order_depends_target_gdtoa
-  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
-  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/g_xLfmt.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
-  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-
-build src/CMakeFiles/gdtoa.dir/gdtoa/src/gdtoa.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/gdtoa.c || cmake_object_order_depends_target_gdtoa
-  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
-  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/gdtoa.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
-  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-
-build src/CMakeFiles/gdtoa.dir/gdtoa/src/gethex.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/gethex.c || cmake_object_order_depends_target_gdtoa
-  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
-  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/gethex.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
-  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-
-build src/CMakeFiles/gdtoa.dir/gdtoa/src/gmisc.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/gmisc.c || cmake_object_order_depends_target_gdtoa
-  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
-  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/gmisc.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
-  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-
-build src/CMakeFiles/gdtoa.dir/gdtoa/src/hd_init.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/hd_init.c || cmake_object_order_depends_target_gdtoa
-  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
-  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/hd_init.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
-  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-
-build src/CMakeFiles/gdtoa.dir/gdtoa/src/hexnan.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/hexnan.c || cmake_object_order_depends_target_gdtoa
-  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
-  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/hexnan.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
-  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-
-build src/CMakeFiles/gdtoa.dir/gdtoa/src/misc.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/misc.c || cmake_object_order_depends_target_gdtoa
-  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
-  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/misc.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
-  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-
-build src/CMakeFiles/gdtoa.dir/gdtoa/src/smisc.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/smisc.c || cmake_object_order_depends_target_gdtoa
-  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
-  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/smisc.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
-  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-
-build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtod.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtod.c || cmake_object_order_depends_target_gdtoa
-  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
-  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/strtod.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
-  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-
-build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtodg.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtodg.c || cmake_object_order_depends_target_gdtoa
-  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
-  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/strtodg.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
-  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-
-build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtodI.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtodI.c || cmake_object_order_depends_target_gdtoa
-  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
-  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/strtodI.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
-  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-
-build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtof.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtof.c || cmake_object_order_depends_target_gdtoa
-  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
-  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/strtof.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
-  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-
-build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoId.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtoId.c || cmake_object_order_depends_target_gdtoa
-  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
-  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoId.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
-  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-
-build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIdd.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtoIdd.c || cmake_object_order_depends_target_gdtoa
-  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
-  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIdd.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
-  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-
-build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIf.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtoIf.c || cmake_object_order_depends_target_gdtoa
-  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
-  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIf.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
-  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-
-build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIg.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtoIg.c || cmake_object_order_depends_target_gdtoa
-  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
-  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIg.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
-  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-
-build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIQ.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtoIQ.c || cmake_object_order_depends_target_gdtoa
-  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
-  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIQ.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
-  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-
-build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIx.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtoIx.c || cmake_object_order_depends_target_gdtoa
-  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
-  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIx.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
-  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-
-build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIxL.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtoIxL.c || cmake_object_order_depends_target_gdtoa
-  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
-  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIxL.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
-  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-
-build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopd.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtopd.c || cmake_object_order_depends_target_gdtoa
-  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
-  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopd.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
-  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-
-build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopdd.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtopdd.c || cmake_object_order_depends_target_gdtoa
-  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
-  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopdd.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
-  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-
-build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopf.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtopf.c || cmake_object_order_depends_target_gdtoa
-  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
-  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopf.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
-  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-
-build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopQ.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtopQ.c || cmake_object_order_depends_target_gdtoa
-  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
-  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopQ.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
-  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-
-build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopx.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtopx.c || cmake_object_order_depends_target_gdtoa
-  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
-  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopx.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
-  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-
-build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopxL.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtopxL.c || cmake_object_order_depends_target_gdtoa
-  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
-  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopxL.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
-  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-
-build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtord.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtord.c || cmake_object_order_depends_target_gdtoa
-  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
-  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/strtord.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
-  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-
-build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtordd.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtordd.c || cmake_object_order_depends_target_gdtoa
-  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
-  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/strtordd.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
-  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-
-build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtorf.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtorf.c || cmake_object_order_depends_target_gdtoa
-  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
-  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/strtorf.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
-  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-
-build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtorQ.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtorQ.c || cmake_object_order_depends_target_gdtoa
-  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
-  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/strtorQ.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
-  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-
-build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtorx.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtorx.c || cmake_object_order_depends_target_gdtoa
-  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
-  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/strtorx.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
-  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-
-build src/CMakeFiles/gdtoa.dir/gdtoa/src/strtorxL.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/strtorxL.c || cmake_object_order_depends_target_gdtoa
-  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
-  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/strtorxL.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
-  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-
-build src/CMakeFiles/gdtoa.dir/gdtoa/src/sum.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/sum.c || cmake_object_order_depends_target_gdtoa
-  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
-  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/sum.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
-  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-
-build src/CMakeFiles/gdtoa.dir/gdtoa/src/ulp.c.o: C_COMPILER__gdtoa_ /Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/src/ulp.c || cmake_object_order_depends_target_gdtoa
-  DEFINES = -DGDTOA_NO_ASSERT -DIFNAN_CHECK -DNO_ERRNO -DNO_FENV_H
-  DEP_FILE = src/CMakeFiles/gdtoa.dir/gdtoa/src/ulp.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/src/gdtoa/include
-  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/gdtoa.dir/gdtoa/src
-
-
-# =============================================================================
-# Link build statements for STATIC_LIBRARY target gdtoa
-
-
-#############################################
-# Link the static library src/libgdtoa.a
-
-build src/libgdtoa.a: C_STATIC_LIBRARY_LINKER__gdtoa_ src/CMakeFiles/gdtoa.dir/gdtoa/src/dmisc.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/dtoa.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/g__fmt.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/g_ddfmt.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/g_dfmt.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/g_ffmt.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/g_Qfmt.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/g_xfmt.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/g_xLfmt.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/gdtoa.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/gethex.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/gmisc.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/hd_init.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/hexnan.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/misc.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/smisc.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/strtod.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/strtodg.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/strtodI.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/strtof.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoId.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIdd.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIf.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIg.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIQ.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIx.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIxL.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopd.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopdd.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopf.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopQ.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopx.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopxL.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/strtord.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/strtordd.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/strtorf.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/strtorQ.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/strtorx.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/strtorxL.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/sum.c.o src/CMakeFiles/gdtoa.dir/gdtoa/src/ulp.c.o
-  ARCH_FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  OBJECT_DIR = src/CMakeFiles/gdtoa.dir
-  POST_BUILD = :
-  PRE_LINK = :
-  TARGET_FILE = src/libgdtoa.a
-  TARGET_PDB = gdtoa.a.dbg
+build src/package: phony src/CMakeFiles/package.util
 
 # =============================================================================
 # Target aliases.
 
 build c: phony src/libc.a
 
+build cmocka: phony _deps/cmocka-build/src/libcmocka.dylib
+
+build dist: phony _deps/cmocka-build/dist
+
+build docs: phony _deps/cmocka-build/doc/docs
+
 build gdtoa: phony src/libgdtoa.a
 
 build libc.a: phony src/libc.a
+
+build libcmocka.dylib: phony _deps/cmocka-build/src/libcmocka.dylib
 
 build libgdtoa.a: phony src/libgdtoa.a
 
@@ -1113,14 +2197,42 @@ build libgdtoa.a: phony src/libgdtoa.a
 #############################################
 # Folder: /Users/haydenbraxton/Projects/cmake-example-project/build
 
-build all: phony src/all
+build all: phony printf_tests _deps/cmocka-build/all src/all
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build
+
+build _deps/cmocka-build/all: phony _deps/cmocka-build/include/all _deps/cmocka-build/src/all _deps/cmocka-build/doc/all
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build/doc
+
+build _deps/cmocka-build/doc/all: phony
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build/include
+
+build _deps/cmocka-build/include/all: phony
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build/src
+
+build _deps/cmocka-build/src/all: phony _deps/cmocka-build/src/libcmocka.dylib
 
 # =============================================================================
 
 #############################################
 # Folder: /Users/haydenbraxton/Projects/cmake-example-project/build/src
 
-build src/all: phony src/libc.a src/libgdtoa.a
+build src/all: phony src/libgdtoa.a src/libc.a
 
 # =============================================================================
 # Built-in targets
@@ -1129,14 +2241,14 @@ build src/all: phony src/libc.a src/libgdtoa.a
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../cmake/CPM.cmake ../src/CMakeLists.txt /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/AppleClang-C.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/Clang.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/FetchContent.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/FetchContent/CMakeLists.cmake.in /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/FindGit.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/FindPackageMessage.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Apple-Clang-C.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Apple-Clang.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.21.3/CMakeCCompiler.cmake CMakeFiles/3.21.3/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../cmake/CPM.cmake ../src/CMakeLists.txt /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakePackageConfigHelpers.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CPack.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CPackComponent.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CTest.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CTestTargets.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CTestUseLaunchers.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CheckCCompilerFlag.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CheckCSourceCompiles.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CheckCXXSourceCompiles.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CheckFunctionExists.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CheckIncludeFile.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CheckIncludeFileCXX.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CheckLibraryExists.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CheckStructHasMember.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CheckSymbolExists.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CheckTypeSize.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/AppleClang-C.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/Clang.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/DartConfiguration.tcl.in /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/FetchContent.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/FetchContent/CMakeLists.cmake.in /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/FindDoxygen.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/FindGit.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/FindPackageMessage.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/GNUInstallDirs.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Internal/CheckCompilerFlag.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Internal/CheckSourceCompiles.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Apple-Clang-C.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Apple-Clang.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/UnixPaths.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/TestBigEndian.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/WriteBasicConfigVersionFile.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeDoxyfile.in CMakeDoxygenDefaults.cmake CMakeFiles/3.21.3/CMakeCCompiler.cmake CMakeFiles/3.21.3/CMakeCXXCompiler.cmake CMakeFiles/3.21.3/CMakeSystem.cmake _deps/cmocka-src/CMakeLists.txt _deps/cmocka-src/CPackConfig.cmake _deps/cmocka-src/CTestConfig.cmake _deps/cmocka-src/CompilerChecks.cmake _deps/cmocka-src/ConfigureChecks.cmake _deps/cmocka-src/DefineOptions.cmake _deps/cmocka-src/cmake/Modules/AddCCompilerFlag.cmake _deps/cmocka-src/cmake/Modules/AddCMockaTest.cmake _deps/cmocka-src/cmake/Modules/CheckCCompilerFlagSSP.cmake _deps/cmocka-src/cmake/Modules/DefineCMakeDefaults.cmake _deps/cmocka-src/cmake/Modules/DefineCompilerFlags.cmake _deps/cmocka-src/cmake/Modules/DefinePlatformDefaults.cmake _deps/cmocka-src/cmake/Modules/MacroEnsureOutOfSourceBuild.cmake _deps/cmocka-src/cmocka-config.cmake.in _deps/cmocka-src/cmocka.pc.cmake _deps/cmocka-src/config.h.cmake _deps/cmocka-src/doc/CMakeLists.txt _deps/cmocka-src/include/CMakeLists.txt _deps/cmocka-src/src/CMakeLists.txt
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt ../cmake/CPM.cmake ../src/CMakeLists.txt /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/AppleClang-C.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/Clang.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/FetchContent.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/FetchContent/CMakeLists.cmake.in /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/FindGit.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/FindPackageMessage.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Apple-Clang-C.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Apple-Clang.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.21.3/CMakeCCompiler.cmake CMakeFiles/3.21.3/CMakeSystem.cmake: phony
+build ../CMakeLists.txt ../cmake/CPM.cmake ../src/CMakeLists.txt /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakePackageConfigHelpers.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CPack.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CPackComponent.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CTest.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CTestTargets.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CTestUseLaunchers.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CheckCCompilerFlag.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CheckCSourceCompiles.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CheckCXXSourceCompiles.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CheckFunctionExists.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CheckIncludeFile.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CheckIncludeFileCXX.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CheckLibraryExists.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CheckStructHasMember.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CheckSymbolExists.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CheckTypeSize.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/AppleClang-C.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/Clang.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/DartConfiguration.tcl.in /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/FetchContent.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/FetchContent/CMakeLists.cmake.in /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/FindDoxygen.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/FindGit.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/FindPackageMessage.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/GNUInstallDirs.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Internal/CheckCompilerFlag.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Internal/CheckSourceCompiles.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Apple-Clang-C.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Apple-Clang.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/UnixPaths.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/TestBigEndian.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/WriteBasicConfigVersionFile.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeDoxyfile.in CMakeDoxygenDefaults.cmake CMakeFiles/3.21.3/CMakeCCompiler.cmake CMakeFiles/3.21.3/CMakeCXXCompiler.cmake CMakeFiles/3.21.3/CMakeSystem.cmake _deps/cmocka-src/CMakeLists.txt _deps/cmocka-src/CPackConfig.cmake _deps/cmocka-src/CTestConfig.cmake _deps/cmocka-src/CompilerChecks.cmake _deps/cmocka-src/ConfigureChecks.cmake _deps/cmocka-src/DefineOptions.cmake _deps/cmocka-src/cmake/Modules/AddCCompilerFlag.cmake _deps/cmocka-src/cmake/Modules/AddCMockaTest.cmake _deps/cmocka-src/cmake/Modules/CheckCCompilerFlagSSP.cmake _deps/cmocka-src/cmake/Modules/DefineCMakeDefaults.cmake _deps/cmocka-src/cmake/Modules/DefineCompilerFlags.cmake _deps/cmocka-src/cmake/Modules/DefinePlatformDefaults.cmake _deps/cmocka-src/cmake/Modules/MacroEnsureOutOfSourceBuild.cmake _deps/cmocka-src/cmocka-config.cmake.in _deps/cmocka-src/cmocka.pc.cmake _deps/cmocka-src/config.h.cmake _deps/cmocka-src/doc/CMakeLists.txt _deps/cmocka-src/include/CMakeLists.txt _deps/cmocka-src/src/CMakeLists.txt: phony
 
 
 #############################################
