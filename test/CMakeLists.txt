@@ -9,7 +9,7 @@ set_target_properties(printf_tests PROPERTIES CXX_STANDARD 11)
 
 add_test(
 	NAME Printf.Test
-	COMMAND printf_tests -s -r junit -o ${CMAKE_CURRENT_BINARY_DIR}/printf_tests.xml
+	COMMAND printf_tests -s -r junit -o ${CMAKE_CURRENT_BINARY_DIR}/testresults/printf_tests.xml
 )
 
 #######################
@@ -27,17 +27,13 @@ target_sources(libc_tests
 	PRIVATE ${libc_tests_target_sources}
 )
 
-target_include_directories(
-	libc_tests
-	PRIVATE .
-	PRIVATE test
-)
+target_include_directories(libc_tests PRIVATE . test)
 target_include_directories(libc_tests SYSTEM PRIVATE ${CMOCKA_INCLUDE_DIR})
 
 target_link_libraries(
 	libc_tests
 	PRIVATE c
-	PRIVATE cmocka
+	PRIVATE ${CMOCKA_LIBRARIES}
 )
 
 add_test(
@@ -45,8 +41,8 @@ add_test(
 	COMMAND libc_tests
 )
 
-set_target_properties(
-	libc_tests
+set_tests_properties(
+	LibC.Tests
 	PROPERTIES
-	ENVIRONMENT CMOCKA_XML_FILE=${CMAKE_CURRENT_BINARY_DIR}/%g.xml
+	ENVIRONMENT CMOCKA_XML_FILE=${CMAKE_CURRENT_BINARY_DIR}/testresults/%g.xml
 )

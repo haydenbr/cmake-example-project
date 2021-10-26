@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite name="heapsort_tests" time="0.003" tests="4" failures="0" errors="0" skipped="0" >
+    <testcase name="heapsort_string_test" time="0.000" >
+    </testcase>
+    <testcase name="heapsort_char_test" time="0.000" >
+    </testcase>
+    <testcase name="heapsort_int_test" time="0.000" >
+    </testcase>
+    <testcase name="heapsort_uint64_test" time="0.003" >
+    </testcase>
+  </testsuite>
+</testsuites>

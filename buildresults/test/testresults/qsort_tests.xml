@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite name="qsort_tests" time="0.001" tests="4" failures="0" errors="0" skipped="0" >
+    <testcase name="qsort_string_test" time="0.000" >
+    </testcase>
+    <testcase name="qsort_char_test" time="0.000" >
+    </testcase>
+    <testcase name="qsort_int_test" time="0.000" >
+    </testcase>
+    <testcase name="qsort_uint64_test" time="0.001" >
+    </testcase>
+  </testsuite>
+</testsuites>
