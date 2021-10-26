@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="printf_tests" errors="0" failures="0" tests="403" hostname="tbd" time="0.454282" timestamp="2021-10-26T05:22:10Z">
+    <testcase classname="printf_tests.global" name="printf" time="0.000091"/>
+    <testcase classname="printf_tests.global" name="fctprintf" time="0.000037"/>
+    <testcase classname="printf_tests.global" name="snprintf" time="0.000035"/>
+    <testcase classname="printf_tests.global" name="vprintf" time="0.000022"/>
+    <testcase classname="printf_tests.global" name="vsnprintf" time="0.000021"/>
+    <testcase classname="printf_tests.global" name="space flag" time="0.000147"/>
+    <testcase classname="printf_tests.global" name="+ flag" time="0.000076"/>
+    <testcase classname="printf_tests.global" name="0 flag" time="0.000044"/>
+    <testcase classname="printf_tests.global" name="- flag" time="0.00008"/>
+    <testcase classname="printf_tests.global" name="# flag" time="0.000027"/>
+    <testcase classname="printf_tests.global" name="specifier" time="0.000059"/>
+    <testcase classname="printf_tests.global" name="width" time="0.000061"/>
+    <testcase classname="printf_tests.global" name="width 20" time="0.000058"/>
+    <testcase classname="printf_tests.global" name="width *20" time="0.000061"/>
+    <testcase classname="printf_tests.global" name="width -20" time="0.000084"/>
+    <testcase classname="printf_tests.global" name="width 0-20" time="0.000053"/>
+    <testcase classname="printf_tests.global" name="padding 20" time="0.000056"/>
+    <testcase classname="printf_tests.global" name="padding .20" time="0.00005"/>
+    <testcase classname="printf_tests.global" name="padding #020" time="0.000051"/>
+    <testcase classname="printf_tests.global" name="padding #20" time="0.00005"/>
+    <testcase classname="printf_tests.global" name="padding 20.5" time="0.00005"/>
+    <testcase classname="printf_tests.global" name="padding neg numbers" time="0.000032"/>
+    <testcase classname="printf_tests.global" name="float padding neg numbers" time="0.00006"/>
+    <testcase classname="printf_tests.global" name="length" time="0.000093"/>
+    <testcase classname="printf_tests.global" name="float" time="0.451777"/>
+    <testcase classname="printf_tests.global" name="types" time="0.000128"/>
+    <testcase classname="printf_tests.global" name="pointer" time="0.000021"/>
+    <testcase classname="printf_tests.global" name="unknown flag" time="0.000011"/>
+    <testcase classname="printf_tests.global" name="string length" time="0.00003"/>
+    <testcase classname="printf_tests.global" name="buffer length" time="0.000044"/>
+    <testcase classname="printf_tests.global" name="ret value" time="0.000063"/>
+    <testcase classname="printf_tests.global" name="misc" time="0.000037"/>
+    <system-out/>
+    <system-err/>
+  </testsuite>
+</testsuites>

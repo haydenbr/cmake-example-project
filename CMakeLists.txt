@@ -29,19 +29,6 @@ add_library(printf INTERFACE)
 target_sources(printf INTERFACE ${printf_SOURCE_DIR})
 target_include_directories(printf SYSTEM INTERFACE ${printf_SOURCE_DIR})
 
-if(BUILD_TESTING) # BUILD_TESTING comes from CTest module
-	# printf unit tests
-	add_executable(printf_tests)
-	target_sources(printf_tests PRIVATE ${printf_SOURCE_DIR}/test/test_suite.cpp)
-	target_include_directories(printf_tests PRIVATE ${printf_SOURCE_DIR})
-	set_target_properties(printf_tests PROPERTIES CXX_STANDARD 11)
-
-	add_test(
-		NAME Printf.Test
-		COMMAND printf_tests
-	)
-endif()
-
 #######################
 # Openlibm Dependency #
 #######################
@@ -65,26 +52,23 @@ target_include_directories(openlibm SYSTEM INTERFACE
 # CMocka Dependency #
 #####################
 
-find_package(cmocka QUIET)
-
-# commenting this out because I'd like to use the same version always 
-# if(NOT cmocka_FOUND)
-	CPMAddPackage(
-		NAME cmocka
-		GIT_REPOSITORY https://git.cryptomilk.org/projects/cmocka.git/
-		VERSION 1.1.5
-		GIT_TAG cmocka-1.1.5
-		OPTIONS
-			"WITH_EXAMPLES OFF"
-			"CMAKE_BUILD_TYPE DEBUG"
-	)
-	set(CMOCKA_LIBRARIES cmocka)
-	## notice no DOWNLOAD_ONLY because
-	## cmocka uses CMake so we can build when we download
-# endif()
+CPMAddPackage(
+	NAME cmocka
+	GIT_REPOSITORY https://git.cryptomilk.org/projects/cmocka.git/
+	VERSION 1.1.5
+	GIT_TAG cmocka-1.1.5
+	OPTIONS
+		"WITH_EXAMPLES OFF"
+		"CMAKE_BUILD_TYPE DEBUG"
+)
+set(CMOCKA_LIBRARIES cmocka)
 
 #######################
 # Process Source Tree #
 #######################
 
 add_subdirectory(src)
+
+if(BUILD_TESTING) # BUILD_TESTING comes from CTest module
+	add_subdirectory(test)
+endif()
