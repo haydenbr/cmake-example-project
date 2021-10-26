@@ -55,13 +55,13 @@ target_compile_definitions(gdtoa INTERFACE
 	NO_FENV_H
 )
 
-add_library(c STATIC)
+add_library(libc STATIC)
 
 # printf module
-target_link_libraries(c PRIVATE printf openlibm)
+target_link_libraries(libc PRIVATE printf openlibm)
 ## as private, we'll see warnings when building libc
 ## but not when linking against libc
-target_include_directories(c
+target_include_directories(libc
 	PRIVATE
 		${PROJECT_SOURCE_DIR}/include
 		${PROJECT_SOURCE_DIR}/arch/x86_64/include
@@ -70,14 +70,14 @@ target_include_directories(c
 ## but SYSTEM supresses warnings for users
 ## linking against libc
 target_include_directories(
-	c SYSTEM INTERFACE
+	libc SYSTEM INTERFACE
 		${PROJECT_SOURCE_DIR}/include
 		${PROJECT_SOURCE_DIR}/arch/x86_64/include
 		$<TARGET_PROPERTY:openlibm,INTERFACE_INCLUDE_DIRECTORIES>
 )
 
 # Assert Module
-target_sources(c PRIVATE
+target_sources(libc PRIVATE
 	assert/assert.c
 )
 
@@ -87,10 +87,10 @@ target_sources(c PRIVATE
 ## to the list, there's no change to CMakeList.txt
 ## so building doesn't cause cmake to rerun
 aux_source_directory(support ctype_target_sources)
-target_sources(c PRIVATE ${ctype_target_sources})
+target_sources(libc PRIVATE ${ctype_target_sources})
 
 # stdlib Module
-target_sources(c PRIVATE
+target_sources(libc PRIVATE
 	stdlib/abs.c
 	stdlib/atof.c
 	stdlib/atoi.c
@@ -119,7 +119,7 @@ target_sources(c PRIVATE
 )
 
 # wchar Module
-target_sources(c PRIVATE
+target_sources(libc PRIVATE
 	wchar/iswalnum.c
 	wchar/iswalpha.c
 	wchar/iswblank.c
@@ -148,18 +148,18 @@ target_sources(c PRIVATE
 )
 
 # locale Module
-target_sources(c PRIVATE
+target_sources(libc PRIVATE
 	locale/langinfo.c
 )
 
 # math Module
-target_sources(c PRIVATE
+target_sources(libc PRIVATE
 	math/fabs.c
 	math/fabsf.c
 )
 
 # stdio Module
-target_sources(c PRIVATE
+target_sources(libc PRIVATE
 	stdio/asprintf.c
 	stdio/putchar.c
 	stdio/puts.c
@@ -167,25 +167,25 @@ target_sources(c PRIVATE
 )
 
 # stdio_native Module
-target_sources(c PRIVATE
+target_sources(libc PRIVATE
 	stdio/putchar_native.c
 )
 
 # support Module
-target_sources(c PRIVATE
+target_sources(libc PRIVATE
 	support/fls.c
 	support/flsl.c
 	support/flsll.c
 )
 
 # time Module
-target_sources(c PRIVATE
+target_sources(libc PRIVATE
 	time/asctime.c
 	time/asctime_r.c
 )
 
 # string Module
-target_sources(c PRIVATE
+target_sources(libc PRIVATE
 	string/memcmp.c
 	string/memcpy.c
 	string/memmem.c
@@ -219,7 +219,7 @@ target_sources(c PRIVATE
 )
 
 # without these header files, the compiler thinks we're redefining built-in functions
-target_include_directories(c PUBLIC ${PROJECT_SOURCE_DIR}/include)
-# architecture-specific deps required by some of the modules
-target_include_directories(c PUBLIC ${PROJECT_SOURCE_DIR}/arch/x86_64/include)
-target_link_libraries(c PRIVATE gdtoa)
+target_include_directories(libc PUBLIC ${PROJECT_SOURCE_DIR}/include)
+# architecture-specifilibc deps required by some of the modules
+target_include_directories(libc PUBLIC ${PROJECT_SOURCE_DIR}/arch/x86_64/include)
+target_link_libraries(libc PRIVATE gdtoa)

@@ -32,7 +32,7 @@ target_include_directories(libc_tests SYSTEM PRIVATE ${CMOCKA_INCLUDE_DIR})
 
 target_link_libraries(
 	libc_tests
-	PRIVATE c
+	PRIVATE libc
 	PRIVATE ${CMOCKA_LIBRARIES}
 )
 
