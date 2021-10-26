@@ -5,7 +5,7 @@
 
 # Configuration directories and files
 SourceDirectory: /Users/haydenbraxton/Projects/cmake-example-project
-BuildDirectory: /Users/haydenbraxton/Projects/cmake-example-project/build
+BuildDirectory: /Users/haydenbraxton/Projects/cmake-example-project/buildresults
 
 # Where to place the cost data store
 CostDataFile: 

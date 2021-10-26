@@ -1,4 +1,4 @@
 #!/bin/bash
 
 ./scripts/regen-cmake
-ninja -C build test
+ninja -C buildresults test

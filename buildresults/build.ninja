@@ -34,13 +34,13 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /Users/haydenbraxton/Projects/cmake-example-project/build/
+cmake_ninja_workdir = /Users/haydenbraxton/Projects/cmake-example-project/buildresults/
 
 #############################################
 # Utility command for install/strip
 
 build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -52,7 +52,7 @@ build install/strip: phony CMakeFiles/install/strip.util
 # Utility command for install/local
 
 build CMakeFiles/install/local.util: CUSTOM_COMMAND all
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -70,7 +70,7 @@ build list_install_components: phony
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake --regenerate-during-build -S/Users/haydenbraxton/Projects/cmake-example-project -B/Users/haydenbraxton/Projects/cmake-example-project/build
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake --regenerate-during-build -S/Users/haydenbraxton/Projects/cmake-example-project -B/Users/haydenbraxton/Projects/cmake-example-project/buildresults
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -86,10 +86,10 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build cmake_object_order_depends_target_printf_tests: phony || CMakeFiles/printf_tests.dir
 
-build CMakeFiles/printf_tests.dir/_deps/printf-src/test/test_suite.cpp.o: CXX_COMPILER__printf_tests_ /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src/test/test_suite.cpp || cmake_object_order_depends_target_printf_tests
+build CMakeFiles/printf_tests.dir/_deps/printf-src/test/test_suite.cpp.o: CXX_COMPILER__printf_tests_ /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src/test/test_suite.cpp || cmake_object_order_depends_target_printf_tests
   DEP_FILE = CMakeFiles/printf_tests.dir/_deps/printf-src/test/test_suite.cpp.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -std=gnu++11
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src
   OBJECT_DIR = CMakeFiles/printf_tests.dir
   OBJECT_FILE_DIR = CMakeFiles/printf_tests.dir/_deps/printf-src/test
 
@@ -114,7 +114,7 @@ build printf_tests: CXX_EXECUTABLE_LINKER__printf_tests_ CMakeFiles/printf_tests
 # Utility command for package_source
 
 build CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/cpack --config ./CPackSourceConfig.cmake /Users/haydenbraxton/Projects/cmake-example-project/build/CPackSourceConfig.cmake
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/cpack --config ./CPackSourceConfig.cmake /Users/haydenbraxton/Projects/cmake-example-project/buildresults/CPackSourceConfig.cmake
   DESC = Run CPack packaging tool for source...
   pool = console
   restat = 1
@@ -180,7 +180,7 @@ build ExperimentalUpdate: phony CMakeFiles/ExperimentalUpdate
 # Utility command for install
 
 build CMakeFiles/install.util: CUSTOM_COMMAND all
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -222,7 +222,7 @@ build NightlyMemCheck: phony CMakeFiles/NightlyMemCheck
 # Utility command for test
 
 build CMakeFiles/test.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest --force-new-ctest-process
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest --force-new-ctest-process
   DESC = Running tests...
   pool = console
   restat = 1
@@ -234,7 +234,7 @@ build test: phony CMakeFiles/test.util
 # Utility command for package
 
 build CMakeFiles/package.util: CUSTOM_COMMAND all
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/cpack --config ./CPackConfig.cmake
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/cpack --config ./CPackConfig.cmake
   DESC = Run CPack packaging tool...
   pool = console
   restat = 1
@@ -288,7 +288,7 @@ build NightlyUpdate: phony CMakeFiles/NightlyUpdate
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -341,7 +341,7 @@ build Experimental: phony CMakeFiles/Experimental
 # Custom command for CMakeFiles/ContinuousCoverage
 
 build CMakeFiles/ContinuousCoverage | ${cmake_ninja_workdir}CMakeFiles/ContinuousCoverage: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ContinuousCoverage
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ContinuousCoverage
   pool = console
 
 
@@ -349,7 +349,7 @@ build CMakeFiles/ContinuousCoverage | ${cmake_ninja_workdir}CMakeFiles/Continuou
 # Custom command for CMakeFiles/ContinuousTest
 
 build CMakeFiles/ContinuousTest | ${cmake_ninja_workdir}CMakeFiles/ContinuousTest: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ContinuousTest
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ContinuousTest
   pool = console
 
 
@@ -357,7 +357,7 @@ build CMakeFiles/ContinuousTest | ${cmake_ninja_workdir}CMakeFiles/ContinuousTes
 # Custom command for CMakeFiles/ContinuousBuild
 
 build CMakeFiles/ContinuousBuild | ${cmake_ninja_workdir}CMakeFiles/ContinuousBuild: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ContinuousBuild
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ContinuousBuild
   pool = console
 
 
@@ -365,7 +365,7 @@ build CMakeFiles/ContinuousBuild | ${cmake_ninja_workdir}CMakeFiles/ContinuousBu
 # Custom command for CMakeFiles/ContinuousStart
 
 build CMakeFiles/ContinuousStart | ${cmake_ninja_workdir}CMakeFiles/ContinuousStart: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ContinuousStart
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ContinuousStart
   pool = console
 
 
@@ -373,7 +373,7 @@ build CMakeFiles/ContinuousStart | ${cmake_ninja_workdir}CMakeFiles/ContinuousSt
 # Custom command for CMakeFiles/ExperimentalBuild
 
 build CMakeFiles/ExperimentalBuild | ${cmake_ninja_workdir}CMakeFiles/ExperimentalBuild: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ExperimentalBuild
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ExperimentalBuild
   pool = console
 
 
@@ -381,7 +381,7 @@ build CMakeFiles/ExperimentalBuild | ${cmake_ninja_workdir}CMakeFiles/Experiment
 # Custom command for CMakeFiles/ExperimentalCoverage
 
 build CMakeFiles/ExperimentalCoverage | ${cmake_ninja_workdir}CMakeFiles/ExperimentalCoverage: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ExperimentalCoverage
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ExperimentalCoverage
   pool = console
 
 
@@ -389,7 +389,7 @@ build CMakeFiles/ExperimentalCoverage | ${cmake_ninja_workdir}CMakeFiles/Experim
 # Custom command for CMakeFiles/ExperimentalSubmit
 
 build CMakeFiles/ExperimentalSubmit | ${cmake_ninja_workdir}CMakeFiles/ExperimentalSubmit: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ExperimentalSubmit
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ExperimentalSubmit
   pool = console
 
 
@@ -397,7 +397,7 @@ build CMakeFiles/ExperimentalSubmit | ${cmake_ninja_workdir}CMakeFiles/Experimen
 # Custom command for CMakeFiles/ContinuousUpdate
 
 build CMakeFiles/ContinuousUpdate | ${cmake_ninja_workdir}CMakeFiles/ContinuousUpdate: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ContinuousUpdate
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ContinuousUpdate
   pool = console
 
 
@@ -405,7 +405,7 @@ build CMakeFiles/ContinuousUpdate | ${cmake_ninja_workdir}CMakeFiles/ContinuousU
 # Custom command for CMakeFiles/ExperimentalUpdate
 
 build CMakeFiles/ExperimentalUpdate | ${cmake_ninja_workdir}CMakeFiles/ExperimentalUpdate: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ExperimentalUpdate
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ExperimentalUpdate
   pool = console
 
 
@@ -413,7 +413,7 @@ build CMakeFiles/ExperimentalUpdate | ${cmake_ninja_workdir}CMakeFiles/Experimen
 # Custom command for CMakeFiles/ExperimentalStart
 
 build CMakeFiles/ExperimentalStart | ${cmake_ninja_workdir}CMakeFiles/ExperimentalStart: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ExperimentalStart
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ExperimentalStart
   pool = console
 
 
@@ -421,7 +421,7 @@ build CMakeFiles/ExperimentalStart | ${cmake_ninja_workdir}CMakeFiles/Experiment
 # Custom command for CMakeFiles/ContinuousSubmit
 
 build CMakeFiles/ContinuousSubmit | ${cmake_ninja_workdir}CMakeFiles/ContinuousSubmit: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ContinuousSubmit
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ContinuousSubmit
   pool = console
 
 
@@ -429,7 +429,7 @@ build CMakeFiles/ContinuousSubmit | ${cmake_ninja_workdir}CMakeFiles/ContinuousS
 # Custom command for CMakeFiles/ExperimentalTest
 
 build CMakeFiles/ExperimentalTest | ${cmake_ninja_workdir}CMakeFiles/ExperimentalTest: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ExperimentalTest
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ExperimentalTest
   pool = console
 
 
@@ -437,7 +437,7 @@ build CMakeFiles/ExperimentalTest | ${cmake_ninja_workdir}CMakeFiles/Experimenta
 # Custom command for CMakeFiles/NightlySubmit
 
 build CMakeFiles/NightlySubmit | ${cmake_ninja_workdir}CMakeFiles/NightlySubmit: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D NightlySubmit
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D NightlySubmit
   pool = console
 
 
@@ -445,7 +445,7 @@ build CMakeFiles/NightlySubmit | ${cmake_ninja_workdir}CMakeFiles/NightlySubmit:
 # Custom command for CMakeFiles/NightlyMemCheck
 
 build CMakeFiles/NightlyMemCheck | ${cmake_ninja_workdir}CMakeFiles/NightlyMemCheck: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D NightlyMemCheck
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D NightlyMemCheck
   pool = console
 
 
@@ -453,7 +453,7 @@ build CMakeFiles/NightlyMemCheck | ${cmake_ninja_workdir}CMakeFiles/NightlyMemCh
 # Custom command for CMakeFiles/ExperimentalConfigure
 
 build CMakeFiles/ExperimentalConfigure | ${cmake_ninja_workdir}CMakeFiles/ExperimentalConfigure: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ExperimentalConfigure
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ExperimentalConfigure
   pool = console
 
 
@@ -461,7 +461,7 @@ build CMakeFiles/ExperimentalConfigure | ${cmake_ninja_workdir}CMakeFiles/Experi
 # Custom command for CMakeFiles/NightlyCoverage
 
 build CMakeFiles/NightlyCoverage | ${cmake_ninja_workdir}CMakeFiles/NightlyCoverage: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D NightlyCoverage
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D NightlyCoverage
   pool = console
 
 
@@ -469,7 +469,7 @@ build CMakeFiles/NightlyCoverage | ${cmake_ninja_workdir}CMakeFiles/NightlyCover
 # Custom command for CMakeFiles/NightlyTest
 
 build CMakeFiles/NightlyTest | ${cmake_ninja_workdir}CMakeFiles/NightlyTest: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D NightlyTest
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D NightlyTest
   pool = console
 
 
@@ -477,7 +477,7 @@ build CMakeFiles/NightlyTest | ${cmake_ninja_workdir}CMakeFiles/NightlyTest: CUS
 # Custom command for CMakeFiles/ContinuousMemCheck
 
 build CMakeFiles/ContinuousMemCheck | ${cmake_ninja_workdir}CMakeFiles/ContinuousMemCheck: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ContinuousMemCheck
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ContinuousMemCheck
   pool = console
 
 
@@ -485,7 +485,7 @@ build CMakeFiles/ContinuousMemCheck | ${cmake_ninja_workdir}CMakeFiles/Continuou
 # Custom command for CMakeFiles/NightlyBuild
 
 build CMakeFiles/NightlyBuild | ${cmake_ninja_workdir}CMakeFiles/NightlyBuild: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D NightlyBuild
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D NightlyBuild
   pool = console
 
 
@@ -493,7 +493,7 @@ build CMakeFiles/NightlyBuild | ${cmake_ninja_workdir}CMakeFiles/NightlyBuild: C
 # Custom command for CMakeFiles/NightlyConfigure
 
 build CMakeFiles/NightlyConfigure | ${cmake_ninja_workdir}CMakeFiles/NightlyConfigure: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D NightlyConfigure
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D NightlyConfigure
   pool = console
 
 
@@ -501,7 +501,7 @@ build CMakeFiles/NightlyConfigure | ${cmake_ninja_workdir}CMakeFiles/NightlyConf
 # Custom command for CMakeFiles/NightlyUpdate
 
 build CMakeFiles/NightlyUpdate | ${cmake_ninja_workdir}CMakeFiles/NightlyUpdate: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D NightlyUpdate
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D NightlyUpdate
   pool = console
 
 
@@ -509,7 +509,7 @@ build CMakeFiles/NightlyUpdate | ${cmake_ninja_workdir}CMakeFiles/NightlyUpdate:
 # Custom command for CMakeFiles/NightlyMemoryCheck
 
 build CMakeFiles/NightlyMemoryCheck | ${cmake_ninja_workdir}CMakeFiles/NightlyMemoryCheck: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D NightlyMemoryCheck
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D NightlyMemoryCheck
   pool = console
 
 
@@ -517,7 +517,7 @@ build CMakeFiles/NightlyMemoryCheck | ${cmake_ninja_workdir}CMakeFiles/NightlyMe
 # Custom command for CMakeFiles/ContinuousConfigure
 
 build CMakeFiles/ContinuousConfigure | ${cmake_ninja_workdir}CMakeFiles/ContinuousConfigure: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ContinuousConfigure
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ContinuousConfigure
   pool = console
 
 
@@ -525,7 +525,7 @@ build CMakeFiles/ContinuousConfigure | ${cmake_ninja_workdir}CMakeFiles/Continuo
 # Custom command for CMakeFiles/Nightly
 
 build CMakeFiles/Nightly | ${cmake_ninja_workdir}CMakeFiles/Nightly: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D Nightly
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D Nightly
   pool = console
 
 
@@ -533,7 +533,7 @@ build CMakeFiles/Nightly | ${cmake_ninja_workdir}CMakeFiles/Nightly: CUSTOM_COMM
 # Custom command for CMakeFiles/NightlyStart
 
 build CMakeFiles/NightlyStart | ${cmake_ninja_workdir}CMakeFiles/NightlyStart: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D NightlyStart
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D NightlyStart
   pool = console
 
 
@@ -541,7 +541,7 @@ build CMakeFiles/NightlyStart | ${cmake_ninja_workdir}CMakeFiles/NightlyStart: C
 # Custom command for CMakeFiles/ExperimentalMemCheck
 
 build CMakeFiles/ExperimentalMemCheck | ${cmake_ninja_workdir}CMakeFiles/ExperimentalMemCheck: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ExperimentalMemCheck
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ExperimentalMemCheck
   pool = console
 
 
@@ -549,7 +549,7 @@ build CMakeFiles/ExperimentalMemCheck | ${cmake_ninja_workdir}CMakeFiles/Experim
 # Custom command for CMakeFiles/Continuous
 
 build CMakeFiles/Continuous | ${cmake_ninja_workdir}CMakeFiles/Continuous: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D Continuous
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D Continuous
   pool = console
 
 
@@ -557,7 +557,7 @@ build CMakeFiles/Continuous | ${cmake_ninja_workdir}CMakeFiles/Continuous: CUSTO
 # Custom command for CMakeFiles/Experimental
 
 build CMakeFiles/Experimental | ${cmake_ninja_workdir}CMakeFiles/Experimental: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D Experimental
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D Experimental
   pool = console
 
 # =============================================================================
@@ -570,7 +570,7 @@ build CMakeFiles/Experimental | ${cmake_ninja_workdir}CMakeFiles/Experimental: C
 # Utility command for install/strip
 
 build _deps/cmocka-build/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/cmocka-build/all
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/cmocka-build && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -582,7 +582,7 @@ build _deps/cmocka-build/install/strip: phony _deps/cmocka-build/CMakeFiles/inst
 # Utility command for install
 
 build _deps/cmocka-build/CMakeFiles/install.util: CUSTOM_COMMAND _deps/cmocka-build/all
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/cmocka-build && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -600,7 +600,7 @@ build _deps/cmocka-build/list_install_components: phony
 # Utility command for install/local
 
 build _deps/cmocka-build/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/cmocka-build/all
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/cmocka-build && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -612,7 +612,7 @@ build _deps/cmocka-build/install/local: phony _deps/cmocka-build/CMakeFiles/inst
 # Utility command for test
 
 build _deps/cmocka-build/CMakeFiles/test.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest --force-new-ctest-process
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/cmocka-build && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest --force-new-ctest-process
   DESC = Running tests...
   pool = console
   restat = 1
@@ -624,7 +624,7 @@ build _deps/cmocka-build/test: phony _deps/cmocka-build/CMakeFiles/test.util
 # Utility command for edit_cache
 
 build _deps/cmocka-build/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/cmocka-build && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -635,7 +635,7 @@ build _deps/cmocka-build/edit_cache: phony _deps/cmocka-build/CMakeFiles/edit_ca
 # Utility command for rebuild_cache
 
 build _deps/cmocka-build/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake --regenerate-during-build -S/Users/haydenbraxton/Projects/cmake-example-project -B/Users/haydenbraxton/Projects/cmake-example-project/build
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/cmocka-build && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake --regenerate-during-build -S/Users/haydenbraxton/Projects/cmake-example-project -B/Users/haydenbraxton/Projects/cmake-example-project/buildresults
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -647,7 +647,7 @@ build _deps/cmocka-build/rebuild_cache: phony _deps/cmocka-build/CMakeFiles/rebu
 # Utility command for package_source
 
 build _deps/cmocka-build/CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/cpack --config ./CPackSourceConfig.cmake /Users/haydenbraxton/Projects/cmake-example-project/build/CPackSourceConfig.cmake
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/cpack --config ./CPackSourceConfig.cmake /Users/haydenbraxton/Projects/cmake-example-project/buildresults/CPackSourceConfig.cmake
   DESC = Run CPack packaging tool for source...
   pool = console
   restat = 1
@@ -659,7 +659,7 @@ build _deps/cmocka-build/package_source: phony _deps/cmocka-build/CMakeFiles/pac
 # Utility command for package
 
 build _deps/cmocka-build/CMakeFiles/package.util: CUSTOM_COMMAND _deps/cmocka-build/all
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/cpack --config ./CPackConfig.cmake
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/cpack --config ./CPackConfig.cmake
   DESC = Run CPack packaging tool...
   pool = console
   restat = 1
@@ -677,11 +677,11 @@ build _deps/cmocka-build/dist: phony _deps/cmocka-build/CMakeFiles/dist
 # Custom command for _deps/cmocka-build/CMakeFiles/dist
 
 build _deps/cmocka-build/CMakeFiles/dist | ${cmake_ninja_workdir}_deps/cmocka-build/CMakeFiles/dist: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build && /usr/local/bin/ninja package_source
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/cmocka-build && /usr/local/bin/ninja package_source
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-src/CMakeLists.txt
+# /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/cmocka-src/CMakeLists.txt
 # =============================================================================
 
 
@@ -689,7 +689,7 @@ build _deps/cmocka-build/CMakeFiles/dist | ${cmake_ninja_workdir}_deps/cmocka-bu
 # Utility command for install/strip
 
 build _deps/cmocka-build/include/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/cmocka-build/include/all
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build/include && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/cmocka-build/include && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -701,7 +701,7 @@ build _deps/cmocka-build/include/install/strip: phony _deps/cmocka-build/include
 # Utility command for install
 
 build _deps/cmocka-build/include/CMakeFiles/install.util: CUSTOM_COMMAND _deps/cmocka-build/include/all
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build/include && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/cmocka-build/include && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -719,7 +719,7 @@ build _deps/cmocka-build/include/list_install_components: phony
 # Utility command for install/local
 
 build _deps/cmocka-build/include/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/cmocka-build/include/all
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build/include && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/cmocka-build/include && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -731,7 +731,7 @@ build _deps/cmocka-build/include/install/local: phony _deps/cmocka-build/include
 # Utility command for test
 
 build _deps/cmocka-build/include/CMakeFiles/test.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build/include && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest --force-new-ctest-process
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/cmocka-build/include && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest --force-new-ctest-process
   DESC = Running tests...
   pool = console
   restat = 1
@@ -743,7 +743,7 @@ build _deps/cmocka-build/include/test: phony _deps/cmocka-build/include/CMakeFil
 # Utility command for package_source
 
 build _deps/cmocka-build/include/CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/cpack --config ./CPackSourceConfig.cmake /Users/haydenbraxton/Projects/cmake-example-project/build/CPackSourceConfig.cmake
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/cpack --config ./CPackSourceConfig.cmake /Users/haydenbraxton/Projects/cmake-example-project/buildresults/CPackSourceConfig.cmake
   DESC = Run CPack packaging tool for source...
   pool = console
   restat = 1
@@ -755,7 +755,7 @@ build _deps/cmocka-build/include/package_source: phony _deps/cmocka-build/includ
 # Utility command for rebuild_cache
 
 build _deps/cmocka-build/include/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build/include && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake --regenerate-during-build -S/Users/haydenbraxton/Projects/cmake-example-project -B/Users/haydenbraxton/Projects/cmake-example-project/build
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/cmocka-build/include && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake --regenerate-during-build -S/Users/haydenbraxton/Projects/cmake-example-project -B/Users/haydenbraxton/Projects/cmake-example-project/buildresults
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -767,7 +767,7 @@ build _deps/cmocka-build/include/rebuild_cache: phony _deps/cmocka-build/include
 # Utility command for edit_cache
 
 build _deps/cmocka-build/include/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build/include && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/cmocka-build/include && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -778,7 +778,7 @@ build _deps/cmocka-build/include/edit_cache: phony _deps/cmocka-build/include/CM
 # Utility command for package
 
 build _deps/cmocka-build/include/CMakeFiles/package.util: CUSTOM_COMMAND _deps/cmocka-build/include/all
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/cpack --config ./CPackConfig.cmake
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/cpack --config ./CPackConfig.cmake
   DESC = Run CPack packaging tool...
   pool = console
   restat = 1
@@ -787,7 +787,7 @@ build _deps/cmocka-build/include/package: phony _deps/cmocka-build/include/CMake
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-src/CMakeLists.txt
+# /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/cmocka-src/CMakeLists.txt
 # =============================================================================
 
 
@@ -795,7 +795,7 @@ build _deps/cmocka-build/include/package: phony _deps/cmocka-build/include/CMake
 # Utility command for install/strip
 
 build _deps/cmocka-build/src/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/cmocka-build/src/all
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build/src && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/cmocka-build/src && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -807,7 +807,7 @@ build _deps/cmocka-build/src/install/strip: phony _deps/cmocka-build/src/CMakeFi
 # Utility command for install
 
 build _deps/cmocka-build/src/CMakeFiles/install.util: CUSTOM_COMMAND _deps/cmocka-build/src/all
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build/src && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/cmocka-build/src && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -825,7 +825,7 @@ build _deps/cmocka-build/src/list_install_components: phony
 # Utility command for install/local
 
 build _deps/cmocka-build/src/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/cmocka-build/src/all
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build/src && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/cmocka-build/src && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -837,7 +837,7 @@ build _deps/cmocka-build/src/install/local: phony _deps/cmocka-build/src/CMakeFi
 # Utility command for test
 
 build _deps/cmocka-build/src/CMakeFiles/test.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build/src && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest --force-new-ctest-process
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/cmocka-build/src && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest --force-new-ctest-process
   DESC = Running tests...
   pool = console
   restat = 1
@@ -849,7 +849,7 @@ build _deps/cmocka-build/src/test: phony _deps/cmocka-build/src/CMakeFiles/test.
 # Utility command for package
 
 build _deps/cmocka-build/src/CMakeFiles/package.util: CUSTOM_COMMAND _deps/cmocka-build/src/all
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/cpack --config ./CPackConfig.cmake
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/cpack --config ./CPackConfig.cmake
   DESC = Run CPack packaging tool...
   pool = console
   restat = 1
@@ -861,7 +861,7 @@ build _deps/cmocka-build/src/package: phony _deps/cmocka-build/src/CMakeFiles/pa
 # Utility command for edit_cache
 
 build _deps/cmocka-build/src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build/src && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/cmocka-build/src && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -872,7 +872,7 @@ build _deps/cmocka-build/src/edit_cache: phony _deps/cmocka-build/src/CMakeFiles
 # Utility command for rebuild_cache
 
 build _deps/cmocka-build/src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build/src && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake --regenerate-during-build -S/Users/haydenbraxton/Projects/cmake-example-project -B/Users/haydenbraxton/Projects/cmake-example-project/build
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/cmocka-build/src && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake --regenerate-during-build -S/Users/haydenbraxton/Projects/cmake-example-project -B/Users/haydenbraxton/Projects/cmake-example-project/buildresults
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -884,7 +884,7 @@ build _deps/cmocka-build/src/rebuild_cache: phony _deps/cmocka-build/src/CMakeFi
 # Utility command for package_source
 
 build _deps/cmocka-build/src/CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/cpack --config ./CPackSourceConfig.cmake /Users/haydenbraxton/Projects/cmake-example-project/build/CPackSourceConfig.cmake
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/cpack --config ./CPackSourceConfig.cmake /Users/haydenbraxton/Projects/cmake-example-project/buildresults/CPackSourceConfig.cmake
   DESC = Run CPack packaging tool for source...
   pool = console
   restat = 1
@@ -900,11 +900,11 @@ build _deps/cmocka-build/src/package_source: phony _deps/cmocka-build/src/CMakeF
 
 build cmake_object_order_depends_target_cmocka: phony || _deps/cmocka-build/src/CMakeFiles/cmocka.dir
 
-build _deps/cmocka-build/src/CMakeFiles/cmocka.dir/cmocka.c.o: C_COMPILER__cmocka_DEBUG /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-src/src/cmocka.c || cmake_object_order_depends_target_cmocka
+build _deps/cmocka-build/src/CMakeFiles/cmocka.dir/cmocka.c.o: C_COMPILER__cmocka_DEBUG /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/cmocka-src/src/cmocka.c || cmake_object_order_depends_target_cmocka
   DEFINES = -Dcmocka_EXPORTS
   DEP_FILE = _deps/cmocka-build/src/CMakeFiles/cmocka.dir/cmocka.c.o.d
   FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIC -std=gnu99 -Wpedantic -Wall -Wshadow -Wmissing-prototypes -Wcast-align -Werror=address -Wstrict-prototypes -Werror=strict-prototypes -Wwrite-strings -Werror=write-strings -Werror-implicit-function-declaration -Wpointer-arith -Werror=pointer-arith -Wdeclaration-after-statement -Werror=declaration-after-statement -Wreturn-type -Werror=return-type -Wuninitialized -Werror=uninitialized -Wimplicit-fallthrough -Werror=strict-overflow -Wstrict-overflow=2 -Wno-format-zero-length -Wmissing-field-initializers -Wformat -Wformat-security -Werror=format-security -fno-common -fstack-protector-strong -DHAVE_CONFIG_H
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build/src -I/Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-src/src -I/Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build -I/Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/cmocka-build/src -I/Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/cmocka-src/src -I/Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/cmocka-build -I/Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/cmocka-src/include
   OBJECT_DIR = _deps/cmocka-build/src/CMakeFiles/cmocka.dir
   OBJECT_FILE_DIR = _deps/cmocka-build/src/CMakeFiles/cmocka.dir
 
@@ -938,7 +938,7 @@ build _deps/cmocka-build/src/libcmocka.0.dylib _deps/cmocka-build/src/libcmocka.
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-src/CMakeLists.txt
+# /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/cmocka-src/CMakeLists.txt
 # =============================================================================
 
 
@@ -946,7 +946,7 @@ build _deps/cmocka-build/src/libcmocka.0.dylib _deps/cmocka-build/src/libcmocka.
 # Utility command for install/strip
 
 build _deps/cmocka-build/doc/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/cmocka-build/doc/all
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build/doc && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/cmocka-build/doc && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -958,7 +958,7 @@ build _deps/cmocka-build/doc/install/strip: phony _deps/cmocka-build/doc/CMakeFi
 # Utility command for install
 
 build _deps/cmocka-build/doc/CMakeFiles/install.util: CUSTOM_COMMAND _deps/cmocka-build/doc/all
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build/doc && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/cmocka-build/doc && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -976,7 +976,7 @@ build _deps/cmocka-build/doc/list_install_components: phony
 # Utility command for install/local
 
 build _deps/cmocka-build/doc/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/cmocka-build/doc/all
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build/doc && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/cmocka-build/doc && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -988,7 +988,7 @@ build _deps/cmocka-build/doc/install/local: phony _deps/cmocka-build/doc/CMakeFi
 # Utility command for test
 
 build _deps/cmocka-build/doc/CMakeFiles/test.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build/doc && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest --force-new-ctest-process
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/cmocka-build/doc && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest --force-new-ctest-process
   DESC = Running tests...
   pool = console
   restat = 1
@@ -1000,7 +1000,7 @@ build _deps/cmocka-build/doc/test: phony _deps/cmocka-build/doc/CMakeFiles/test.
 # Utility command for package
 
 build _deps/cmocka-build/doc/CMakeFiles/package.util: CUSTOM_COMMAND _deps/cmocka-build/doc/all
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/cpack --config ./CPackConfig.cmake
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/cpack --config ./CPackConfig.cmake
   DESC = Run CPack packaging tool...
   pool = console
   restat = 1
@@ -1012,7 +1012,7 @@ build _deps/cmocka-build/doc/package: phony _deps/cmocka-build/doc/CMakeFiles/pa
 # Utility command for edit_cache
 
 build _deps/cmocka-build/doc/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build/doc && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/cmocka-build/doc && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -1023,7 +1023,7 @@ build _deps/cmocka-build/doc/edit_cache: phony _deps/cmocka-build/doc/CMakeFiles
 # Utility command for rebuild_cache
 
 build _deps/cmocka-build/doc/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build/doc && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake --regenerate-during-build -S/Users/haydenbraxton/Projects/cmake-example-project -B/Users/haydenbraxton/Projects/cmake-example-project/build
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/cmocka-build/doc && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake --regenerate-during-build -S/Users/haydenbraxton/Projects/cmake-example-project -B/Users/haydenbraxton/Projects/cmake-example-project/buildresults
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -1035,7 +1035,7 @@ build _deps/cmocka-build/doc/rebuild_cache: phony _deps/cmocka-build/doc/CMakeFi
 # Utility command for package_source
 
 build _deps/cmocka-build/doc/CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/cpack --config ./CPackSourceConfig.cmake /Users/haydenbraxton/Projects/cmake-example-project/build/CPackSourceConfig.cmake
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/cpack --config ./CPackSourceConfig.cmake /Users/haydenbraxton/Projects/cmake-example-project/buildresults/CPackSourceConfig.cmake
   DESC = Run CPack packaging tool for source...
   pool = console
   restat = 1
@@ -1053,7 +1053,7 @@ build _deps/cmocka-build/doc/docs: phony _deps/cmocka-build/doc/CMakeFiles/docs
 # Custom command for _deps/cmocka-build/doc/CMakeFiles/docs
 
 build _deps/cmocka-build/doc/CMakeFiles/docs | ${cmake_ninja_workdir}_deps/cmocka-build/doc/CMakeFiles/docs: CUSTOM_COMMAND _deps/cmocka-build/doc/Doxyfile.docs
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-src/doc && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -E make_directory /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build/doc && /usr/local/bin/doxygen /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build/doc/Doxyfile.docs
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/cmocka-src/doc && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -E make_directory /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/cmocka-build/doc && /usr/local/bin/doxygen /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/cmocka-build/doc/Doxyfile.docs
   DESC = Generate API documentation for docs
 
 # =============================================================================
@@ -1072,7 +1072,7 @@ build src/list_install_components: phony
 # Utility command for edit_cache
 
 build src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/src && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/src && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -1083,7 +1083,7 @@ build src/edit_cache: phony src/CMakeFiles/edit_cache.util
 # Utility command for install/local
 
 build src/CMakeFiles/install/local.util: CUSTOM_COMMAND src/all
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/src && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/src && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -1448,7 +1448,7 @@ build src/libgdtoa.a: C_STATIC_LIBRARY_LINKER__gdtoa_ src/CMakeFiles/gdtoa.dir/g
 # Utility command for test
 
 build src/CMakeFiles/test.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/src && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest --force-new-ctest-process
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/src && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest --force-new-ctest-process
   DESC = Running tests...
   pool = console
   restat = 1
@@ -1460,7 +1460,7 @@ build src/test: phony src/CMakeFiles/test.util
 # Utility command for rebuild_cache
 
 build src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/src && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake --regenerate-during-build -S/Users/haydenbraxton/Projects/cmake-example-project -B/Users/haydenbraxton/Projects/cmake-example-project/build
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/src && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake --regenerate-during-build -S/Users/haydenbraxton/Projects/cmake-example-project -B/Users/haydenbraxton/Projects/cmake-example-project/buildresults
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -1472,7 +1472,7 @@ build src/rebuild_cache: phony src/CMakeFiles/rebuild_cache.util
 # Utility command for package_source
 
 build src/CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/cpack --config ./CPackSourceConfig.cmake /Users/haydenbraxton/Projects/cmake-example-project/build/CPackSourceConfig.cmake
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/cpack --config ./CPackSourceConfig.cmake /Users/haydenbraxton/Projects/cmake-example-project/buildresults/CPackSourceConfig.cmake
   DESC = Run CPack packaging tool for source...
   pool = console
   restat = 1
@@ -1484,7 +1484,7 @@ build src/package_source: phony src/CMakeFiles/package_source.util
 # Utility command for install/strip
 
 build src/CMakeFiles/install/strip.util: CUSTOM_COMMAND src/all
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/src && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/src && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -1496,7 +1496,7 @@ build src/install/strip: phony src/CMakeFiles/install/strip.util
 # Utility command for install
 
 build src/CMakeFiles/install.util: CUSTOM_COMMAND src/all
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build/src && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/src && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -1515,630 +1515,630 @@ build cmake_object_order_depends_target_c: phony || src/CMakeFiles/c.dir
 build src/CMakeFiles/c.dir/assert/assert.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/assert/assert.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/assert/assert.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/assert
 
 build src/CMakeFiles/c.dir/support/fls.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/support/fls.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/support/fls.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/support
 
 build src/CMakeFiles/c.dir/support/flsl.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/support/flsl.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/support/flsl.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/support
 
 build src/CMakeFiles/c.dir/support/flsll.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/support/flsll.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/support/flsll.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/support
 
 build src/CMakeFiles/c.dir/stdlib/abs.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/abs.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/stdlib/abs.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
 
 build src/CMakeFiles/c.dir/stdlib/atof.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/atof.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/stdlib/atof.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
 
 build src/CMakeFiles/c.dir/stdlib/atoi.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/atoi.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/stdlib/atoi.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
 
 build src/CMakeFiles/c.dir/stdlib/atol.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/atol.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/stdlib/atol.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
 
 build src/CMakeFiles/c.dir/stdlib/atoll.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/atoll.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/stdlib/atoll.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
 
 build src/CMakeFiles/c.dir/stdlib/bsearch.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/bsearch.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/stdlib/bsearch.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
 
 build src/CMakeFiles/c.dir/stdlib/calloc.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/calloc.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/stdlib/calloc.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
 
 build src/CMakeFiles/c.dir/stdlib/div.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/div.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/stdlib/div.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
 
 build src/CMakeFiles/c.dir/stdlib/heapsort_r.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/heapsort_r.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/stdlib/heapsort_r.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
 
 build src/CMakeFiles/c.dir/stdlib/heapsort.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/heapsort.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/stdlib/heapsort.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
 
 build src/CMakeFiles/c.dir/stdlib/imaxabs.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/imaxabs.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/stdlib/imaxabs.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
 
 build src/CMakeFiles/c.dir/stdlib/imaxdiv.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/imaxdiv.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/stdlib/imaxdiv.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
 
 build src/CMakeFiles/c.dir/stdlib/labs.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/labs.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/stdlib/labs.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
 
 build src/CMakeFiles/c.dir/stdlib/ldiv.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/ldiv.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/stdlib/ldiv.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
 
 build src/CMakeFiles/c.dir/stdlib/llabs.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/llabs.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/stdlib/llabs.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
 
 build src/CMakeFiles/c.dir/stdlib/lldiv.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/lldiv.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/stdlib/lldiv.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
 
 build src/CMakeFiles/c.dir/stdlib/qsort_r.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/qsort_r.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/stdlib/qsort_r.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
 
 build src/CMakeFiles/c.dir/stdlib/qsort.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/qsort.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/stdlib/qsort.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
 
 build src/CMakeFiles/c.dir/stdlib/rand.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/rand.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/stdlib/rand.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
 
 build src/CMakeFiles/c.dir/stdlib/realloc.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/realloc.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/stdlib/realloc.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
 
 build src/CMakeFiles/c.dir/stdlib/strtol.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/strtol.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/stdlib/strtol.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
 
 build src/CMakeFiles/c.dir/stdlib/strtold.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/strtold.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/stdlib/strtold.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
 
 build src/CMakeFiles/c.dir/stdlib/strtoul.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/strtoul.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/stdlib/strtoul.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
 
 build src/CMakeFiles/c.dir/stdlib/strtoll.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/strtoll.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/stdlib/strtoll.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
 
 build src/CMakeFiles/c.dir/stdlib/strtoull.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdlib/strtoull.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/stdlib/strtoull.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdlib
 
 build src/CMakeFiles/c.dir/wchar/iswalnum.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/iswalnum.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/wchar/iswalnum.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
 
 build src/CMakeFiles/c.dir/wchar/iswalpha.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/iswalpha.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/wchar/iswalpha.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
 
 build src/CMakeFiles/c.dir/wchar/iswblank.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/iswblank.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/wchar/iswblank.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
 
 build src/CMakeFiles/c.dir/wchar/iswcntrl.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/iswcntrl.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/wchar/iswcntrl.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
 
 build src/CMakeFiles/c.dir/wchar/iswctype.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/iswctype.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/wchar/iswctype.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
 
 build src/CMakeFiles/c.dir/wchar/iswdigit.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/iswdigit.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/wchar/iswdigit.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
 
 build src/CMakeFiles/c.dir/wchar/iswgraph.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/iswgraph.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/wchar/iswgraph.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
 
 build src/CMakeFiles/c.dir/wchar/iswlower.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/iswlower.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/wchar/iswlower.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
 
 build src/CMakeFiles/c.dir/wchar/iswprint.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/iswprint.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/wchar/iswprint.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
 
 build src/CMakeFiles/c.dir/wchar/iswpunct.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/iswpunct.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/wchar/iswpunct.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
 
 build src/CMakeFiles/c.dir/wchar/iswspace.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/iswspace.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/wchar/iswspace.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
 
 build src/CMakeFiles/c.dir/wchar/iswupper.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/iswupper.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/wchar/iswupper.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
 
 build src/CMakeFiles/c.dir/wchar/iswxdigit.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/iswxdigit.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/wchar/iswxdigit.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
 
 build src/CMakeFiles/c.dir/wchar/towccase.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/towccase.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/wchar/towccase.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
 
 build src/CMakeFiles/c.dir/wchar/towctrans.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/towctrans.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/wchar/towctrans.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
 
 build src/CMakeFiles/c.dir/wchar/towlower.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/towlower.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/wchar/towlower.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
 
 build src/CMakeFiles/c.dir/wchar/towupper.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/towupper.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/wchar/towupper.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
 
 build src/CMakeFiles/c.dir/wchar/wcswidth.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/wcswidth.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/wchar/wcswidth.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
 
 build src/CMakeFiles/c.dir/wchar/wctrans.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/wctrans.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/wchar/wctrans.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
 
 build src/CMakeFiles/c.dir/wchar/wctype.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/wctype.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/wchar/wctype.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
 
 build src/CMakeFiles/c.dir/wchar/wcwidth.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/wchar/wcwidth.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/wchar/wcwidth.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/wchar
 
 build src/CMakeFiles/c.dir/locale/langinfo.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/locale/langinfo.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/locale/langinfo.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/locale
 
 build src/CMakeFiles/c.dir/math/fabs.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/math/fabs.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/math/fabs.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/math
 
 build src/CMakeFiles/c.dir/math/fabsf.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/math/fabsf.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/math/fabsf.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/math
 
 build src/CMakeFiles/c.dir/stdio/asprintf.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdio/asprintf.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/stdio/asprintf.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdio
 
 build src/CMakeFiles/c.dir/stdio/putchar.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdio/putchar.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/stdio/putchar.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdio
 
 build src/CMakeFiles/c.dir/stdio/puts.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdio/puts.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/stdio/puts.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdio
 
 build src/CMakeFiles/c.dir/stdio/vasprintf.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdio/vasprintf.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/stdio/vasprintf.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdio
 
 build src/CMakeFiles/c.dir/stdio/putchar_native.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/stdio/putchar_native.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/stdio/putchar_native.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/stdio
 
 build src/CMakeFiles/c.dir/time/asctime.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/time/asctime.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/time/asctime.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/time
 
 build src/CMakeFiles/c.dir/time/asctime_r.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/time/asctime_r.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/time/asctime_r.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/time
 
 build src/CMakeFiles/c.dir/string/memcmp.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/memcmp.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/memcmp.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
 
 build src/CMakeFiles/c.dir/string/memcpy.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/memcpy.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/memcpy.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
 
 build src/CMakeFiles/c.dir/string/memmem.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/memmem.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/memmem.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
 
 build src/CMakeFiles/c.dir/string/memmove.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/memmove.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/memmove.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
 
 build src/CMakeFiles/c.dir/string/memchr.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/memchr.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/memchr.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
 
 build src/CMakeFiles/c.dir/string/memrchr.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/memrchr.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/memrchr.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
 
 build src/CMakeFiles/c.dir/string/memset.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/memset.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/memset.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
 
 build src/CMakeFiles/c.dir/string/strcat.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/strcat.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/strcat.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
 
 build src/CMakeFiles/c.dir/string/strchr.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/strchr.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/strchr.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
 
 build src/CMakeFiles/c.dir/string/strchrnul.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/strchrnul.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/strchrnul.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
 
 build src/CMakeFiles/c.dir/string/strcmp.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/strcmp.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/strcmp.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
 
 build src/CMakeFiles/c.dir/string/strcoll.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/strcoll.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/strcoll.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
 
 build src/CMakeFiles/c.dir/string/strcpy.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/strcpy.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/strcpy.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
 
 build src/CMakeFiles/c.dir/string/strcspn.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/strcspn.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/strcspn.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
 
 build src/CMakeFiles/c.dir/string/strdup.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/strdup.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/strdup.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
 
 build src/CMakeFiles/c.dir/string/strerror.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/strerror.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/strerror.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
 
 build src/CMakeFiles/c.dir/string/strerror_r.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/strerror_r.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/strerror_r.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
 
 build src/CMakeFiles/c.dir/string/strlen.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/strlen.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/strlen.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
 
 build src/CMakeFiles/c.dir/string/strncat.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/strncat.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/strncat.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
 
 build src/CMakeFiles/c.dir/string/strncmp.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/strncmp.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/strncmp.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
 
 build src/CMakeFiles/c.dir/string/strncpy.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/strncpy.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/strncpy.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
 
 build src/CMakeFiles/c.dir/string/strndup.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/strndup.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/strndup.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
 
 build src/CMakeFiles/c.dir/string/strnlen.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/strnlen.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/strnlen.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
 
 build src/CMakeFiles/c.dir/string/strnstr.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/strnstr.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/strnstr.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
 
 build src/CMakeFiles/c.dir/string/strpbrk.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/strpbrk.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/strpbrk.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
 
 build src/CMakeFiles/c.dir/string/strrchr.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/strrchr.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/strrchr.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
 
 build src/CMakeFiles/c.dir/string/strspn.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/strspn.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/strspn.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
 
 build src/CMakeFiles/c.dir/string/strstr.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/strstr.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/strstr.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
 
 build src/CMakeFiles/c.dir/string/strtok.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/strtok.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/strtok.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
 
 build src/CMakeFiles/c.dir/string/strxfrm.c.o: C_COMPILER__c_ /Users/haydenbraxton/Projects/cmake-example-project/src/string/strxfrm.c || cmake_object_order_depends_target_c
   DEP_FILE = src/CMakeFiles/c.dir/string/strxfrm.c.o.d
   FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/openlibm-src/include
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/include -I/Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = src/CMakeFiles/c.dir
   OBJECT_FILE_DIR = src/CMakeFiles/c.dir/string
 
@@ -2163,7 +2163,7 @@ build src/libc.a: C_STATIC_LIBRARY_LINKER__c_ src/CMakeFiles/c.dir/assert/assert
 # Utility command for package
 
 build src/CMakeFiles/package.util: CUSTOM_COMMAND src/all
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/build && /usr/local/Cellar/cmake/3.21.3_1/bin/cpack --config ./CPackConfig.cmake
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/cpack --config ./CPackConfig.cmake
   DESC = Run CPack packaging tool...
   pool = console
   restat = 1
@@ -2195,42 +2195,42 @@ build libgdtoa.a: phony src/libgdtoa.a
 # =============================================================================
 
 #############################################
-# Folder: /Users/haydenbraxton/Projects/cmake-example-project/build
+# Folder: /Users/haydenbraxton/Projects/cmake-example-project/buildresults
 
 build all: phony printf_tests _deps/cmocka-build/all src/all
 
 # =============================================================================
 
 #############################################
-# Folder: /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build
+# Folder: /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/cmocka-build
 
 build _deps/cmocka-build/all: phony _deps/cmocka-build/include/all _deps/cmocka-build/src/all _deps/cmocka-build/doc/all
 
 # =============================================================================
 
 #############################################
-# Folder: /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build/doc
+# Folder: /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/cmocka-build/doc
 
 build _deps/cmocka-build/doc/all: phony
 
 # =============================================================================
 
 #############################################
-# Folder: /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build/include
+# Folder: /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/cmocka-build/include
 
 build _deps/cmocka-build/include/all: phony
 
 # =============================================================================
 
 #############################################
-# Folder: /Users/haydenbraxton/Projects/cmake-example-project/build/_deps/cmocka-build/src
+# Folder: /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/cmocka-build/src
 
 build _deps/cmocka-build/src/all: phony _deps/cmocka-build/src/libcmocka.dylib
 
 # =============================================================================
 
 #############################################
-# Folder: /Users/haydenbraxton/Projects/cmake-example-project/build/src
+# Folder: /Users/haydenbraxton/Projects/cmake-example-project/buildresults/src
 
 build src/all: phony src/libgdtoa.a src/libc.a
 

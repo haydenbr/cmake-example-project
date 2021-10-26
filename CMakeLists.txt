@@ -33,7 +33,6 @@ if(BUILD_TESTING) # BUILD_TESTING comes from CTest module
 	# printf unit tests
 	add_executable(printf_tests)
 	target_sources(printf_tests PRIVATE ${printf_SOURCE_DIR}/test/test_suite.cpp)
-	message("printf_tests source" ${printf_SOURCE_DIR}/test/test_suite.cpp)
 	target_include_directories(printf_tests PRIVATE ${printf_SOURCE_DIR})
 	set_target_properties(printf_tests PROPERTIES CXX_STANDARD 11)
 

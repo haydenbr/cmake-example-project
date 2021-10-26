@@ -72,8 +72,8 @@ target_include_directories(c
 ## this makes these available as deps
 ## but SYSTEM supresses warnings for users
 ## linking against libc
-target_include_directories(c
-	SYSTEM INTERFACE
+target_include_directories(
+	c SYSTEM INTERFACE
 		${PROJECT_SOURCE_DIR}/include
 		${PROJECT_SOURCE_DIR}/arch/x86_64/include
 		$<TARGET_PROPERTY:openlibm,INTERFACE_INCLUDE_DIRECTORIES>
