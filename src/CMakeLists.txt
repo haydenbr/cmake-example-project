@@ -1,4 +1,4 @@
-add_library(libc STATIC)
+add_library(libc)
 
 # printf module
 target_link_libraries(libc PRIVATE printf openlibm)
