@@ -40,7 +40,7 @@ cmake_ninja_workdir = /Users/haydenbraxton/Projects/cmake-example-project/buildr
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake --regenerate-during-build -S/Users/haydenbraxton/Projects/cmake-example-project -B/Users/haydenbraxton/Projects/cmake-example-project/buildresults
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.4/bin/cmake --regenerate-during-build -S/Users/haydenbraxton/Projects/cmake-example-project -B/Users/haydenbraxton/Projects/cmake-example-project/buildresults
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -52,7 +52,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # Utility command for package_source
 
 build CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/cpack --config ./CPackSourceConfig.cmake /Users/haydenbraxton/Projects/cmake-example-project/buildresults/CPackSourceConfig.cmake
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.4/bin/cpack --config ./CPackSourceConfig.cmake /Users/haydenbraxton/Projects/cmake-example-project/buildresults/CPackSourceConfig.cmake
   DESC = Run CPack packaging tool for source...
   pool = console
   restat = 1
@@ -148,7 +148,7 @@ build NightlyMemCheck: phony CMakeFiles/NightlyMemCheck
 # Utility command for test
 
 build CMakeFiles/test.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest --force-new-ctest-process
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.4/bin/ctest --force-new-ctest-process
   DESC = Running tests...
   pool = console
   restat = 1
@@ -160,7 +160,7 @@ build test: phony CMakeFiles/test.util
 # Utility command for package
 
 build CMakeFiles/package.util: CUSTOM_COMMAND all
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/cpack --config ./CPackConfig.cmake
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.4/bin/cpack --config ./CPackConfig.cmake
   DESC = Run CPack packaging tool...
   pool = console
   restat = 1
@@ -214,7 +214,7 @@ build NightlyUpdate: phony CMakeFiles/NightlyUpdate
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.4/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -273,7 +273,7 @@ build Experimental: phony CMakeFiles/Experimental
 # Custom command for CMakeFiles/ContinuousCoverage
 
 build CMakeFiles/ContinuousCoverage | ${cmake_ninja_workdir}CMakeFiles/ContinuousCoverage: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ContinuousCoverage
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.4/bin/ctest -D ContinuousCoverage
   pool = console
 
 
@@ -281,7 +281,7 @@ build CMakeFiles/ContinuousCoverage | ${cmake_ninja_workdir}CMakeFiles/Continuou
 # Custom command for CMakeFiles/ContinuousTest
 
 build CMakeFiles/ContinuousTest | ${cmake_ninja_workdir}CMakeFiles/ContinuousTest: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ContinuousTest
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.4/bin/ctest -D ContinuousTest
   pool = console
 
 
@@ -289,7 +289,7 @@ build CMakeFiles/ContinuousTest | ${cmake_ninja_workdir}CMakeFiles/ContinuousTes
 # Custom command for CMakeFiles/ContinuousBuild
 
 build CMakeFiles/ContinuousBuild | ${cmake_ninja_workdir}CMakeFiles/ContinuousBuild: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ContinuousBuild
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.4/bin/ctest -D ContinuousBuild
   pool = console
 
 
@@ -297,7 +297,7 @@ build CMakeFiles/ContinuousBuild | ${cmake_ninja_workdir}CMakeFiles/ContinuousBu
 # Custom command for CMakeFiles/ContinuousStart
 
 build CMakeFiles/ContinuousStart | ${cmake_ninja_workdir}CMakeFiles/ContinuousStart: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ContinuousStart
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.4/bin/ctest -D ContinuousStart
   pool = console
 
 
@@ -305,7 +305,7 @@ build CMakeFiles/ContinuousStart | ${cmake_ninja_workdir}CMakeFiles/ContinuousSt
 # Custom command for CMakeFiles/ExperimentalBuild
 
 build CMakeFiles/ExperimentalBuild | ${cmake_ninja_workdir}CMakeFiles/ExperimentalBuild: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ExperimentalBuild
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.4/bin/ctest -D ExperimentalBuild
   pool = console
 
 
@@ -313,7 +313,7 @@ build CMakeFiles/ExperimentalBuild | ${cmake_ninja_workdir}CMakeFiles/Experiment
 # Custom command for CMakeFiles/ExperimentalCoverage
 
 build CMakeFiles/ExperimentalCoverage | ${cmake_ninja_workdir}CMakeFiles/ExperimentalCoverage: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ExperimentalCoverage
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.4/bin/ctest -D ExperimentalCoverage
   pool = console
 
 
@@ -321,7 +321,7 @@ build CMakeFiles/ExperimentalCoverage | ${cmake_ninja_workdir}CMakeFiles/Experim
 # Custom command for CMakeFiles/ExperimentalSubmit
 
 build CMakeFiles/ExperimentalSubmit | ${cmake_ninja_workdir}CMakeFiles/ExperimentalSubmit: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ExperimentalSubmit
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.4/bin/ctest -D ExperimentalSubmit
   pool = console
 
 
@@ -329,7 +329,7 @@ build CMakeFiles/ExperimentalSubmit | ${cmake_ninja_workdir}CMakeFiles/Experimen
 # Custom command for CMakeFiles/ContinuousUpdate
 
 build CMakeFiles/ContinuousUpdate | ${cmake_ninja_workdir}CMakeFiles/ContinuousUpdate: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ContinuousUpdate
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.4/bin/ctest -D ContinuousUpdate
   pool = console
 
 
@@ -337,7 +337,7 @@ build CMakeFiles/ContinuousUpdate | ${cmake_ninja_workdir}CMakeFiles/ContinuousU
 # Custom command for CMakeFiles/ExperimentalUpdate
 
 build CMakeFiles/ExperimentalUpdate | ${cmake_ninja_workdir}CMakeFiles/ExperimentalUpdate: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ExperimentalUpdate
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.4/bin/ctest -D ExperimentalUpdate
   pool = console
 
 
@@ -345,7 +345,7 @@ build CMakeFiles/ExperimentalUpdate | ${cmake_ninja_workdir}CMakeFiles/Experimen
 # Custom command for CMakeFiles/ExperimentalStart
 
 build CMakeFiles/ExperimentalStart | ${cmake_ninja_workdir}CMakeFiles/ExperimentalStart: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ExperimentalStart
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.4/bin/ctest -D ExperimentalStart
   pool = console
 
 
@@ -353,7 +353,7 @@ build CMakeFiles/ExperimentalStart | ${cmake_ninja_workdir}CMakeFiles/Experiment
 # Custom command for CMakeFiles/ContinuousSubmit
 
 build CMakeFiles/ContinuousSubmit | ${cmake_ninja_workdir}CMakeFiles/ContinuousSubmit: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ContinuousSubmit
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.4/bin/ctest -D ContinuousSubmit
   pool = console
 
 
@@ -361,7 +361,7 @@ build CMakeFiles/ContinuousSubmit | ${cmake_ninja_workdir}CMakeFiles/ContinuousS
 # Custom command for CMakeFiles/ExperimentalTest
 
 build CMakeFiles/ExperimentalTest | ${cmake_ninja_workdir}CMakeFiles/ExperimentalTest: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ExperimentalTest
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.4/bin/ctest -D ExperimentalTest
   pool = console
 
 
@@ -369,7 +369,7 @@ build CMakeFiles/ExperimentalTest | ${cmake_ninja_workdir}CMakeFiles/Experimenta
 # Custom command for CMakeFiles/NightlySubmit
 
 build CMakeFiles/NightlySubmit | ${cmake_ninja_workdir}CMakeFiles/NightlySubmit: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D NightlySubmit
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.4/bin/ctest -D NightlySubmit
   pool = console
 
 
@@ -377,7 +377,7 @@ build CMakeFiles/NightlySubmit | ${cmake_ninja_workdir}CMakeFiles/NightlySubmit:
 # Custom command for CMakeFiles/NightlyMemCheck
 
 build CMakeFiles/NightlyMemCheck | ${cmake_ninja_workdir}CMakeFiles/NightlyMemCheck: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D NightlyMemCheck
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.4/bin/ctest -D NightlyMemCheck
   pool = console
 
 
@@ -385,7 +385,7 @@ build CMakeFiles/NightlyMemCheck | ${cmake_ninja_workdir}CMakeFiles/NightlyMemCh
 # Custom command for CMakeFiles/ExperimentalConfigure
 
 build CMakeFiles/ExperimentalConfigure | ${cmake_ninja_workdir}CMakeFiles/ExperimentalConfigure: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ExperimentalConfigure
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.4/bin/ctest -D ExperimentalConfigure
   pool = console
 
 
@@ -393,7 +393,7 @@ build CMakeFiles/ExperimentalConfigure | ${cmake_ninja_workdir}CMakeFiles/Experi
 # Custom command for CMakeFiles/NightlyCoverage
 
 build CMakeFiles/NightlyCoverage | ${cmake_ninja_workdir}CMakeFiles/NightlyCoverage: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D NightlyCoverage
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.4/bin/ctest -D NightlyCoverage
   pool = console
 
 
@@ -401,7 +401,7 @@ build CMakeFiles/NightlyCoverage | ${cmake_ninja_workdir}CMakeFiles/NightlyCover
 # Custom command for CMakeFiles/NightlyTest
 
 build CMakeFiles/NightlyTest | ${cmake_ninja_workdir}CMakeFiles/NightlyTest: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D NightlyTest
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.4/bin/ctest -D NightlyTest
   pool = console
 
 
@@ -409,7 +409,7 @@ build CMakeFiles/NightlyTest | ${cmake_ninja_workdir}CMakeFiles/NightlyTest: CUS
 # Custom command for CMakeFiles/ContinuousMemCheck
 
 build CMakeFiles/ContinuousMemCheck | ${cmake_ninja_workdir}CMakeFiles/ContinuousMemCheck: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ContinuousMemCheck
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.4/bin/ctest -D ContinuousMemCheck
   pool = console
 
 
@@ -417,7 +417,7 @@ build CMakeFiles/ContinuousMemCheck | ${cmake_ninja_workdir}CMakeFiles/Continuou
 # Custom command for CMakeFiles/NightlyBuild
 
 build CMakeFiles/NightlyBuild | ${cmake_ninja_workdir}CMakeFiles/NightlyBuild: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D NightlyBuild
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.4/bin/ctest -D NightlyBuild
   pool = console
 
 
@@ -425,7 +425,7 @@ build CMakeFiles/NightlyBuild | ${cmake_ninja_workdir}CMakeFiles/NightlyBuild: C
 # Custom command for CMakeFiles/NightlyConfigure
 
 build CMakeFiles/NightlyConfigure | ${cmake_ninja_workdir}CMakeFiles/NightlyConfigure: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D NightlyConfigure
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.4/bin/ctest -D NightlyConfigure
   pool = console
 
 
@@ -433,7 +433,7 @@ build CMakeFiles/NightlyConfigure | ${cmake_ninja_workdir}CMakeFiles/NightlyConf
 # Custom command for CMakeFiles/NightlyUpdate
 
 build CMakeFiles/NightlyUpdate | ${cmake_ninja_workdir}CMakeFiles/NightlyUpdate: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D NightlyUpdate
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.4/bin/ctest -D NightlyUpdate
   pool = console
 
 
@@ -441,7 +441,7 @@ build CMakeFiles/NightlyUpdate | ${cmake_ninja_workdir}CMakeFiles/NightlyUpdate:
 # Custom command for CMakeFiles/NightlyMemoryCheck
 
 build CMakeFiles/NightlyMemoryCheck | ${cmake_ninja_workdir}CMakeFiles/NightlyMemoryCheck: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D NightlyMemoryCheck
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.4/bin/ctest -D NightlyMemoryCheck
   pool = console
 
 
@@ -449,7 +449,7 @@ build CMakeFiles/NightlyMemoryCheck | ${cmake_ninja_workdir}CMakeFiles/NightlyMe
 # Custom command for CMakeFiles/ContinuousConfigure
 
 build CMakeFiles/ContinuousConfigure | ${cmake_ninja_workdir}CMakeFiles/ContinuousConfigure: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ContinuousConfigure
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.4/bin/ctest -D ContinuousConfigure
   pool = console
 
 
@@ -457,7 +457,7 @@ build CMakeFiles/ContinuousConfigure | ${cmake_ninja_workdir}CMakeFiles/Continuo
 # Custom command for CMakeFiles/Nightly
 
 build CMakeFiles/Nightly | ${cmake_ninja_workdir}CMakeFiles/Nightly: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D Nightly
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.4/bin/ctest -D Nightly
   pool = console
 
 
@@ -471,7 +471,7 @@ build CMakeFiles/project_cmocka | ${cmake_ninja_workdir}CMakeFiles/project_cmock
 # Custom command for CMakeFiles/project_cmocka-complete
 
 build CMakeFiles/project_cmocka-complete cmocka/src/project_cmocka-stamp/project_cmocka-done | ${cmake_ninja_workdir}CMakeFiles/project_cmocka-complete ${cmake_ninja_workdir}cmocka/src/project_cmocka-stamp/project_cmocka-done: CUSTOM_COMMAND cmocka/src/project_cmocka-stamp/project_cmocka-install cmocka/src/project_cmocka-stamp/project_cmocka-mkdir cmocka/src/project_cmocka-stamp/project_cmocka-download cmocka/src/project_cmocka-stamp/project_cmocka-update cmocka/src/project_cmocka-stamp/project_cmocka-patch cmocka/src/project_cmocka-stamp/project_cmocka-configure cmocka/src/project_cmocka-stamp/project_cmocka-build cmocka/src/project_cmocka-stamp/project_cmocka-install
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -E make_directory /Users/haydenbraxton/Projects/cmake-example-project/buildresults/CMakeFiles && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -E touch /Users/haydenbraxton/Projects/cmake-example-project/buildresults/CMakeFiles/project_cmocka-complete && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -E touch /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/src/project_cmocka-stamp/project_cmocka-done
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.4/bin/cmake -E make_directory /Users/haydenbraxton/Projects/cmake-example-project/buildresults/CMakeFiles && /usr/local/Cellar/cmake/3.21.4/bin/cmake -E touch /Users/haydenbraxton/Projects/cmake-example-project/buildresults/CMakeFiles/project_cmocka-complete && /usr/local/Cellar/cmake/3.21.4/bin/cmake -E touch /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/src/project_cmocka-stamp/project_cmocka-done
   DESC = Completed 'project_cmocka'
   restat = 1
 
@@ -480,7 +480,7 @@ build CMakeFiles/project_cmocka-complete cmocka/src/project_cmocka-stamp/project
 # Custom command for cmocka/src/project_cmocka-stamp/project_cmocka-build
 
 build cmocka/src/project_cmocka-stamp/project_cmocka-build cmocka/lib/libcmocka-static.a | ${cmake_ninja_workdir}cmocka/src/project_cmocka-stamp/project_cmocka-build ${cmake_ninja_workdir}cmocka/lib/libcmocka-static.a: CUSTOM_COMMAND cmocka/src/project_cmocka-stamp/project_cmocka-configure
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake --build . && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -E touch /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/src/project_cmocka-stamp/project_cmocka-build
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka && /usr/local/Cellar/cmake/3.21.4/bin/cmake --build . && /usr/local/Cellar/cmake/3.21.4/bin/cmake -E touch /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/src/project_cmocka-stamp/project_cmocka-build
   DESC = Performing build step for 'project_cmocka'
   restat = 1
 
@@ -489,7 +489,7 @@ build cmocka/src/project_cmocka-stamp/project_cmocka-build cmocka/lib/libcmocka-
 # Custom command for cmocka/src/project_cmocka-stamp/project_cmocka-configure
 
 build cmocka/src/project_cmocka-stamp/project_cmocka-configure | ${cmake_ninja_workdir}cmocka/src/project_cmocka-stamp/project_cmocka-configure: CUSTOM_COMMAND cmocka/tmp/project_cmocka-cfgcmd.txt cmocka/src/project_cmocka-stamp/project_cmocka-patch
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -DBUILD_STATIC_LIB=ON -DWITH_STATIC_LIB=ON -DWITH_EXAMPLES=OFF -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=/Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka -GNinja /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/cmocka-src && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -E touch /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/src/project_cmocka-stamp/project_cmocka-configure
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka && /usr/local/Cellar/cmake/3.21.4/bin/cmake -DBUILD_STATIC_LIB=ON -DWITH_STATIC_LIB=ON -DWITH_EXAMPLES=OFF -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=/Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka -GNinja /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/cmocka-src && /usr/local/Cellar/cmake/3.21.4/bin/cmake -E touch /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/src/project_cmocka-stamp/project_cmocka-configure
   DESC = Performing configure step for 'project_cmocka'
   restat = 1
 
@@ -498,7 +498,7 @@ build cmocka/src/project_cmocka-stamp/project_cmocka-configure | ${cmake_ninja_w
 # Custom command for cmocka/src/project_cmocka-stamp/project_cmocka-download
 
 build cmocka/src/project_cmocka-stamp/project_cmocka-download | ${cmake_ninja_workdir}cmocka/src/project_cmocka-stamp/project_cmocka-download: CUSTOM_COMMAND cmocka/src/project_cmocka-stamp/project_cmocka-mkdir
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -E echo_append && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -E touch /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/src/project_cmocka-stamp/project_cmocka-download
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.4/bin/cmake -E echo_append && /usr/local/Cellar/cmake/3.21.4/bin/cmake -E touch /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/src/project_cmocka-stamp/project_cmocka-download
   DESC = No download step for 'project_cmocka'
   restat = 1
 
@@ -507,7 +507,7 @@ build cmocka/src/project_cmocka-stamp/project_cmocka-download | ${cmake_ninja_wo
 # Custom command for cmocka/src/project_cmocka-stamp/project_cmocka-install
 
 build cmocka/src/project_cmocka-stamp/project_cmocka-install | ${cmake_ninja_workdir}cmocka/src/project_cmocka-stamp/project_cmocka-install: CUSTOM_COMMAND cmocka/src/project_cmocka-stamp/project_cmocka-build
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake --build . --target install && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -E touch /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/src/project_cmocka-stamp/project_cmocka-install
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka && /usr/local/Cellar/cmake/3.21.4/bin/cmake --build . --target install && /usr/local/Cellar/cmake/3.21.4/bin/cmake -E touch /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/src/project_cmocka-stamp/project_cmocka-install
   DESC = Performing install step for 'project_cmocka'
   restat = 1
 
@@ -516,7 +516,7 @@ build cmocka/src/project_cmocka-stamp/project_cmocka-install | ${cmake_ninja_wor
 # Custom command for cmocka/src/project_cmocka-stamp/project_cmocka-mkdir
 
 build cmocka/src/project_cmocka-stamp/project_cmocka-mkdir | ${cmake_ninja_workdir}cmocka/src/project_cmocka-stamp/project_cmocka-mkdir: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -E make_directory /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/cmocka-src && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -E make_directory /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -E make_directory /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -E make_directory /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/tmp && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -E make_directory /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/src/project_cmocka-stamp && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -E make_directory /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/src && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -E make_directory /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/src/project_cmocka-stamp && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -E touch /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/src/project_cmocka-stamp/project_cmocka-mkdir
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.4/bin/cmake -E make_directory /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/cmocka-src && /usr/local/Cellar/cmake/3.21.4/bin/cmake -E make_directory /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka && /usr/local/Cellar/cmake/3.21.4/bin/cmake -E make_directory /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka && /usr/local/Cellar/cmake/3.21.4/bin/cmake -E make_directory /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/tmp && /usr/local/Cellar/cmake/3.21.4/bin/cmake -E make_directory /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/src/project_cmocka-stamp && /usr/local/Cellar/cmake/3.21.4/bin/cmake -E make_directory /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/src && /usr/local/Cellar/cmake/3.21.4/bin/cmake -E make_directory /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/src/project_cmocka-stamp && /usr/local/Cellar/cmake/3.21.4/bin/cmake -E touch /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/src/project_cmocka-stamp/project_cmocka-mkdir
   DESC = Creating directories for 'project_cmocka'
   restat = 1
 
@@ -525,7 +525,7 @@ build cmocka/src/project_cmocka-stamp/project_cmocka-mkdir | ${cmake_ninja_workd
 # Custom command for cmocka/src/project_cmocka-stamp/project_cmocka-patch
 
 build cmocka/src/project_cmocka-stamp/project_cmocka-patch | ${cmake_ninja_workdir}cmocka/src/project_cmocka-stamp/project_cmocka-patch: CUSTOM_COMMAND cmocka/src/project_cmocka-stamp/project_cmocka-update
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -E echo_append && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -E touch /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/src/project_cmocka-stamp/project_cmocka-patch
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.4/bin/cmake -E echo_append && /usr/local/Cellar/cmake/3.21.4/bin/cmake -E touch /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/src/project_cmocka-stamp/project_cmocka-patch
   DESC = No patch step for 'project_cmocka'
   restat = 1
 
@@ -534,7 +534,7 @@ build cmocka/src/project_cmocka-stamp/project_cmocka-patch | ${cmake_ninja_workd
 # Custom command for cmocka/src/project_cmocka-stamp/project_cmocka-update
 
 build cmocka/src/project_cmocka-stamp/project_cmocka-update | ${cmake_ninja_workdir}cmocka/src/project_cmocka-stamp/project_cmocka-update: CUSTOM_COMMAND cmocka/src/project_cmocka-stamp/project_cmocka-download
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -E echo_append && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -E touch /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/src/project_cmocka-stamp/project_cmocka-update
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.4/bin/cmake -E echo_append && /usr/local/Cellar/cmake/3.21.4/bin/cmake -E touch /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/src/project_cmocka-stamp/project_cmocka-update
   DESC = No update step for 'project_cmocka'
   restat = 1
 
@@ -543,7 +543,7 @@ build cmocka/src/project_cmocka-stamp/project_cmocka-update | ${cmake_ninja_work
 # Custom command for CMakeFiles/NightlyStart
 
 build CMakeFiles/NightlyStart | ${cmake_ninja_workdir}CMakeFiles/NightlyStart: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D NightlyStart
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.4/bin/ctest -D NightlyStart
   pool = console
 
 
@@ -551,7 +551,7 @@ build CMakeFiles/NightlyStart | ${cmake_ninja_workdir}CMakeFiles/NightlyStart: C
 # Custom command for CMakeFiles/ExperimentalMemCheck
 
 build CMakeFiles/ExperimentalMemCheck | ${cmake_ninja_workdir}CMakeFiles/ExperimentalMemCheck: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D ExperimentalMemCheck
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.4/bin/ctest -D ExperimentalMemCheck
   pool = console
 
 
@@ -559,7 +559,7 @@ build CMakeFiles/ExperimentalMemCheck | ${cmake_ninja_workdir}CMakeFiles/Experim
 # Custom command for CMakeFiles/Continuous
 
 build CMakeFiles/Continuous | ${cmake_ninja_workdir}CMakeFiles/Continuous: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D Continuous
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.4/bin/ctest -D Continuous
   pool = console
 
 
@@ -567,7 +567,7 @@ build CMakeFiles/Continuous | ${cmake_ninja_workdir}CMakeFiles/Continuous: CUSTO
 # Custom command for CMakeFiles/Experimental
 
 build CMakeFiles/Experimental | ${cmake_ninja_workdir}CMakeFiles/Experimental: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest -D Experimental
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.4/bin/ctest -D Experimental
   pool = console
 
 # =============================================================================
@@ -580,7 +580,7 @@ build CMakeFiles/Experimental | ${cmake_ninja_workdir}CMakeFiles/Experimental: C
 # Utility command for edit_cache
 
 build src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/src && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/src && /usr/local/Cellar/cmake/3.21.4/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -591,7 +591,7 @@ build src/edit_cache: phony src/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/src && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake --regenerate-during-build -S/Users/haydenbraxton/Projects/cmake-example-project -B/Users/haydenbraxton/Projects/cmake-example-project/buildresults
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/src && /usr/local/Cellar/cmake/3.21.4/bin/cmake --regenerate-during-build -S/Users/haydenbraxton/Projects/cmake-example-project -B/Users/haydenbraxton/Projects/cmake-example-project/buildresults
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -603,7 +603,7 @@ build src/rebuild_cache: phony src/CMakeFiles/rebuild_cache.util
 # Utility command for package_source
 
 build src/CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/cpack --config ./CPackSourceConfig.cmake /Users/haydenbraxton/Projects/cmake-example-project/buildresults/CPackSourceConfig.cmake
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.4/bin/cpack --config ./CPackSourceConfig.cmake /Users/haydenbraxton/Projects/cmake-example-project/buildresults/CPackSourceConfig.cmake
   DESC = Run CPack packaging tool for source...
   pool = console
   restat = 1
@@ -1688,7 +1688,7 @@ build src/liblibc.a: C_STATIC_LIBRARY_LINKER__libc_ src/CMakeFiles/libc.dir/asse
 # Utility command for package
 
 build src/CMakeFiles/package.util: CUSTOM_COMMAND src/all
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/cpack --config ./CPackConfig.cmake
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.4/bin/cpack --config ./CPackConfig.cmake
   DESC = Run CPack packaging tool...
   pool = console
   restat = 1
@@ -1700,7 +1700,7 @@ build src/package: phony src/CMakeFiles/package.util
 # Utility command for test
 
 build src/CMakeFiles/test.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/src && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest --force-new-ctest-process
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/src && /usr/local/Cellar/cmake/3.21.4/bin/ctest --force-new-ctest-process
   DESC = Running tests...
   pool = console
   restat = 1
@@ -1717,7 +1717,7 @@ build src/test: phony src/CMakeFiles/test.util
 # Utility command for test
 
 build src/gdtoa/CMakeFiles/test.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/src/gdtoa && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest --force-new-ctest-process
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/src/gdtoa && /usr/local/Cellar/cmake/3.21.4/bin/ctest --force-new-ctest-process
   DESC = Running tests...
   pool = console
   restat = 1
@@ -1729,7 +1729,7 @@ build src/gdtoa/test: phony src/gdtoa/CMakeFiles/test.util
 # Utility command for edit_cache
 
 build src/gdtoa/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/src/gdtoa && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/src/gdtoa && /usr/local/Cellar/cmake/3.21.4/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -1740,7 +1740,7 @@ build src/gdtoa/edit_cache: phony src/gdtoa/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build src/gdtoa/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/src/gdtoa && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake --regenerate-during-build -S/Users/haydenbraxton/Projects/cmake-example-project -B/Users/haydenbraxton/Projects/cmake-example-project/buildresults
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/src/gdtoa && /usr/local/Cellar/cmake/3.21.4/bin/cmake --regenerate-during-build -S/Users/haydenbraxton/Projects/cmake-example-project -B/Users/haydenbraxton/Projects/cmake-example-project/buildresults
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -1752,7 +1752,7 @@ build src/gdtoa/rebuild_cache: phony src/gdtoa/CMakeFiles/rebuild_cache.util
 # Utility command for package_source
 
 build src/gdtoa/CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/cpack --config ./CPackSourceConfig.cmake /Users/haydenbraxton/Projects/cmake-example-project/buildresults/CPackSourceConfig.cmake
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.4/bin/cpack --config ./CPackSourceConfig.cmake /Users/haydenbraxton/Projects/cmake-example-project/buildresults/CPackSourceConfig.cmake
   DESC = Run CPack packaging tool for source...
   pool = console
   restat = 1
@@ -1764,7 +1764,7 @@ build src/gdtoa/package_source: phony src/gdtoa/CMakeFiles/package_source.util
 # Utility command for package
 
 build src/gdtoa/CMakeFiles/package.util: CUSTOM_COMMAND src/gdtoa/all
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/cpack --config ./CPackConfig.cmake
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.4/bin/cpack --config ./CPackConfig.cmake
   DESC = Run CPack packaging tool...
   pool = console
   restat = 1
@@ -1778,22 +1778,10 @@ build src/gdtoa/package: phony src/gdtoa/CMakeFiles/package.util
 
 
 #############################################
-# Utility command for test
-
-build test/CMakeFiles/test.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/test && /usr/local/Cellar/cmake/3.21.3_1/bin/ctest --force-new-ctest-process
-  DESC = Running tests...
-  pool = console
-  restat = 1
-
-build test/test: phony test/CMakeFiles/test.util
-
-
-#############################################
 # Utility command for rebuild_cache
 
 build test/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/test && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake --regenerate-during-build -S/Users/haydenbraxton/Projects/cmake-example-project -B/Users/haydenbraxton/Projects/cmake-example-project/buildresults
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/test && /usr/local/Cellar/cmake/3.21.4/bin/cmake --regenerate-during-build -S/Users/haydenbraxton/Projects/cmake-example-project -B/Users/haydenbraxton/Projects/cmake-example-project/buildresults
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -1805,7 +1793,7 @@ build test/rebuild_cache: phony test/CMakeFiles/rebuild_cache.util
 # Utility command for package_source
 
 build test/CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/cpack --config ./CPackSourceConfig.cmake /Users/haydenbraxton/Projects/cmake-example-project/buildresults/CPackSourceConfig.cmake
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.4/bin/cpack --config ./CPackSourceConfig.cmake /Users/haydenbraxton/Projects/cmake-example-project/buildresults/CPackSourceConfig.cmake
   DESC = Run CPack packaging tool for source...
   pool = console
   restat = 1
@@ -1817,12 +1805,61 @@ build test/package_source: phony test/CMakeFiles/package_source.util
 # Utility command for package
 
 build test/CMakeFiles/package.util: CUSTOM_COMMAND test/all
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.3_1/bin/cpack --config ./CPackConfig.cmake
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults && /usr/local/Cellar/cmake/3.21.4/bin/cpack --config ./CPackConfig.cmake
   DESC = Run CPack packaging tool...
   pool = console
   restat = 1
 
 build test/package: phony test/CMakeFiles/package.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build test/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/test && /usr/local/Cellar/cmake/3.21.4/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build test/edit_cache: phony test/CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Object build statements for EXECUTABLE target printf_tests
+
+
+#############################################
+# Order-only phony target for printf_tests
+
+build cmake_object_order_depends_target_printf_tests: phony || test/CMakeFiles/printf_tests.dir
+
+build test/CMakeFiles/printf_tests.dir/__/_deps/printf-src/test/test_suite.cpp.o: CXX_COMPILER__printf_tests_ /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src/test/test_suite.cpp || cmake_object_order_depends_target_printf_tests
+  DEP_FILE = test/CMakeFiles/printf_tests.dir/__/_deps/printf-src/test/test_suite.cpp.o.d
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -std=gnu++11
+  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src
+  OBJECT_DIR = test/CMakeFiles/printf_tests.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/printf_tests.dir/__/_deps/printf-src/test
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target printf_tests
+
+
+#############################################
+# Link the executable test/printf_tests
+
+build test/printf_tests: CXX_EXECUTABLE_LINKER__printf_tests_ test/CMakeFiles/printf_tests.dir/__/_deps/printf-src/test/test_suite.cpp.o
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  OBJECT_DIR = test/CMakeFiles/printf_tests.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = test/printf_tests
+  TARGET_PDB = printf_tests.dbg
+
+
+#############################################
+# Utility command for NAME
+
+build test/NAME: phony test/CMakeFiles/NAME test/libc_tests
 
 # =============================================================================
 # Object build statements for EXECUTABLE target libc_tests
@@ -2321,49 +2358,54 @@ build test/libc_tests: C_EXECUTABLE_LINKER__libc_tests_ test/CMakeFiles/libc_tes
 
 
 #############################################
-# Utility command for edit_cache
+# Utility command for test-clear-results
 
-build test/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/test && /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-  DESC = No interactive CMake dialog available...
+build test/test-clear-results: phony test/CMakeFiles/test-clear-results
+
+
+#############################################
+# Utility command for test
+
+build test/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/test && /usr/local/Cellar/cmake/3.21.4/bin/ctest --force-new-ctest-process
+  DESC = Running tests...
+  pool = console
   restat = 1
 
-build test/edit_cache: phony test/CMakeFiles/edit_cache.util
-
-# =============================================================================
-# Object build statements for EXECUTABLE target printf_tests
+build test/test: phony test/CMakeFiles/test.util
 
 
 #############################################
-# Order-only phony target for printf_tests
+# Utility command for test-printf
 
-build cmake_object_order_depends_target_printf_tests: phony || test/CMakeFiles/printf_tests.dir
-
-build test/CMakeFiles/printf_tests.dir/__/_deps/printf-src/test/test_suite.cpp.o: CXX_COMPILER__printf_tests_ /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src/test/test_suite.cpp || cmake_object_order_depends_target_printf_tests
-  DEP_FILE = test/CMakeFiles/printf_tests.dir/__/_deps/printf-src/test/test_suite.cpp.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -std=gnu++11
-  INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/printf-src
-  OBJECT_DIR = test/CMakeFiles/printf_tests.dir
-  OBJECT_FILE_DIR = test/CMakeFiles/printf_tests.dir/__/_deps/printf-src/test
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target printf_tests
+build test/test-printf: phony test/CMakeFiles/test-printf test/printf_tests
 
 
 #############################################
-# Link the executable test/printf_tests
+# Custom command for test/CMakeFiles/NAME
 
-build test/printf_tests: CXX_EXECUTABLE_LINKER__printf_tests_ test/CMakeFiles/printf_tests.dir/__/_deps/printf-src/test/test_suite.cpp.o
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  OBJECT_DIR = test/CMakeFiles/printf_tests.dir
-  POST_BUILD = :
-  PRE_LINK = :
-  TARGET_FILE = test/printf_tests
-  TARGET_PDB = printf_tests.dbg
+build test/CMakeFiles/NAME | ${cmake_ninja_workdir}test/CMakeFiles/NAME: CUSTOM_COMMAND || project_cmocka src/liblibc.a test/libc_tests
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/test && test-libc && export CMOCKA_MESSAGE_OUTPUT=stdout && /Users/haydenbraxton/Projects/cmake-example-project/buildresults/test/libc_tests
+
+
+#############################################
+# Custom command for test/CMakeFiles/test-clear-results
+
+build test/CMakeFiles/test-clear-results | ${cmake_ninja_workdir}test/CMakeFiles/test-clear-results: CUSTOM_COMMAND
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/test && /usr/local/Cellar/cmake/3.21.4/bin/cmake -E rm -f /Users/haydenbraxton/Projects/cmake-example-project/buildresults/testresults/*.xml
+  DESC = Removing XML files in the testresults/ dir
+
+
+#############################################
+# Custom command for test/CMakeFiles/test-printf
+
+build test/CMakeFiles/test-printf | ${cmake_ninja_workdir}test/CMakeFiles/test-printf: CUSTOM_COMMAND || test/printf_tests
+  COMMAND = cd /Users/haydenbraxton/Projects/cmake-example-project/buildresults/test && /Users/haydenbraxton/Projects/cmake-example-project/buildresults/test/printf_tests
 
 # =============================================================================
 # Target aliases.
+
+build NAME: phony test/NAME
 
 build libc: phony src/liblibc.a
 
@@ -2372,6 +2414,10 @@ build libc_tests: phony test/libc_tests
 build liblibc.a: phony src/liblibc.a
 
 build printf_tests: phony test/printf_tests
+
+build test-clear-results: phony test/test-clear-results
+
+build test-printf: phony test/test-printf
 
 # =============================================================================
 # Folder targets.
@@ -2402,7 +2448,7 @@ build src/gdtoa/all: phony
 #############################################
 # Folder: /Users/haydenbraxton/Projects/cmake-example-project/buildresults/test
 
-build test/all: phony test/libc_tests test/printf_tests
+build test/all: phony test/printf_tests test/libc_tests
 
 # =============================================================================
 # Built-in targets
@@ -2411,14 +2457,14 @@ build test/all: phony test/libc_tests test/printf_tests
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../cmake/CPM.cmake ../src/CMakeLists.txt ../src/gdtoa/CMakeLists.txt ../test/CMakeLists.txt /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CTest.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CTestTargets.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CTestUseLaunchers.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/AppleClang-C.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/Clang.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/DartConfiguration.tcl.in /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/ExternalProject.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/FetchContent.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/FetchContent/CMakeLists.cmake.in /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/FindGit.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/FindPackageMessage.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Apple-Clang-C.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Apple-Clang.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.21.3/CMakeCCompiler.cmake CMakeFiles/3.21.3/CMakeCXXCompiler.cmake CMakeFiles/3.21.3/CMakeSystem.cmake cmocka/tmp/project_cmocka-cfgcmd.txt.in
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../cmake/CPM.cmake ../src/CMakeLists.txt ../src/gdtoa/CMakeLists.txt ../test/CMakeLists.txt /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CTest.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CTestTargets.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CTestUseLaunchers.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Compiler/AppleClang-C.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Compiler/Clang.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/DartConfiguration.tcl.in /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/ExternalProject.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/FetchContent.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/FetchContent/CMakeLists.cmake.in /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/FindGit.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/FindPackageMessage.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Platform/Apple-Clang-C.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Platform/Apple-Clang.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.21.4/CMakeCCompiler.cmake CMakeFiles/3.21.4/CMakeCXXCompiler.cmake CMakeFiles/3.21.4/CMakeSystem.cmake cmocka/tmp/project_cmocka-cfgcmd.txt.in
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt ../cmake/CPM.cmake ../src/CMakeLists.txt ../src/gdtoa/CMakeLists.txt ../test/CMakeLists.txt /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CTest.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CTestTargets.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/CTestUseLaunchers.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/AppleClang-C.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/Clang.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/DartConfiguration.tcl.in /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/ExternalProject.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/FetchContent.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/FetchContent/CMakeLists.cmake.in /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/FindGit.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/FindPackageMessage.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Apple-Clang-C.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Apple-Clang.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.21.3_1/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.21.3/CMakeCCompiler.cmake CMakeFiles/3.21.3/CMakeCXXCompiler.cmake CMakeFiles/3.21.3/CMakeSystem.cmake cmocka/tmp/project_cmocka-cfgcmd.txt.in: phony
+build ../CMakeLists.txt ../cmake/CPM.cmake ../src/CMakeLists.txt ../src/gdtoa/CMakeLists.txt ../test/CMakeLists.txt /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CTest.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CTestTargets.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CTestUseLaunchers.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Compiler/AppleClang-C.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Compiler/Clang.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/DartConfiguration.tcl.in /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/ExternalProject.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/FetchContent.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/FetchContent/CMakeLists.cmake.in /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/FindGit.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/FindPackageMessage.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Platform/Apple-Clang-C.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Platform/Apple-Clang.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.21.4/CMakeCCompiler.cmake CMakeFiles/3.21.4/CMakeCXXCompiler.cmake CMakeFiles/3.21.4/CMakeSystem.cmake cmocka/tmp/project_cmocka-cfgcmd.txt.in: phony
 
 
 #############################################

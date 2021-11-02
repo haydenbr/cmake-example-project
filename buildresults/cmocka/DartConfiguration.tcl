@@ -26,7 +26,7 @@ SubmitURL: https://test.cmocka.org/submit.php?project=cmocka
 NightlyStartTime: 01:00:00 UTC
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/local/Cellar/cmake/3.21.3_1/bin/cmake" "/Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/cmocka-src"
+ConfigureCommand: "/usr/local/Cellar/cmake/3.21.4/bin/cmake" "/Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/cmocka-src"
 MakeCommand: /usr/local/Cellar/cmake/3.21.3_1/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 

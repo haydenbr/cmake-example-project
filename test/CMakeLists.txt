@@ -12,6 +12,8 @@ add_test(
 	COMMAND printf_tests -s -r junit -o ${CMAKE_CURRENT_BINARY_DIR}/testresults/printf_tests.xml
 )
 
+add_custom_target(test-printf printf_tests)
+
 #######################
 # libc unit tests #
 #######################
@@ -36,13 +38,28 @@ target_link_libraries(
 	PRIVATE ${CMOCKA_LIBRARIES}
 )
 
+add_custom_target(test-clear-results
+	COMMAND ${CMAKE_COMMAND} -E rm -f ${CMAKE_BINARY_DIR}/testresults/*.xml
+	COMMENT "Removing XML files in the testresults/ dir"
+)
+add_test(
+	NAME Libc.ClearResults
+	COMMAND ${CMAKE_COMMAND} --build ${CMAKE_BINARY_DIR} --target test-clear-results
+)
+
 add_test(
 	NAME LibC.Tests
 	COMMAND libc_tests
 )
-
 set_tests_properties(
 	LibC.Tests
 	PROPERTIES
-	ENVIRONMENT CMOCKA_XML_FILE=${CMAKE_CURRENT_BINARY_DIR}/testresults/%g.xml
+		ENVIRONMENT CMOCKA_XML_FILE=${CMAKE_CURRENT_BINARY_DIR}/testresults/%g.xml
+		DEPENDS Libc.ClearResults
+)
+
+add_custom_target(
+	NAME test-libc
+	COMMAND export CMOCKA_MESSAGE_OUTPUT=stdout
+	COMMAND libc_tests
 )

@@ -26,7 +26,7 @@ SubmitURL: http://
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/local/Cellar/cmake/3.21.3_1/bin/cmake" "/Users/haydenbraxton/Projects/cmake-example-project"
+ConfigureCommand: "/usr/local/Cellar/cmake/3.21.4/bin/cmake" "/Users/haydenbraxton/Projects/cmake-example-project"
 MakeCommand: /usr/local/Cellar/cmake/3.21.3_1/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 
