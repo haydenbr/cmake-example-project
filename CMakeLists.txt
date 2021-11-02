@@ -9,6 +9,7 @@ set_property(GLOBAL PROPERTY C_STANDARD 11)
 
 include(cmake/CPM.cmake)
 include(ExternalProject)
+include(CheckCCompilerFlag)
 
 if(CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME)
 	include(CTest)

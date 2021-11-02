@@ -1872,469 +1872,469 @@ build cmake_object_order_depends_target_libc_tests: phony || cmake_object_order_
 
 build test/CMakeFiles/libc_tests.dir/main.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/main.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/main.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir
 
 build test/CMakeFiles/libc_tests.dir/ctype/ctype_tests.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/ctype/ctype_tests.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/ctype/ctype_tests.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/ctype
 
 build test/CMakeFiles/libc_tests.dir/ctype/isalnum.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/ctype/isalnum.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/ctype/isalnum.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/ctype
 
 build test/CMakeFiles/libc_tests.dir/ctype/isalpha.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/ctype/isalpha.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/ctype/isalpha.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/ctype
 
 build test/CMakeFiles/libc_tests.dir/ctype/isascii.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/ctype/isascii.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/ctype/isascii.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/ctype
 
 build test/CMakeFiles/libc_tests.dir/ctype/isblank.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/ctype/isblank.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/ctype/isblank.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/ctype
 
 build test/CMakeFiles/libc_tests.dir/ctype/iscntrl.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/ctype/iscntrl.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/ctype/iscntrl.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/ctype
 
 build test/CMakeFiles/libc_tests.dir/ctype/isdigit.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/ctype/isdigit.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/ctype/isdigit.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/ctype
 
 build test/CMakeFiles/libc_tests.dir/ctype/isgraph.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/ctype/isgraph.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/ctype/isgraph.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/ctype
 
 build test/CMakeFiles/libc_tests.dir/ctype/islower.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/ctype/islower.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/ctype/islower.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/ctype
 
 build test/CMakeFiles/libc_tests.dir/ctype/isprint.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/ctype/isprint.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/ctype/isprint.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/ctype
 
 build test/CMakeFiles/libc_tests.dir/ctype/ispunct.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/ctype/ispunct.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/ctype/ispunct.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/ctype
 
 build test/CMakeFiles/libc_tests.dir/ctype/isspace.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/ctype/isspace.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/ctype/isspace.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/ctype
 
 build test/CMakeFiles/libc_tests.dir/ctype/isupper.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/ctype/isupper.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/ctype/isupper.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/ctype
 
 build test/CMakeFiles/libc_tests.dir/ctype/isxdigit.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/ctype/isxdigit.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/ctype/isxdigit.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/ctype
 
 build test/CMakeFiles/libc_tests.dir/ctype/toascii.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/ctype/toascii.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/ctype/toascii.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/ctype
 
 build test/CMakeFiles/libc_tests.dir/ctype/tolower.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/ctype/tolower.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/ctype/tolower.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/ctype
 
 build test/CMakeFiles/libc_tests.dir/ctype/toupper.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/ctype/toupper.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/ctype/toupper.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/ctype
 
 build test/CMakeFiles/libc_tests.dir/stdlib/abs.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/stdlib/abs.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/stdlib/abs.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/stdlib
 
 build test/CMakeFiles/libc_tests.dir/stdlib/atof.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/stdlib/atof.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/stdlib/atof.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/stdlib
 
 build test/CMakeFiles/libc_tests.dir/stdlib/atoi.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/stdlib/atoi.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/stdlib/atoi.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/stdlib
 
 build test/CMakeFiles/libc_tests.dir/stdlib/atol.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/stdlib/atol.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/stdlib/atol.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/stdlib
 
 build test/CMakeFiles/libc_tests.dir/stdlib/atoll.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/stdlib/atoll.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/stdlib/atoll.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/stdlib
 
 build test/CMakeFiles/libc_tests.dir/stdlib/bsearch.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/stdlib/bsearch.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/stdlib/bsearch.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/stdlib
 
 build test/CMakeFiles/libc_tests.dir/stdlib/calloc.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/stdlib/calloc.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/stdlib/calloc.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/stdlib
 
 build test/CMakeFiles/libc_tests.dir/stdlib/div.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/stdlib/div.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/stdlib/div.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/stdlib
 
 build test/CMakeFiles/libc_tests.dir/stdlib/heapsort.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/stdlib/heapsort.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/stdlib/heapsort.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/stdlib
 
 build test/CMakeFiles/libc_tests.dir/stdlib/heapsort_r.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/stdlib/heapsort_r.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/stdlib/heapsort_r.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/stdlib
 
 build test/CMakeFiles/libc_tests.dir/stdlib/imaxabs.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/stdlib/imaxabs.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/stdlib/imaxabs.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/stdlib
 
 build test/CMakeFiles/libc_tests.dir/stdlib/imaxdiv.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/stdlib/imaxdiv.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/stdlib/imaxdiv.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/stdlib
 
 build test/CMakeFiles/libc_tests.dir/stdlib/labs.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/stdlib/labs.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/stdlib/labs.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/stdlib
 
 build test/CMakeFiles/libc_tests.dir/stdlib/ldiv.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/stdlib/ldiv.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/stdlib/ldiv.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/stdlib
 
 build test/CMakeFiles/libc_tests.dir/stdlib/llabs.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/stdlib/llabs.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/stdlib/llabs.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/stdlib
 
 build test/CMakeFiles/libc_tests.dir/stdlib/lldiv.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/stdlib/lldiv.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/stdlib/lldiv.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/stdlib
 
 build test/CMakeFiles/libc_tests.dir/stdlib/qsort.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/stdlib/qsort.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/stdlib/qsort.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/stdlib
 
 build test/CMakeFiles/libc_tests.dir/stdlib/qsort_r.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/stdlib/qsort_r.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/stdlib/qsort_r.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/stdlib
 
 build test/CMakeFiles/libc_tests.dir/stdlib/rand.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/stdlib/rand.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/stdlib/rand.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/stdlib
 
 build test/CMakeFiles/libc_tests.dir/stdlib/realloc.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/stdlib/realloc.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/stdlib/realloc.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/stdlib
 
 build test/CMakeFiles/libc_tests.dir/stdlib/stdlib_tests.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/stdlib/stdlib_tests.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/stdlib/stdlib_tests.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/stdlib
 
 build test/CMakeFiles/libc_tests.dir/stdlib/strtod.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/stdlib/strtod.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/stdlib/strtod.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/stdlib
 
 build test/CMakeFiles/libc_tests.dir/stdlib/strtof.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/stdlib/strtof.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/stdlib/strtof.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/stdlib
 
 build test/CMakeFiles/libc_tests.dir/stdlib/strtol.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/stdlib/strtol.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/stdlib/strtol.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/stdlib
 
 build test/CMakeFiles/libc_tests.dir/stdlib/strtoll.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/stdlib/strtoll.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/stdlib/strtoll.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/stdlib
 
 build test/CMakeFiles/libc_tests.dir/stdlib/strtoul.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/stdlib/strtoul.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/stdlib/strtoul.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/stdlib
 
 build test/CMakeFiles/libc_tests.dir/stdlib/strtoull.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/stdlib/strtoull.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/stdlib/strtoull.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/stdlib
 
 build test/CMakeFiles/libc_tests.dir/string/memcmp.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/string/memcmp.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/string/memcmp.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/string
 
 build test/CMakeFiles/libc_tests.dir/string/memcpy.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/string/memcpy.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/string/memcpy.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/string
 
 build test/CMakeFiles/libc_tests.dir/string/memmem.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/string/memmem.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/string/memmem.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/string
 
 build test/CMakeFiles/libc_tests.dir/string/memmove.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/string/memmove.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/string/memmove.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/string
 
 build test/CMakeFiles/libc_tests.dir/string/memset.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/string/memset.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/string/memset.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/string
 
 build test/CMakeFiles/libc_tests.dir/string/strcat.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/string/strcat.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/string/strcat.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/string
 
 build test/CMakeFiles/libc_tests.dir/string/strchr.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/string/strchr.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/string/strchr.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/string
 
 build test/CMakeFiles/libc_tests.dir/string/strcmp.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/string/strcmp.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/string/strcmp.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/string
 
 build test/CMakeFiles/libc_tests.dir/string/strcpy.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/string/strcpy.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/string/strcpy.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/string
 
 build test/CMakeFiles/libc_tests.dir/string/strdup.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/string/strdup.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/string/strdup.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/string
 
 build test/CMakeFiles/libc_tests.dir/string/string_tests.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/string/string_tests.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/string/string_tests.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/string
 
 build test/CMakeFiles/libc_tests.dir/string/strlen.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/string/strlen.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/string/strlen.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/string
 
 build test/CMakeFiles/libc_tests.dir/string/strncat.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/string/strncat.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/string/strncat.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/string
 
 build test/CMakeFiles/libc_tests.dir/string/strncmp.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/string/strncmp.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/string/strncmp.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/string
 
 build test/CMakeFiles/libc_tests.dir/string/strncpy.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/string/strncpy.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/string/strncpy.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/string
 
 build test/CMakeFiles/libc_tests.dir/string/strndup.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/string/strndup.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/string/strndup.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/string
 
 build test/CMakeFiles/libc_tests.dir/string/strnlen.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/string/strnlen.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/string/strnlen.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/string
 
 build test/CMakeFiles/libc_tests.dir/string/strnstr.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/string/strnstr.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/string/strnstr.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/string
 
 build test/CMakeFiles/libc_tests.dir/string/strrchr.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/string/strrchr.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/string/strrchr.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/string
 
 build test/CMakeFiles/libc_tests.dir/string/strstr.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/string/strstr.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/string/strstr.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/string
 
 build test/CMakeFiles/libc_tests.dir/string/strtok.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/string/strtok.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/string/strtok.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/string
 
 build test/CMakeFiles/libc_tests.dir/test/rand.c.o: C_COMPILER__libc_tests_ /Users/haydenbraxton/Projects/cmake-example-project/test/test/rand.c || cmake_object_order_depends_target_libc_tests
   DEP_FILE = test/CMakeFiles/libc_tests.dir/test/rand.c.o.d
-  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra
+  FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fPIE -Wall -Wextra -Wno-unused-parameter
   INCLUDES = -I/Users/haydenbraxton/Projects/cmake-example-project/test/. -I/Users/haydenbraxton/Projects/cmake-example-project/test/test -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/cmocka/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/arch/x86_64/include -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/src -isystem /Users/haydenbraxton/Projects/cmake-example-project/buildresults/_deps/openlibm-src/include
   OBJECT_DIR = test/CMakeFiles/libc_tests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/libc_tests.dir/test
@@ -2457,14 +2457,14 @@ build test/all: phony test/printf_tests test/libc_tests
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../cmake/CPM.cmake ../src/CMakeLists.txt ../src/gdtoa/CMakeLists.txt ../test/CMakeLists.txt /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CTest.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CTestTargets.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CTestUseLaunchers.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Compiler/AppleClang-C.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Compiler/Clang.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/DartConfiguration.tcl.in /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/ExternalProject.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/FetchContent.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/FetchContent/CMakeLists.cmake.in /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/FindGit.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/FindPackageMessage.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Platform/Apple-Clang-C.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Platform/Apple-Clang.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.21.4/CMakeCCompiler.cmake CMakeFiles/3.21.4/CMakeCXXCompiler.cmake CMakeFiles/3.21.4/CMakeSystem.cmake cmocka/tmp/project_cmocka-cfgcmd.txt.in
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../cmake/CPM.cmake ../src/CMakeLists.txt ../src/gdtoa/CMakeLists.txt ../test/CMakeLists.txt /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CTest.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CTestTargets.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CTestUseLaunchers.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CheckCCompilerFlag.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CheckCSourceCompiles.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Compiler/AppleClang-C.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Compiler/Clang.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/DartConfiguration.tcl.in /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/ExternalProject.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/FetchContent.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/FetchContent/CMakeLists.cmake.in /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/FindGit.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/FindPackageMessage.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Internal/CheckCompilerFlag.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Internal/CheckSourceCompiles.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Platform/Apple-Clang-C.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Platform/Apple-Clang.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.21.4/CMakeCCompiler.cmake CMakeFiles/3.21.4/CMakeCXXCompiler.cmake CMakeFiles/3.21.4/CMakeSystem.cmake cmocka/tmp/project_cmocka-cfgcmd.txt.in
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt ../cmake/CPM.cmake ../src/CMakeLists.txt ../src/gdtoa/CMakeLists.txt ../test/CMakeLists.txt /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CTest.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CTestTargets.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CTestUseLaunchers.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Compiler/AppleClang-C.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Compiler/Clang.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/DartConfiguration.tcl.in /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/ExternalProject.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/FetchContent.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/FetchContent/CMakeLists.cmake.in /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/FindGit.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/FindPackageMessage.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Platform/Apple-Clang-C.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Platform/Apple-Clang.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.21.4/CMakeCCompiler.cmake CMakeFiles/3.21.4/CMakeCXXCompiler.cmake CMakeFiles/3.21.4/CMakeSystem.cmake cmocka/tmp/project_cmocka-cfgcmd.txt.in: phony
+build ../CMakeLists.txt ../cmake/CPM.cmake ../src/CMakeLists.txt ../src/gdtoa/CMakeLists.txt ../test/CMakeLists.txt /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CTest.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CTestTargets.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CTestUseLaunchers.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CheckCCompilerFlag.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CheckCSourceCompiles.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Compiler/AppleClang-C.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Compiler/Clang.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/DartConfiguration.tcl.in /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/ExternalProject.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/FetchContent.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/FetchContent/CMakeLists.cmake.in /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/FindGit.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/FindPackageMessage.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Internal/CheckCompilerFlag.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Internal/CheckSourceCompiles.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Platform/Apple-Clang-C.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Platform/Apple-Clang.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.21.4/CMakeCCompiler.cmake CMakeFiles/3.21.4/CMakeCXXCompiler.cmake CMakeFiles/3.21.4/CMakeSystem.cmake cmocka/tmp/project_cmocka-cfgcmd.txt.in: phony
 
 
 #############################################

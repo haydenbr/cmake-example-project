@@ -3,6 +3,7 @@
 #######################
 
 add_executable(printf_tests)
+
 target_sources(printf_tests PRIVATE ${printf_SOURCE_DIR}/test/test_suite.cpp)
 target_include_directories(printf_tests PRIVATE ${printf_SOURCE_DIR})
 set_target_properties(printf_tests PROPERTIES CXX_STANDARD 11)
@@ -19,6 +20,23 @@ add_custom_target(test-printf printf_tests)
 #######################
 
 add_executable(libc_tests)
+
+list(APPEND desired_libc_tests_flags
+	"-Wno-stringop-overflow"
+	"-Wno-unused-parameter"
+)
+
+function(apply_supported_c_compiler_flags target scope flag_list)
+	foreach(flag ${${flag_list}})
+		string(REPLACE - _ flag_var ${flag})
+		check_c_compiler_flag(${flag} ${flag_var})
+		if(${flag_var})
+			target_compile_options(${target} ${scope} ${flag})
+		endif()
+	endforeach()
+endfunction()
+
+apply_supported_c_compiler_flags(libc_tests PRIVATE desired_libc_tests_flags)
 
 aux_source_directory(ctype libc_tests_target_sources)
 aux_source_directory(stdlib libc_tests_target_sources)
