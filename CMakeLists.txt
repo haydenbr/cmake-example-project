@@ -12,6 +12,7 @@ include(ExternalProject)
 
 if(CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME)
 	include(CTest)
+  add_compile_options(-Wall -Wextra)
 endif()
 
 set(default_position_independent_code ON)
