@@ -26,9 +26,14 @@ list(APPEND desired_libc_tests_flags
 	"-Wno-unused-parameter"
 )
 
+function(make_safe_varname input_string output_var)
+	string(REPLACE - _ return_value ${input_string})
+	set(${output_var} ${return_value} PARENT_SCOPE)
+endfunction()
+
 function(apply_supported_c_compiler_flags target scope flag_list)
 	foreach(flag ${${flag_list}})
-		string(REPLACE - _ flag_var ${flag})
+		make_safe_varname(${flag} flag_var)
 		check_c_compiler_flag(${flag} ${flag_var})
 		if(${flag_var})
 			target_compile_options(${target} ${scope} ${flag})
