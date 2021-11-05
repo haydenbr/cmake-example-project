@@ -1,5 +1,15 @@
 add_library(libc)
 
+list(APPEND libc_compiler_flags
+	"-Wno-nonnull-compare"
+	"-Wno-unknown-pragmas"
+)
+apply_supported_c_compiler_flags(
+	libc
+	PRIVATE
+	libc_compiler_flags
+)
+
 # printf module
 target_link_libraries(libc PRIVATE printf openlibm)
 ## as private, we'll see warnings when building libc

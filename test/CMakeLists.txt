@@ -21,12 +21,19 @@ add_custom_target(test-printf printf_tests)
 
 add_executable(libc_tests)
 
-list(APPEND desired_libc_tests_flags
+list(APPEND libc_tests_compiler_flags
 	"-Wno-stringop-overflow"
 	"-Wno-unused-parameter"
+	"-Wno-unknown-pragmas"
+	"-Wno-nonnull-compare"
+	"-Wno-nonnull"
+	"-Wno-stringop-truncation"	
 )
-
-apply_supported_c_compiler_flags(libc_tests PRIVATE desired_libc_tests_flags)
+apply_supported_c_compiler_flags(
+	libc_tests
+	PRIVATE
+	libc_tests_compiler_flags
+)
 
 aux_source_directory(ctype libc_tests_target_sources)
 aux_source_directory(stdlib libc_tests_target_sources)
