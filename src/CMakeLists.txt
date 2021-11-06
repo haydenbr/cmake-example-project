@@ -9,6 +9,25 @@ apply_supported_c_compiler_flags(
 	PRIVATE
 	libc_compiler_flags
 )
+apply_supported_c_compiler_flags(
+	libc
+	PUBLIC
+	"-nostdinc"
+)
+# apply_supported_c_linker_flags(
+# 	libc
+# 	INTERFACE
+# 	"-nolibc;-nostdlib"
+# )
+
+if("${CMAKE_CROSSCOMPILING}")
+	check_c_compiler_flag("-nostdlib" _nostdlib)
+	if(_nostdlib)
+		target_link_options(libc INTERFACE "-nostdlib")
+	else()
+		apply_supported_c_compiler_flags(libc INTERFACE "-nolibc")
+	endif()
+endif()
 
 # printf module
 target_link_libraries(libc PRIVATE printf openlibm)

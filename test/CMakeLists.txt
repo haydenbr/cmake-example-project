@@ -44,6 +44,11 @@ target_sources(libc_tests
 	PRIVATE ${libc_tests_target_sources}
 )
 
+list(
+	REMOVE_ITEM
+	CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES
+	"${CMOCKA_INCLUDE_DIR}"
+)
 target_include_directories(libc_tests PRIVATE . test)
 target_include_directories(libc_tests SYSTEM PRIVATE ${CMOCKA_INCLUDE_DIR})
 
