@@ -10,35 +10,12 @@ set_property(GLOBAL PROPERTY C_STANDARD 11)
 include(cmake/CPM.cmake)
 include(cmake/CheckAndApplyFlags.cmake)
 include(ExternalProject)
+include(BuildOptions.cmake)
 
 if(CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME)
 	include(CTest)
   add_compile_options(-Wall -Wextra)
 endif()
-
-set(default_position_independent_code ON)
-if(NOT DEFINED CMAKE_POSITION_INDEPENDENT_CODE)
-	message(STATUS "Setting PIC for all targets to '${default_position_independent_code}' as no value was specified")
-	set(
-		CMAKE_POSITION_INDEPENDENT_CODE
-		"${default_position_independent_code}" CACHE
-		BOOL "Compile all targets with -fPIC"
-		FORCE
-	)
-endif()
-
-set(default_build_shared_libs OFF)
-if(NOT DEFINED BUILD_SHARED_LIBS)
-	message(STATUS "Setting 'build shared libraries' to '${default_shared_libs}' as no value was specified.")
-	set(
-		BUILD_SHARED_LIBS
-		"${default_build_shared_libs}" CACHE
-		BOOL "Compile shared libraries by default instead of static libraries."
-		FORCE
-	)
-endif()
-
-set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 #####################
 # Printf Dependency #
