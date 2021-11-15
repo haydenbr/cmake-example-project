@@ -14,13 +14,11 @@ apply_supported_c_compiler_flags(
 	PUBLIC
 	"-nostdinc"
 )
-if(HIDE_UNIMPLEMENTED_C_APIS)
-	target_compile_definitions(
-		libc
-		INTERFACE
-		DISABLE_UNIMPLEMENTED_LIBC_APIS
-	)
-endif()
+target_compile_definitions(
+	libc
+	INTERFACE
+	$<$<BOOL:${HIDE_UNIMPLEMENTED_C_APIS}>:DISABLE_UNIMPLEMENTED_LIBC_APIS>
+)
 
 if("${CMAKE_CROSSCOMPILING}")
 	check_c_compiler_flag("-nostdlib" _nostdlib)
