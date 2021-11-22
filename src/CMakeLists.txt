@@ -1,23 +1,52 @@
 add_library(libc)
 
-list(APPEND libc_compiler_flags
+###############
+# Definitions #
+###############
+target_compile_definitions(libc
+	INTERFACE
+		$<$<BOOL:${HIDE_UNIMPLEMENTED_C_APIS}>:DISABLE_UNIMPLEMENTED_LIBC_APIS>
+	PUBLIC
+		$<$<BOOL:${ENABLE_GNU_EXTENSIONS}>:_GNU_SOURCE>
+	PRIVATE
+		# Define a DEBUG symbol if we're using a Debug or Release with Debug Info buildtype
+		$<$<OR:$<STREQUAL:${CMAKE_BUILD_TYPE},Debug>,$<STREQUAL:${CMAKE_BUILD_TYPE},RelWithDebInfo>>:DEBUG>
+)
+
+##################
+# Compiler Flags #
+##################
+list(APPEND libc_compiler_private_flags
 	"-Wno-nonnull-compare"
 	"-Wno-unknown-pragmas"
 )
+
+list(APPEND libc_compiler_public_flags "")
+
+if("${NOSTDINC_FOR_DEPENDENTS}")
+	list(APPEND libc_compiler_public_flags "-nostdinc")
+else()
+	list(APPEND libc_compiler_private_flags "-nostdinc")
+endif()
+
+if("${DISABLE_BUILTINS}")
+	list(APPEND libc_compiler_public_flags "-fno-builtin")
+endif()
+
+if("${DISABLE_STACK_PROTECTION}")
+	list(APPEND libc_compiler_public_flags "-fno-stack-protector")
+endif()
+
 apply_supported_c_compiler_flags(
 	libc
 	PRIVATE
-	libc_compiler_flags
+	libc_compiler_private_flags
 )
+
 apply_supported_c_compiler_flags(
 	libc
 	PUBLIC
-	"-nostdinc"
-)
-target_compile_definitions(
-	libc
-	INTERFACE
-	$<$<BOOL:${HIDE_UNIMPLEMENTED_C_APIS}>:DISABLE_UNIMPLEMENTED_LIBC_APIS>
+	libc_compiler_public_flags
 )
 
 if("${CMAKE_CROSSCOMPILING}")
@@ -29,7 +58,9 @@ if("${CMAKE_CROSSCOMPILING}")
 	endif()
 endif()
 
-# printf module
+#################
+# printf module #
+#################
 target_link_libraries(libc PRIVATE printf openlibm)
 ## as private, we'll see warnings when building libc
 ## but not when linking against libc

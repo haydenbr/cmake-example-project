@@ -13,7 +13,6 @@ include(ExternalProject)
 include(BuildOptions.cmake)
 
 if(CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME)
-	include(CTest)
   add_compile_options(-Wall -Wextra)
 endif()
 
@@ -111,6 +110,10 @@ set(CMOCKA_INCLUDE_DIR ${BINARY_DIR}/include)
 
 add_subdirectory(src)
 
-if(BUILD_TESTING) # BUILD_TESTING comes from CTest module
-	add_subdirectory(test)
+if(CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME OR "${LIBC_BUILD_TESTING}")
+	include(CTest)
+
+	if(BUILD_TESTING) # BUILD_TESTING comes from CTest module
+		add_subdirectory(test)
+	endif()
 endif()

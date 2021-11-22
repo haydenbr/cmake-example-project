@@ -54,3 +54,33 @@ option(
 	"Make unimplemented libc functions invisible to the compiler."
 	OFF
 )
+
+option(
+	ENABLE_GNU_EXTENSIONS
+	"enables the GNU extensions to the standard libc functions."
+	OFF
+)
+
+option(
+	DISABLE_BUILTINS
+	"add an -fno-builtin compilation flag to the library"
+	ON
+)
+
+option(
+	DISABLE_STACK_PROTECTION
+	"add an -fno-stack-protector compilation flag to the libc target and its dependencies"
+	ON
+)
+
+option(
+	NOSTDINC_FOR_DEPENDENTS
+	"adds -nostdinc flag for dependants"
+	OFF
+)
+
+option(
+	LIBC_BUILD_TESTING
+	"enable unit test builds when this project is used as a dependency in another project"
+	OFF
+)
