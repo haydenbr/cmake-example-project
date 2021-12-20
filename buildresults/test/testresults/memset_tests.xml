@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuites>
-  <testsuite name="memset_tests" time="0.010" tests="2" failures="0" errors="0" skipped="0" >
-    <testcase name="memset_aligned_test" time="0.010" >
-    </testcase>
-    <testcase name="check_input" time="0.000" >
-    </testcase>
-  </testsuite>
-</testsuites>
